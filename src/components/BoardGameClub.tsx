@@ -53,7 +53,7 @@ const BoardGameClub: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-cream text-center mb-12"
         >
-          Unwind & Play: The VIP Board Game Club
+          We love board games.
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">

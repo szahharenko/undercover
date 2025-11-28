@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       className="relative bg-cream min-h-[70vh] flex items-center justify-center text-center p-8 overflow-hidden"
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cream to-beige opacity-40">
+      <div className="absolute inset-0 bg-gradient-to-br from-cream to-beige opacity-60">
         <img src={undercover} alt="Undercover workspace" className="w-full h-full object-cover" />
       </div>
       <div className="absolute inset-0 pattern-dots opacity-10"></div>
@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
-            className="px-8 py-3 border-2 border-coffee text-coffee rounded-2xl text-lg font-semibold hover:bg-coffee hover:text-cream transition-all duration-300"
+            className="px-8 py-3 border-2 border-coffee text-coffee bg-white bg-opacity-30 rounded-2xl text-lg font-semibold hover:bg-coffee hover:text-cream transition-all duration-300"
           >
             Join the Club
           </motion.button>

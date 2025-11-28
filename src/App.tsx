@@ -14,7 +14,9 @@ const App: React.FC = () => {
       <HeroSection />
       <CoworkingExperience />
       <BoardGameClub />
-      <AtmosphereGallery />
+      {
+        false && <AtmosphereGallery />
+      }
       <RegistrationForm />
       <Footer />
     </div>

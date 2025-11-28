@@ -9,22 +9,10 @@ const Footer: React.FC = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.8 }}
-      className="bg-charcoal text-cream py-12"
+      className="bg-charcoal text-cream p-20"
     >
       <div className="container mx-auto px-4 text-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Section 1: Navigation */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Navigation</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="hover:text-sage-green transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-sage-green transition-colors">Coworking</a></li>
-              <li><a href="#" className="hover:text-sage-green transition-colors">Board Games</a></li>
-              <li><a href="#" className="hover:text-sage-green transition-colors">Book a Visit</a></li>
-              <li><a href="#" className="hover:text-sage-green transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Section 2: Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Get in Touch</h3>

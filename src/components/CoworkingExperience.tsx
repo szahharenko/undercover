@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Coffee, Wifi, Armchair, MicVocal } from 'lucide-react';
+import { Coffee, Wifi, Armchair, MoonStar } from 'lucide-react';
 
 interface FeatureCardProps {
   icon: React.ElementType;
@@ -29,22 +29,22 @@ const CoworkingExperience: React.FC = () => {
     {
       icon: Armchair,
       title: "Ergonomic Comfort",
-      description: "Sink into our premium ergonomic chairs, designed for long hours of productive work in ultimate comfort.",
+      description: "",
     },
     {
       icon: Wifi,
       title: "Blazing Fast Wi-Fi",
-      description: "Seamless connectivity with our high-speed internet, ensuring your workflow is never interrupted.",
+      description: "",
     },
     {
       icon: Coffee,
-      title: "Artisan Coffee Bar",
-      description: "Enjoy unlimited barista-crafted coffee and gourmet teas, fueling your day with delightful blends.",
+      title: "Artisan Coffee Taste",
+      description: "",
     },
     {
-      icon: MicVocal, // Using MicVocal as a placeholder for soundproof
-      title: "Soundproof Focus Zones",
-      description: "Dedicated quiet areas for deep work and confidential calls, ensuring maximum concentration.",
+      icon: MoonStar, // Using MicVocal as a placeholder for soundproof
+      title: "Cozy Quiet Atmosphere",
+      description: "",
     },
   ];
 
@@ -58,7 +58,7 @@ const CoworkingExperience: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-charcoal text-center mb-12"
         >
-          Your Day, Elevated: The Undercover Coworking Experience
+          The Undercover Coworking Experience
         </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
