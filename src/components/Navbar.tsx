@@ -1,12 +1,18 @@
 import React from 'react';
+import logo from '../assets/logo-undercover-web.png'
 
 const Navbar: React.FC = () => {
   return (
     <nav className="p-4 bg-neutral-100 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold text-charcoal">CO/PLAY</div>
+        <div className='flex items-center'>
+          <img src={logo} alt="Undercover vibe logo" className='max-w-[100px] h-auto' />
+          <div className='flex flex-col ml-2'>
+            <div className="text-l font-bold text-charcoal uppercase">Undercover vibe</div>
+            <small>more than co-working</small>
+          </div>
+        </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-charcoal hover:text-sage-green transition-colors">Home</a>
           <a href="#" className="text-charcoal hover:text-sage-green transition-colors">Coworking</a>
           <a href="#" className="text-charcoal hover:text-sage-green transition-colors">Board Games</a>
           <a href="#" className="text-charcoal hover:text-sage-green transition-colors">Contact</a>

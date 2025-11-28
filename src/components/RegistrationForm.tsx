@@ -23,7 +23,7 @@ const RegistrationForm: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-beige">
+    <section className="p-20 bg-beige">
       <div className="container mx-auto px-4 max-w-2xl">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}

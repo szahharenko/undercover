@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AtmosphereGallery: React.FC = () => {
   return (
-    <section className="py-20 bg-cream">
+    <section className="p-20 bg-cream">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}

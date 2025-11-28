@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import undercover from '../assets/coworking.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -10,10 +11,12 @@ const HeroSection: React.FC = () => {
       className="relative bg-cream min-h-[70vh] flex items-center justify-center text-center p-8 overflow-hidden"
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cream to-beige opacity-70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-cream to-beige opacity-40">
+        <img src={undercover} alt="Undercover workspace" className="w-full h-full object-cover" />
+      </div>
       <div className="absolute inset-0 pattern-dots opacity-10"></div>
 
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 max-w-4xl mx-auto" >
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

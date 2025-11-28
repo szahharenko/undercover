@@ -44,7 +44,7 @@ const BoardGameClub: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-charcoal text-cream">
+    <section className="p-20 bg-charcoal text-cream">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
