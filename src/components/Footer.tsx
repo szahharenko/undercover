@@ -25,14 +25,11 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
             <div className="flex justify-center space-x-6">
-              <a href="#" className="hover:text-sage-green transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Facebook">
                 <Facebook size={28} />
               </a>
-              <a href="#" className="hover:text-sage-green transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Instagram">
                 <Instagram size={28} />
-              </a>
-              <a href="#" className="hover:text-sage-green transition-colors" aria-label="Twitter">
-                <Twitter size={28} />
               </a>
             </div>
           </div>
