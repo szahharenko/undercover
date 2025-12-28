@@ -15,10 +15,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Section 2: Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Get in Touch</h3>
-            <p>123 Cozy Lane, Comfort City, CC 45678</p>
-            <p>Email: info@undercover.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <h3 className="text-xl font-bold mb-4">Undercover Location</h3>
+            <p><a href="https://maps.app.goo.gl/z4kknp2yiiwf39QJ8">Kivimurru tn 34 - 6, 11411 Tallinn</a></p>
+            <p>Email: <a href="mailto:info@undercover.com">info@undercover.com</a></p>
+            <p>Phone: <a href="tel:+3725154369">(+372) 51 54 369</a></p>
           </div>
 
           {/* Section 3: Social Media */}
