@@ -43,6 +43,17 @@ const BoardGameClub: React.FC = () => {
     },
   ];
 
+  const topGames = [
+    "Catan",
+    "Terraforming Mars",
+    "Gloomhaven",
+    "Dungeons & Dragons",
+    "Wingspan",
+    "Scythe",
+    "Brass: Birmingham",
+    "Azul",
+  ];
+
   return (
     <section className="p-20 bg-charcoal text-cream">
       <div className="container mx-auto px-4">
@@ -61,6 +72,23 @@ const BoardGameClub: React.FC = () => {
             <GameFeatureCard key={index} {...feature} />
           ))}
         </div>
+
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 text-center"
+        >
+          <h3 className="text-3xl font-bold mb-6">Some of Our Featured Games</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {topGames.map((game, index) => (
+              <span key={index} className="bg-sage-green text-charcoal font-semibold px-4 py-2 rounded-full">
+                {game}
+              </span>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

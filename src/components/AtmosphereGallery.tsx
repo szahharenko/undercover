@@ -1,5 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import coworking1 from '../assets/coworking-1.jpg';
+import coworking2 from '../assets/coworking-2.jpg';
+import boardGames1 from '../assets/board-games-1.jpg';
+import boardGames2 from '../assets/board-games-2.jpg';
+import coffeeShop1 from '../assets/coffee-shop-1.jpg';
+import generic from '../assets/logo-undercover.jpg';
+
+const images = [
+  { src: coworking1, alt: 'A modern and cozy coworking space' },
+  { src: boardGames1, alt: 'A collection of board games on a shelf' },
+  { src: coffeeShop1, alt: 'A warm and inviting coffee shop area' },
+  { src: coworking2, alt: 'People working in a collaborative environment' },
+  { src: boardGames2, alt: 'Friends laughing while playing a board game' },
+  { src: generic, alt: 'A comfortable lounge area with soft lighting' },
+];
 
 const AtmosphereGallery: React.FC = () => {
   return (
@@ -26,16 +41,16 @@ const AtmosphereGallery: React.FC = () => {
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3].map((item) => (
+          {images.map((image, index) => (
             <motion.div
-              key={item}
+              key={index}
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: item * 0.1 }}
-              className="bg-beige h-64 rounded-2xl shadow-md flex items-center justify-center text-charcoal/50 text-xl font-semibold"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="h-80 rounded-2xl shadow-md overflow-hidden"
             >
-              Image Placeholder {item}
+              <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
             </motion.div>
           ))}
         </div>

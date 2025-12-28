@@ -28,23 +28,23 @@ const CoworkingExperience: React.FC = () => {
   const features = [
     {
       icon: Armchair,
-      title: "Ergonomic Comfort",
-      description: "",
+      title: "Health-Conscious Comfort",
+      description: "Work in comfort with our ergonomic IKEA Markus chairs. We also offer 4K monitors for rent and orthopedic footrests to ensure your well-being.",
     },
     {
       icon: Wifi,
       title: "Blazing Fast Wi-Fi",
-      description: "",
+      description: "Stay connected with our fiber-optic internet, ensuring smooth video calls and fast downloads.",
     },
     {
       icon: Coffee,
-      title: "Artisan Coffee Taste",
-      description: "",
+      title: "Artisan Coffee & Tea",
+      description: "Enjoy unlimited freshly brewed artisan coffee and a selection of premium teas to keep you energized.",
     },
     {
-      icon: MoonStar, // Using MicVocal as a placeholder for soundproof
-      title: "Cozy Quiet Atmosphere",
-      description: "",
+      icon: MoonStar,
+      title: "Cozy & Quiet Atmosphere",
+      description: "Our space is designed to be a peaceful and productive environment, with quiet zones for focused work.",
     },
   ];
 
