@@ -1,0 +1,138 @@
+{
+  "coworking_and_board_games": "Coworking & Board Games",
+  "about_us": "About Us",
+  "pricing": "Pricing",
+  "board_games": "Board Games",
+  "events": "Events",
+  "book_a_visit": "Book a Visit",
+  "form": {
+    "title": "Book a Free Trial Day",
+    "name": "Name",
+    "name_placeholder": "Your Name",
+    "email": "Email",
+    "email_placeholder": "your@example.com",
+    "date": "Preferred Visit Date",
+    "submit_button": "Book My Free Day",
+    "submit_alert": "Thank you for your interest! We will get back to you shortly."
+  },
+  "about_us_page": {
+    "title": "About Us",
+    "subtitle": "Welcome to our board game cafe! We are a cozy place for you to hang out with friends, family, or by yourself.",
+    "mission_title": "Our Mission",
+    "mission_text": "Our mission is to create a vibrant and inclusive community for board game enthusiasts. We believe in the power of board games to bring people together, foster creativity, and create lasting memories.",
+    "team_title": "Meet the Founders"
+  },
+  "hero": {
+    "title": "Where Focus Meets Comfort.",
+    "subtitle": "A cozy workspace by day. A VIP board game club by night.",
+    "reserve_button": "Reserve Workspace",
+    "join_button": "Join the Club"
+  },
+  "coworking_experience": {
+    "title": "The Undercover Coworking Experience",
+    "features": {
+      "comfort": {
+        "title": "Health-Conscious Comfort",
+        "description": "Work in comfort with our ergonomic IKEA Markus chairs. We also offer 4K monitors for rent and orthopedic footrests to ensure your well-being."
+      },
+      "wifi": {
+        "title": "Blazing Fast Wi-Fi",
+        "description": "Stay connected with our fiber-optic internet, ensuring smooth video calls and fast downloads."
+      },
+      "coffee": {
+        "title": "Artisan Coffee & Tea",
+        "description": "Enjoy unlimited freshly brewed artisan coffee and a selection of premium teas to keep you energized."
+      },
+      "atmosphere": {
+        "title": "Cozy & Quiet Atmosphere",
+        "description": "Our space is designed to be a peaceful and productive environment, with quiet zones for focused work."
+      }
+    }
+  },
+  "board_game_club": {
+    "title": "We love board games.",
+    "features": {
+      "collection": {
+        "title": "Curated Game Collection",
+        "description": "Explore a vast and unique collection of board games, from classic strategies to the latest releases."
+      },
+      "tables": {
+        "title": "Exclusive Private Tables",
+        "description": "Enjoy your game nights in privacy and comfort with dedicated tables for you and your friends."
+      },
+      "tournaments": {
+        "title": "Thrilling Tournaments",
+        "description": "Test your skills in our regular tournaments and compete for glory and exciting prizes."
+      }
+    },
+    "featured_games_title": "Some of Our Featured Games"
+  },
+  "atmosphere_gallery": {
+    "title": "An Ambiance Crafted for You",
+    "description": "Step into a space where thoughtful design meets ultimate comfort. Our interiors blend warm wood tones, soft ambient lighting, and plush furnishings to create an inviting atmosphere that feels both productive and deeply relaxing.",
+    "images": {
+      "coworking1": "A modern and cozy coworking space",
+      "boardGames1": "A collection of board games on a shelf",
+      "coffeeShop1": "A warm and inviting coffee shop area",
+      "coworking2": "People working in a collaborative environment",
+      "boardGames2": "Friends laughing while playing a board game",
+      "generic": "A comfortable lounge area with soft lighting"
+    }
+  },
+  "footer": {
+    "location_title": "Undercover Location",
+    "social_title": "Connect With Us",
+    "rights_reserved": "All rights reserved."
+  },
+  "pricing_page": {
+    "title": "Our Pricing",
+    "subtitle": "We offer flexible pricing options to suit your needs. Whether you're here for a day of work or a month of productivity, we have a plan for you.",
+    "day_pass": {
+      "title": "Day Pass",
+      "description": "Perfect for a day of focused work. Includes access to all common areas and amenities."
+    },
+    "monthly_desk": {
+      "title": "Monthly Desk",
+      "description": "Your own dedicated desk for the month. Includes 24/7 access and all the perks of our community."
+    },
+    "meeting_room": {
+      "title": "Meeting Room",
+      "description": "A private, fully-equipped room for your meetings and presentations. Seats up to 8 people."
+    },
+    "usp": {
+      "title": "Big Brain USP!",
+      "description": "For all our coworking residents, board games are completely free in the evening!"
+    }
+  },
+  "board_games_page": {
+    "title": "Our Board Games",
+    "description_1": "We have a massive collection of over 1,000 board games! From classic strategy games to the latest releases, we have something for everyone. Our library is constantly growing, so there's always something new to discover.",
+    "description_2": "You can browse our collection online or come into the cafe to see them for yourself. Our knowledgeable staff is always on hand to help you choose the perfect game and teach you the rules."
+  },
+  "events_page": {
+    "title": "Upcoming Events",
+    "subtitle": "Join our community for a variety of exciting events, from epic tournaments to casual game nights. There's always something happening at Undercover Vibe!",
+    "events": {
+      "mafia": {
+        "date": "Friday, 19:00",
+        "title": "Mafia Night",
+        "description": "A night of deception, deduction, and fun. Can you survive?"
+      },
+      "dnd": {
+        "date": "Wednesday, 18:30",
+        "title": "D&D for Beginners",
+        "description": "New to Dungeons & Dragons? Join our introductory session and start your adventure."
+      },
+      "catan": {
+        "date": "Saturday, 14:00",
+        "title": "Catan Tournament",
+        "description": "Compete with other settlers for the lordship of Catan. Prizes for the winner!"
+      },
+      "cozy": {
+        "date": "Monday, 19:00",
+        "title": "Cozy Game Night",
+        "description": "A relaxed evening with a selection of light and fun board games."
+      }
+    }
+  }
+}

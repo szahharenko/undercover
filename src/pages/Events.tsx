@@ -1,39 +1,41 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Calendar, Gamepad2, Users } from 'lucide-react';
 
-const events = [
-  {
-    date: 'Friday, 19:00',
-    title: 'Mafia Night',
-    description: 'A night of deception, deduction, and fun. Can you survive?',
-    icon: Users,
-  },
-  {
-    date: 'Wednesday, 18:30',
-    title: 'D&D for Beginners',
-    description: 'New to Dungeons & Dragons? Join our introductory session and start your adventure.',
-    icon: Gamepad2,
-  },
-  {
-    date: 'Saturday, 14:00',
-    title: 'Catan Tournament',
-    description: 'Compete with other settlers for the lordship of Catan. Prizes for the winner!',
-    icon: Gamepad2,
-  },
-  {
-    date: 'Monday, 19:00',
-    title: 'Cozy Game Night',
-    description: 'A relaxed evening with a selection of light and fun board games.',
-    icon: Calendar,
-  },
-];
-
 const Events: React.FC = () => {
+  const { t } = useTranslation();
+  const events = [
+    {
+      date: t('events_page.events.mafia.date'),
+      title: t('events_page.events.mafia.title'),
+      description: t('events_page.events.mafia.description'),
+      icon: Users,
+    },
+    {
+      date: t('events_page.events.dnd.date'),
+      title: t('events_page.events.dnd.title'),
+      description: t('events_page.events.dnd.description'),
+      icon: Gamepad2,
+    },
+    {
+      date: t('events_page.events.catan.date'),
+      title: t('events_page.events.catan.title'),
+      description: t('events_page.events.catan.description'),
+      icon: Gamepad2,
+    },
+    {
+      date: t('events_page.events.cozy.date'),
+      title: t('events_page.events.cozy.title'),
+      description: t('events_page.events.cozy.description'),
+      icon: Calendar,
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-5xl font-extrabold text-center text-charcoal mb-6">Upcoming Events</h1>
+      <h1 className="text-5xl font-extrabold text-center text-charcoal mb-6">{t('events_page.title')}</h1>
       <p className="text-xl text-center text-charcoal/80 max-w-2xl mx-auto mb-16">
-        Join our community for a variety of exciting events, from epic tournaments to casual game nights. There's always something happening at Undercover Vibe!
+        {t('events_page.subtitle')}
       </p>
 
       <div className="grid md:grid-cols-2 gap-8">

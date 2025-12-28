@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import undercover from '../assets/coworking.png';
 
 const HeroSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -23,7 +26,7 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-5xl md:text-6xl font-extrabold text-charcoal leading-tight mb-4"
         >
-          Where Focus Meets Comfort.
+          {t('hero.title')}
         </motion.h2>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -31,7 +34,7 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-xl md:text-2xl text-charcoal mb-8 max-w-2xl mx-auto"
         >
-          A cozy workspace by day. A VIP board game club by night.
+          {t('hero.subtitle')}
         </motion.p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.button
@@ -40,7 +43,7 @@ const HeroSection: React.FC = () => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="px-8 py-3 bg-coffee text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
           >
-            Reserve Workspace
+            {t('hero.reserve_button')}
           </motion.button>
           <motion.button
             initial={{ scale: 0.9, opacity: 0 }}
@@ -48,7 +51,7 @@ const HeroSection: React.FC = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
             className="px-8 py-3 border-2 border-coffee text-coffee bg-white bg-opacity-30 rounded-2xl text-lg font-semibold hover:bg-coffee hover:text-cream transition-all duration-300"
           >
-            Join the Club
+            {t('hero.join_button')}
           </motion.button>
         </div>
       </div>

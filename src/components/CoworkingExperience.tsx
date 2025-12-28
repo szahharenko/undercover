@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Coffee, Wifi, Armchair, MoonStar } from 'lucide-react';
 
 interface FeatureCardProps {
@@ -25,26 +26,27 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, descriptio
 };
 
 const CoworkingExperience: React.FC = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: Armchair,
-      title: "Health-Conscious Comfort",
-      description: "Work in comfort with our ergonomic IKEA Markus chairs. We also offer 4K monitors for rent and orthopedic footrests to ensure your well-being.",
+      title: t('coworking_experience.features.comfort.title'),
+      description: t('coworking_experience.features.comfort.description'),
     },
     {
       icon: Wifi,
-      title: "Blazing Fast Wi-Fi",
-      description: "Stay connected with our fiber-optic internet, ensuring smooth video calls and fast downloads.",
+      title: t('coworking_experience.features.wifi.title'),
+      description: t('coworking_experience.features.wifi.description'),
     },
     {
       icon: Coffee,
-      title: "Artisan Coffee & Tea",
-      description: "Enjoy unlimited freshly brewed artisan coffee and a selection of premium teas to keep you energized.",
+      title: t('coworking_experience.features.coffee.title'),
+      description: t('coworking_experience.features.coffee.description'),
     },
     {
       icon: MoonStar,
-      title: "Cozy & Quiet Atmosphere",
-      description: "Our space is designed to be a peaceful and productive environment, with quiet zones for focused work.",
+      title: t('coworking_experience.features.atmosphere.title'),
+      description: t('coworking_experience.features.atmosphere.description'),
     },
   ];
 
@@ -58,7 +60,7 @@ const CoworkingExperience: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-charcoal text-center mb-12"
         >
-          The Undercover Coworking Experience
+          {t('coworking_experience.title')}
         </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

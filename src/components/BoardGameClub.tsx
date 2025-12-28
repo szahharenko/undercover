@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Dice5, Crown, CalendarDays } from 'lucide-react';
 
 interface GameFeatureCardProps {
@@ -25,21 +26,22 @@ const GameFeatureCard: React.FC<GameFeatureCardProps> = ({ icon: Icon, title, de
 };
 
 const BoardGameClub: React.FC = () => {
+  const { t } = useTranslation();
   const features = [
     {
       icon: Dice5,
-      title: "Curated Game Collection",
-      description: "Explore a vast and unique collection of board games, from classic strategies to the latest releases.",
+      title: t('board_game_club.features.collection.title'),
+      description: t('board_game_club.features.collection.description'),
     },
     {
       icon: Crown,
-      title: "Exclusive Private Tables",
-      description: "Enjoy your game nights in privacy and comfort with dedicated tables for you and your friends.",
+      title: t('board_game_club.features.tables.title'),
+      description: t('board_game_club.features.tables.description'),
     },
     {
       icon: CalendarDays,
-      title: "Thrilling Tournaments",
-      description: "Test your skills in our regular tournaments and compete for glory and exciting prizes.",
+      title: t('board_game_club.features.tournaments.title'),
+      description: t('board_game_club.features.tournaments.description'),
     },
   ];
 
@@ -64,7 +66,7 @@ const BoardGameClub: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-cream text-center mb-12"
         >
-          We love board games.
+          {t('board_game_club.title')}
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -80,7 +82,7 @@ const BoardGameClub: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="mt-16 text-center"
         >
-          <h3 className="text-3xl font-bold mb-6">Some of Our Featured Games</h3>
+          <h3 className="text-3xl font-bold mb-6">{t('board_game_club.featured_games_title')}</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {topGames.map((game, index) => (
               <span key={index} className="bg-sage-green text-charcoal font-semibold px-4 py-2 rounded-full">

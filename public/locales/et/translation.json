@@ -1,0 +1,138 @@
+{
+  "coworking_and_board_games": "Coworking & Lauamängud",
+  "about_us": "Meist",
+  "pricing": "Hinnakiri",
+  "board_games": "Lauamängud",
+  "events": "Üritused",
+  "book_a_visit": "Broneeri Külastus",
+  "form": {
+    "title": "Broneeri Tasuta Proovipäev",
+    "name": "Nimi",
+    "name_placeholder": "Sinu Nimi",
+    "email": "E-post",
+    "email_placeholder": "sinu@näide.com",
+    "date": "Eelistatud külastuse kuupäev",
+    "submit_button": "Broneeri Minu Tasuta Päev",
+    "submit_alert": "Täname huvi eest! Võtame teiega peagi ühendust."
+  },
+  "about_us_page": {
+    "title": "Meist",
+    "subtitle": "Tere tulemast meie lauamängukohvikusse! Oleme hubane koht, kus saate aega veeta sõprade, perega või üksi.",
+    "mission_title": "Meie Missioon",
+    "mission_text": "Meie missioon on luua elav ja kaasav kogukond lauamänguhuvilistele. Usume, et lauamängudel on jõud inimesi kokku tuua, loovust soodustada ja püsivaid mälestusi luua.",
+    "team_title": "Tutvuge Asutajatega"
+  },
+  "hero": {
+    "title": "Kus Fookus Kohtub Mugavusega.",
+    "subtitle": "Hubane tööruum päeval. VIP-lauamänguklubi öösel.",
+    "reserve_button": "Reserveeri Töökoht",
+    "join_button": "Liitu Klubiga"
+  },
+  "coworking_experience": {
+    "title": "Undercover Coworking Kogemus",
+    "features": {
+      "comfort": {
+        "title": "Terviseteadlik Mugavus",
+        "description": "Töötage mugavalt meie ergonoomiliste IKEA Markus toolidega. Pakume ka 4K-monitore rentimiseks ja ortopeedilisi jalatugesid, et tagada teie heaolu."
+      },
+      "wifi": {
+        "title": "Välkkiire Wi-Fi",
+        "description": "Püsige ühenduses meie fiiberoptilise internetiga, tagades sujuvad videokõned ja kiired allalaadimised."
+      },
+      "coffee": {
+        "title": "Käsitöökohv ja -tee",
+        "description": "Nautige piiramatult värskelt valmistatud käsitöökohvi ja valikut premium-teesid, et hoida teid energilisena."
+      },
+      "atmosphere": {
+        "title": "Hubane ja Vaikne Atmosfäär",
+        "description": "Meie ruum on loodud olema rahulik ja produktiivne keskkond, kus on vaiksed tsoonid keskendunud tööks."
+      }
+    }
+  },
+  "board_game_club": {
+    "title": "Me armastame lauamänge.",
+    "features": {
+      "collection": {
+        "title": "Kureeritud Mängukollektsioon",
+        "description": "Avastage laia ja ainulaadset lauamängude kollektsiooni, alates klassikalistest strateegiatest kuni uusimate väljalaseteni."
+      },
+      "tables": {
+        "title": "Eksklusiivsed Privaatlauad",
+        "description": "Nautige oma mänguõhtuid privaatsuses ja mugavuses spetsiaalsete laudadega teile ja teie sõpradele."
+      },
+      "tournaments": {
+        "title": "Põnevad Turniirid",
+        "description": "Testi oma oskusi meie regulaarsetel turniiridel ja võistle au ja põnevate auhindade nimel."
+      }
+    },
+    "featured_games_title": "Mõned Meie Esiletõstetud Mängud"
+  },
+  "atmosphere_gallery": {
+    "title": "Sulle Loodud Atmosfäär",
+    "description": "Astuge ruumi, kus läbimõeldud disain kohtub ülima mugavusega. Meie interjöörid ühendavad soojad puidutoonid, pehme ümbritseva valgustuse ja pehme mööbli, et luua kutsuv õhkkond, mis tundub nii produktiivne kui ka sügavalt lõõgastav.",
+    "images": {
+      "coworking1": "Kaasaegne ja hubane koostööruum",
+      "boardGames1": "Riiulil olev laumängude kollektsioon",
+      "coffeeShop1": "Soe ja kutsuv kohvinurk",
+      "coworking2": "Inimesed töötavad koostöökeskkonnas",
+      "boardGames2": "Sõbrad naeravad lauamängu mängides",
+      "generic": "Mugav puhkeruum pehme valgustusega"
+    }
+  },
+  "footer": {
+    "location_title": "Undercover Asukoht",
+    "social_title": "Ühenda Meiega",
+    "rights_reserved": "Kõik õigused kaitstud."
+  },
+  "pricing_page": {
+    "title": "Meie Hinnakiri",
+    "subtitle": "Pakume paindlikke hinnakujundusvõimalusi, mis vastavad teie vajadustele. Ükskõik, kas olete siin üheks päevaks tööks või kuuks ajaks tootlikkuseks, meil on teile plaan.",
+    "day_pass": {
+      "title": "Päevapilet",
+      "description": "Ideaalne päevaks keskendunud tööks. Sisaldab juurdepääsu kõikidele üldkasutatavatele aladele ja mugavustele."
+    },
+    "monthly_desk": {
+      "title": "Kuu Laud",
+      "description": "Teie enda pühendatud laud kuuks ajaks. Sisaldab 24/7 juurdepääsu ja kõiki meie kogukonna hüvesid."
+    },
+    "meeting_room": {
+      "title": "Nõupidamisteruum",
+      "description": "Privaatne, täielikult varustatud ruum teie koosolekuteks ja esitlusteks. Mahutab kuni 8 inimest."
+    },
+    "usp": {
+      "title": "Suur Aju USP!",
+      "description": "Kõigile meie koostöö elanikele on lauamängud õhtuti täiesti tasuta!"
+    }
+  },
+  "board_games_page": {
+    "title": "Meie Lauamängud",
+    "description_1": "Meil on tohutu, üle 1000 lauamängu kollektsioon! Klassikalistest strateegiamängudest kuni uusimate väljalaseteni on meil midagi igaühele. Meie raamatukogu kasvab pidevalt, nii et alati on midagi uut avastada.",
+    "description_2": "Saate sirvida meie kollektsiooni veebis või tulla kohvikusse neid ise vaatama. Meie asjatundlik personal on alati valmis aitama teil valida täiusliku mängu ja õpetama teile reegleid."
+  },
+  "events_page": {
+    "title": "Tulevased Üritused",
+    "subtitle": "Liituge meie kogukonnaga mitmesugustel põnevatel üritustel, alates eepilistest turniiridest kuni juhuslike mänguõhtuteni. Undercover Vibe'is toimub alati midagi!",
+    "events": {
+      "mafia": {
+        "date": "Reede, 19:00",
+        "title": "Maffiaõhtu",
+        "description": "Pettuse, deduktsiooni ja lõbu õhtu. Kas suudate ellu jääda?"
+      },
+      "dnd": {
+        "date": "Kolmapäev, 18:30",
+        "title": "D&D algajatele",
+        "description": "Uus Dungeons & Dragonsis? Liituge meie sissejuhatava sessiooniga ja alustage oma seiklust."
+      },
+      "catan": {
+        "date": "Laupäev, 14:00",
+        "title": "Catani Turniir",
+        "description": "Võistelge teiste asunikega Catani isandavõimu pärast. Võitjale auhinnad!"
+      },
+      "cozy": {
+        "date": "Esmaspäev, 19:00",
+        "title": "Hubane Mänguõhtu",
+        "description": "Lõdvestunud õhtu kergete ja lõbusate lauamängude valikuga."
+      }
+    }
+  }
+}
