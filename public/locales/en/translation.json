@@ -23,8 +23,8 @@
     "team_title": "Meet the Founders"
   },
   "hero": {
-    "title": "Where Focus Meets Comfort.",
-    "subtitle": "A cozy workspace by day. A VIP board game club by night.",
+    "title": "Coziest co-working in Tallinn",
+    "subtitle": "Perfect workspace by day. A VIP board game club by night.",
     "reserve_button": "Reserve Workspace",
     "join_button": "Join the Club"
   },
@@ -80,9 +80,9 @@
     }
   },
   "footer": {
-    "location_title": "Undercover Location",
-    "social_title": "Connect With Us",
-    "rights_reserved": "All rights reserved."
+    "location_title": "Location",
+    "social_title": "Social Media",
+    "rights_reserved": "No rights reserved."
   },
   "pricing_page": {
     "title": "Our Pricing",

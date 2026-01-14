@@ -23,7 +23,7 @@
     "team_title": "Познакомьтесь с основателями"
   },
   "hero": {
-    "title": "Где Фокус Встречается с Комфортом.",
+    "title": "Самый уютный коворкинг в Таллине",
     "subtitle": "Уютное рабочее пространство днем. VIP-клуб настольных игр ночью.",
     "reserve_button": "Зарезервировать рабочее место",
     "join_button": "Вступить в клуб"
@@ -80,9 +80,9 @@
     }
   },
   "footer": {
-    "location_title": "Местоположение Undercover",
-    "social_title": "Свяжитесь с нами",
-    "rights_reserved": "Все права защищены."
+    "location_title": "Местоположение",
+    "social_title": "Social Media",
+    "rights_reserved": "Права не защищены."
   },
   "pricing_page": {
     "title": "Наши Цены",

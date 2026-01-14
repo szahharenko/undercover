@@ -23,7 +23,7 @@
     "team_title": "Tutvuge Asutajatega"
   },
   "hero": {
-    "title": "Kus Fookus Kohtub Mugavusega.",
+    "title": "Kõige hubasem koostööruum Tallinnas",
     "subtitle": "Hubane tööruum päeval. VIP-lauamänguklubi öösel.",
     "reserve_button": "Reserveeri Töökoht",
     "join_button": "Liitu Klubiga"
@@ -80,9 +80,9 @@
     }
   },
   "footer": {
-    "location_title": "Undercover Asukoht",
-    "social_title": "Ühenda Meiega",
-    "rights_reserved": "Kõik õigused kaitstud."
+    "location_title": "Asukoht",
+    "social_title": "Social Media",
+    "rights_reserved": "Õigused ei ole kaitstud."
   },
   "pricing_page": {
     "title": "Meie Hinnakiri",

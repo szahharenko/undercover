@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import cat from '../assets/cat-left.png';
-import dog from '../assets/dog-right.png';
+import logo from '../assets/logo-undercover.png';
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -15,12 +14,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-neutral-100 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className='flex items-center'>
-          <img src={cat} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
-          <div className='flex text-center flex-col'>
-            <span className='text-3xl font-bold text-charcoal uppercase'>Undercover Vibe</span>
-            <span className='text-sm text-charcoal/70 -mt-1'>{t('coworking_and_board_games')}</span>
-          </div>
-          <img src={dog} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
+          <img src={logo} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
         </Link>
         <div className="hidden md:flex space-x-6">
           <Link to="/about" className="text-charcoal hover:text-sage-green transition-colors">{t('about_us')}</Link>

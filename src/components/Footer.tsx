@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Facebook, Instagram } from 'lucide-react';
+import cat from '../assets/cat-left.png';
+import dog from '../assets/dog-right.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -16,6 +18,22 @@ const Footer: React.FC = () => {
     >
       <div className="container mx-auto px-4 text-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+
+        <div className='flex items-center'>
+          <img src={cat} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
+          <div className='flex text-center flex-col  p-2'>
+            <h3 className="text-xl font-bold mb-4">{t('footer.social_title')}</h3>
+            <div className="flex justify-center space-x-6">
+              <a href="https://www.facebook.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Facebook">
+                <Facebook size={28} />
+              </a>
+              <a href="https://www.instagram.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Instagram">
+                <Instagram size={28} />
+              </a>
+            </div>
+          </div>
+          <img src={dog} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
+        </div>
           {/* Section 2: Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">{t('footer.location_title')}</h3>
@@ -26,15 +44,7 @@ const Footer: React.FC = () => {
 
           {/* Section 3: Social Media */}
           <div>
-            <h3 className="text-xl font-bold mb-4">{t('footer.social_title')}</h3>
-            <div className="flex justify-center space-x-6">
-              <a href="https://www.facebook.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Facebook">
-                <Facebook size={28} />
-              </a>
-              <a href="https://www.instagram.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Instagram">
-                <Instagram size={28} />
-              </a>
-            </div>
+
           </div>
         </div>
 
