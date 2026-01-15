@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import undercover from '../assets/coworking.png';
+import founders from '../assets/founders.jpg';
 
-const HeroSection: React.FC = () => {
+const HeroSectionAbout: React.FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -15,10 +15,9 @@ const HeroSection: React.FC = () => {
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
-        <img src={undercover} alt="Undercover workspace" className="w-full h-full object-cover" />
+        <img src={founders} alt="Undercover workspace" className="w-full h-full object-cover" />
       </div>
       <div className="absolute w-full h-full z-2 opacity-50 bg-charcoal"/>
-
       <div className="relative z-10 max-w-4xl mx-auto">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
@@ -26,7 +25,7 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-5xl md:text-6xl font-extrabold text-white mb-4"
         >
-          {t('hero.title')}
+          {t('about_us_page.title')}
         </motion.h2>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
@@ -34,21 +33,11 @@ const HeroSection: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto"
         >
-          {t('hero.subtitle')}
+          {t('about_us_page.subtitle')}
         </motion.p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <motion.button
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-            className="px-8 py-3 bg-coffee text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
-          >
-            {t('book_a_visit')}
-          </motion.button>
-        </div>
       </div>
     </motion.section>
   );
 };
 
-export default HeroSection;
+export default HeroSectionAbout;

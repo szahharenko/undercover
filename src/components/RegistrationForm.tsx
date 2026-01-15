@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { CalendarDays } from 'lucide-react';
 
 const RegistrationForm: React.FC = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     date: '',
   });
 
@@ -69,6 +69,19 @@ const RegistrationForm: React.FC = () => {
               required
             />
           </div>
+          <div>
+            <label htmlFor="phone" className="block text-charcoal text-lg font-medium mb-2">{t('form.phone')}</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder={t('form.phone_placeholder')}
+              className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all"
+              required
+            />
+          </div>
           <div className="relative">
             <label htmlFor="date" className="block text-charcoal text-lg font-medium mb-2">{t('form.date')}</label>
             <input
@@ -80,7 +93,6 @@ const RegistrationForm: React.FC = () => {
               className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all appearance-none pr-10"
               required
             />
-            <CalendarDays className="absolute right-3 top-1/2 mt-2 transform -translate-y-1/2 text-coffee" size={24} />
           </div>
           <motion.button
             whileHover={{ scale: 1.02 }}

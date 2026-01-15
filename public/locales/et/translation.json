@@ -1,15 +1,18 @@
 {
   "coworking_and_board_games": "Coworking & Lauamängud",
+  "home": "Esileht",
   "about_us": "Meist",
   "pricing": "Hinnakiri",
   "board_games": "Lauamängud",
   "events": "Üritused",
-  "book_a_visit": "Broneeri Külastus",
+  "book_a_visit": "Tule külla",
   "form": {
     "title": "Broneeri Tasuta Proovipäev",
     "name": "Nimi",
     "name_placeholder": "Sinu Nimi",
     "email": "E-post",
+    "phone": "Telefon",
+    "phone_placeholder": "Sinu telefoninumber",
     "email_placeholder": "sinu@näide.com",
     "date": "Eelistatud külastuse kuupäev",
     "submit_button": "Broneeri Minu Tasuta Päev",
@@ -33,7 +36,7 @@
     "features": {
       "comfort": {
         "title": "Terviseteadlik Mugavus",
-        "description": "Töötage mugavalt meie ergonoomiliste IKEA Markus toolidega. Pakume ka 4K-monitore rentimiseks ja ortopeedilisi jalatugesid, et tagada teie heaolu."
+        "description": "Töötage mugavalt meie ergonoomiliste IKEA Markus toolidega. Mööbel ja atmosfäär on loodud teie heaolu tagamiseks."
       },
       "wifi": {
         "title": "Välkkiire Wi-Fi",
@@ -51,18 +54,20 @@
   },
   "board_game_club": {
     "title": "Me armastame lauamänge.",
+    "subtitle": "Lauamängud on terve universum põnevaid seiklusi, strateegiaid ja lõbu. Oleme teile kokku kogunud parimad neist.",
+    "bgg_link": "Meie mängukollektsioon BGG-s",
     "features": {
       "collection": {
-        "title": "Kureeritud Mängukollektsioon",
+        "title": "Mängukollektsioon",
         "description": "Avastage laia ja ainulaadset lauamängude kollektsiooni, alates klassikalistest strateegiatest kuni uusimate väljalaseteni."
       },
       "tables": {
-        "title": "Eksklusiivsed Privaatlauad",
+        "title": "Privaatlauad",
         "description": "Nautige oma mänguõhtuid privaatsuses ja mugavuses spetsiaalsete laudadega teile ja teie sõpradele."
       },
       "tournaments": {
-        "title": "Põnevad Turniirid",
-        "description": "Testi oma oskusi meie regulaarsetel turniiridel ja võistle au ja põnevate auhindade nimel."
+        "title": "Üritused ja Turniirid",
+        "description": "tulekul."
       }
     },
     "featured_games_title": "Mõned Meie Esiletõstetud Mängud"
@@ -85,23 +90,38 @@
     "rights_reserved": "Õigused ei ole kaitstud."
   },
   "pricing_page": {
-    "title": "Meie Hinnakiri",
+    "title": "Hinnakiri",
     "subtitle": "Pakume paindlikke hinnakujundusvõimalusi, mis vastavad teie vajadustele. Ükskõik, kas olete siin üheks päevaks tööks või kuuks ajaks tootlikkuseks, meil on teile plaan.",
-    "day_pass": {
-      "title": "Päevapilet",
-      "description": "Ideaalne päevaks keskendunud tööks. Sisaldab juurdepääsu kõikidele üldkasutatavatele aladele ja mugavustele."
+    "coworking": {
+      "title": "Koostööruum"
+    },
+    "bg": {
+      "title": "Lauamängud"
     },
     "monthly_desk": {
       "title": "Kuu Laud",
-      "description": "Teie enda pühendatud laud kuuks ajaks. Sisaldab 24/7 juurdepääsu ja kõiki meie kogukonna hüvesid."
+      "subtitle": "Soodustus kuni märtsi lõpuni",
+      "description": "Sisaldab 24/7 juurdepääsu ja kõiki meie kogukonna hüvesid."
     },
-    "meeting_room": {
-      "title": "Nõupidamisteruum",
-      "description": "Privaatne, täielikult varustatud ruum teie koosolekuteks ja esitlusteks. Mahutab kuni 8 inimest."
+    "day_pass": {
+      "title": "Päevapilet",
+      "description": "Täiuslik päev keskendunud tööks. Sisaldab juurdepääsu kõigile ühiskasutatavatele aladele ja mugavustele."
     },
-    "usp": {
-      "title": "Suur Aju USP!",
-      "description": "Kõigile meie koostöö elanikele on lauamängud õhtuti täiesti tasuta!"
+    "free_trial": {
+      "title": "Tasuta Proovipäev",
+      "description": "Broneerige tasuta proovipäev, et kogeda meie koostöörühma ja näha, kas see sobib teile."
+    },
+    "boardgames_event_club": {
+      "title": "Oma Lauamängu Üritus",
+      "description": "Korraldage oma lauamänguõhtuid Undercover Vibe'is! Ideaalne gruppidele, kes otsivad pühendatud ruumi mängimiseks ja suhtlemiseks."
+    },
+    "boardgames_event_table": {
+      "title": "Oma Lauamängu Laud",
+      "description": "Reserveerige privaatne laud oma lauamänguürituste jaoks. Ideaalne gruppidele, kes otsivad pühendatud ruumi mängimiseks ja suhtlemiseks."
+    },
+    "boardgames_event_daily": {
+      "title": "Päevapilet",
+      "description": "Erinevatele lauamängu üritustele ja turniiridele."
     }
   },
   "board_games_page": {

@@ -1,22 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import coworking1 from '../assets/coworking-1.jpg';
-import coworking2 from '../assets/coworking-2.jpg';
-import boardGames1 from '../assets/board-games-1.jpg';
-import boardGames2 from '../assets/board-games-2.jpg';
-import coffeeShop1 from '../assets/coffee-shop-1.jpg';
-import generic from '../assets/logo-undercover.jpg';
+import g1 from '../assets/g1.jpg';
+import g2 from '../assets/g2.jpg';
+import g3 from '../assets/g3.jpg';
+import g4 from '../assets/g4.jpg';
+import g5 from '../assets/g5.jpg';
+import g6 from '../assets/g6.jpg';
 
 const AtmosphereGallery: React.FC = () => {
   const { t } = useTranslation();
   const images = [
-    { src: coworking1, alt: t('atmosphere_gallery.images.coworking1') },
-    { src: boardGames1, alt: t('atmosphere_gallery.images.boardGames1') },
-    { src: coffeeShop1, alt: t('atmosphere_gallery.images.coffeeShop1') },
-    { src: coworking2, alt: t('atmosphere_gallery.images.coworking2') },
-    { src: boardGames2, alt: t('atmosphere_gallery.images.boardGames2') },
-    { src: generic, alt: t('atmosphere_gallery.images.generic') },
+    { src: g1, alt: t('atmosphere_gallery.images.coworking1') },
+    { src: g2, alt: t('atmosphere_gallery.images.boardGames1') },
+    { src: g3, alt: t('atmosphere_gallery.images.coffeeShop1') },
+    { src: g4, alt: t('atmosphere_gallery.images.coworking2') },
+    { src: g5, alt: t('atmosphere_gallery.images.boardGames2') },
+    { src: g6, alt: t('atmosphere_gallery.images.generic') },
   ];
 
   return (

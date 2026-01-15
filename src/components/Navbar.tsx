@@ -11,21 +11,24 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-neutral-100 shadow-md">
+    <nav className="absolute top-0 left-0 w-full bg-transparent p-6 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className='flex items-center'>
           <img src={logo} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
         </Link>
-        <div className="hidden md:flex space-x-6">
-          <Link to="/about" className="text-charcoal hover:text-sage-green transition-colors">{t('about_us')}</Link>
-          <Link to="/pricing" className="text-charcoal hover:text-sage-green transition-colors">{t('pricing')}</Link>
-          <Link to="/boardgames" className="text-charcoal hover:text-sage-green transition-colors">{t('board_games')}</Link>
-          <Link to="/events" className="text-charcoal hover:text-sage-green transition-colors">{t('events')}</Link>
+        <div className="md:flex space-x-6">
+          <Link to="/" className="text-white">{t('home')}</Link>
+          <Link to="/about" className="text-white">{t('about_us')}</Link>
+          <Link to="/pricing" className="text-white">{t('pricing')}</Link>
+          {
+            /*
+            <Link to="/boardgames" className="text-white">{t('board_games')}</Link>
+            <Link to="/events" className="text-white">{t('events')}</Link>
+            */
+          }
+
         </div>
         <div className="flex items-center">
-          <button className="px-6 py-2 bg-coffee text-cream rounded-xl hover:bg-opacity-90 transition-colors hidden md:block">
-            {t('book_a_visit')}
-          </button>
           <div className="ml-4">
             <select onChange={(e) => changeLanguage(e.target.value)} defaultValue={i18n.language} className="bg-charcoal text-cream rounded-md p-1">
               <option value="en">EN</option>

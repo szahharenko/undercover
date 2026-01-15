@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { Coffee, Wifi, Armchair, MoonStar } from 'lucide-react';
+import iconComfort from '../assets/icon-comfort.png'
+import iconCoffee from '../assets/icon-coffe.png'
+import iconQuite from '../assets/icon-quiet.png'
 
 interface FeatureCardProps {
   icon: React.ElementType;
@@ -29,22 +31,17 @@ const CoworkingExperience: React.FC = () => {
   const { t } = useTranslation();
   const features = [
     {
-      icon: Armchair,
+      icon: () => <img src={iconComfort} alt="Comfort Icon" className="w-24 h-24 mb-4" />,
       title: t('coworking_experience.features.comfort.title'),
       description: t('coworking_experience.features.comfort.description'),
     },
     {
-      icon: Wifi,
-      title: t('coworking_experience.features.wifi.title'),
-      description: t('coworking_experience.features.wifi.description'),
-    },
-    {
-      icon: Coffee,
+      icon: () => <img src={iconCoffee} alt="Coffee Icon" className="w-24 h-24 mb-4" />,
       title: t('coworking_experience.features.coffee.title'),
       description: t('coworking_experience.features.coffee.description'),
     },
     {
-      icon: MoonStar,
+      icon: () => <img src={iconQuite} alt="Quiet Icon" className="w-24 h-24 mb-4" />,
       title: t('coworking_experience.features.atmosphere.title'),
       description: t('coworking_experience.features.atmosphere.description'),
     },
@@ -63,7 +60,7 @@ const CoworkingExperience: React.FC = () => {
           {t('coworking_experience.title')}
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-[1500px] mx-auto">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}
