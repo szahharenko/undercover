@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                   <a href="https://www.facebook.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Facebook">
                     <Facebook size={28} />
                   </a>
-                  <a href="https://www.instagram.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Instagram">
+                  <a href="https://www.instagram.com/undercovertallinn" className="hover:text-sage-green transition-colors" aria-label="Instagram">
                     <Instagram size={28} />
                   </a>
                 </div>

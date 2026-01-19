@@ -18,7 +18,8 @@ const GameFeatureCard: React.FC<GameFeatureCardProps> = ({ icon: Icon, title, de
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6 }}
-      className="bg-coffee p-6 rounded-2xl shadow-lg  flex flex-col items-center text-center text-cream"
+      className="p-6 rounded-2xl shadow-lg  flex flex-col items-center text-center text-cream"
+      style={{background: '#3f3a60c9'}}
     >
       <Icon className="w-12 h-12 text-sage-green mb-4" />
       <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -90,7 +91,8 @@ const BoardGameClub: React.FC = () => {
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="px-8 py-3 bg-coffee text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
+                className="px-8 py-3 text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
+                style={{background: '#ff5100'}}
               >
                 {t('board_game_club.bgg_link')}
               </motion.button>

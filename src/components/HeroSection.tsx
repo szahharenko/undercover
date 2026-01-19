@@ -38,6 +38,13 @@ const HeroSection: React.FC = () => {
         </motion.p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <motion.button
+            // scroll to registration-form
+            onClick={ () => {
+              const element = document.getElementById('registration-form');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}

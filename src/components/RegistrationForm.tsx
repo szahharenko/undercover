@@ -23,7 +23,7 @@ const RegistrationForm: React.FC = () => {
   };
 
   return (
-    <section className="p-20 bg-beige">
+    <section className="p-20 flex" id="registration-form">
       <div className="container mx-auto px-4 max-w-2xl">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
@@ -103,6 +103,45 @@ const RegistrationForm: React.FC = () => {
             {t('form.submit_button')}
           </motion.button>
         </motion.form>
+      </div>
+      <div className="container mx-auto px-4 max-w-2xl">
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-extrabold text-charcoal text-center mb-12"
+        >
+          Contact us
+        </motion.h2>
+        <motion.p
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+          className="text-charcoal text-center"
+        >
+          <p>
+            Email:
+            <a href="mailto:info@undercover.ee" className="text-coffee hover:underline ml-2">
+              info@undercover.ee
+            </a>
+          </p>
+          <p className="mt-2">
+            Phone:
+            <a href="tel:+37255512345" className="text-coffee hover:underline ml-2">
+              +372 555 12345
+            </a>
+          </p>
+          <p>
+            Address:
+            <span className="ml-2">Tartu mnt 84, Tallinn, Estonia</span>
+          </p>
+          <p>
+            Telegram: <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2">@Acrashik</a>
+          </p>
+
+        </motion.p>
       </div>
     </section>
   );
