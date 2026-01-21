@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import kivimurru from '../assets/kivimurru-house.jpg';
+import { EmailService, type EmailPayload } from '../servises/send-email';
 
 const RegistrationForm: React.FC = () => {
   const { t } = useTranslation();
+  const [emailSend, setEmailSend] = useState<boolean>(false);
+  const [emailSending, setEmailSending] = useState<boolean>(false);
+  const [emailSendingError, setEmailSendingError] = useState<string | null>(null);
+  const minDate = useMemo(() => new Date(new Date().getTime() + 86400000).toISOString().split('T')[0], []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,13 +22,89 @@ const RegistrationForm: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert(t('form.submit_alert'));
-    // Here you would typically send data to a backend
-  };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const emailData: EmailPayload = {
+      email: formData.email,
+      name: formData.name,
+      data: formData,
+      type: 'trial',
+      title: 'New Trial Session Registration',
+      message: 'A new trial session registration has been submitted.',
+    };
+
+    // 2. Call the service
+    const result = await EmailService.send(emailData);
+
+    // 3. Handle the result
+    if (result.status === 'success') {
+      setEmailSend(true);
+      setEmailSending(false);
+      setEmailSendingError(null);
+      console.log('Success:', result.message);
+    } else {
+
+      setEmailSending(false);
+      setEmailSendingError(result.message);
+      console.error('Error:', result.message);
+    }
+  };
+  if (emailSending) {
+    return (
+      <section className="p-20 flex" id="registration-form">
+        <div className="container mx-auto px-4 max-w-2xl">
+          <motion.h2
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-extrabold text-charcoal text-center mb-12"
+          >
+            {t('form.sending_title')}
+          </motion.h2>
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
+            className="text-charcoal text-center"
+          >
+            {t('form.sending_message')}
+          </motion.p>
+        </div>
+      </section>
+    );
+  }
+  if (emailSend) {
+    return (
+      <section className="p-20 flex" id="registration-form">
+        <div className="container mx-auto px-4 max-w-2xl">
+          <motion.h2
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl font-extrabold text-charcoal text-center mb-12"
+          >
+            {t('form.thank_you_title')}
+          </motion.h2>
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7 }}
+            className="text-charcoal text-center"
+          >
+            {t('form.thank_you_message')}
+          </motion.p>
+          <button onClick={() => setEmailSend(false)} className="mt-6 px-6 py-3 bg-sage-green text-white rounded-xl hover:bg-sage-green-dark transition">
+            {t('form.send_another')}
+          </button>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className="p-20 flex" id="registration-form">
       <div className="container mx-auto px-4 max-w-2xl">
@@ -88,6 +171,8 @@ const RegistrationForm: React.FC = () => {
               type="date"
               id="date"
               name="date"
+              //min tomorrow's date
+              min={ minDate }
               value={formData.date}
               onChange={handleChange}
               className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all appearance-none pr-10"
@@ -102,6 +187,9 @@ const RegistrationForm: React.FC = () => {
           >
             {t('form.submit_button')}
           </motion.button>
+          { emailSendingError && (
+            <p className="text-red-600 text-center mt-4">{t('form.error_message')}: {emailSendingError}</p>
+          ) }
         </motion.form>
       </div>
       <div className="container mx-auto px-4 max-w-2xl">
@@ -130,17 +218,21 @@ const RegistrationForm: React.FC = () => {
           <p className="mt-2">
             Phone:
             <a href="tel:+37255512345" className="text-coffee hover:underline ml-2">
-              +372 555 12345
+              +372 5154369
             </a>
           </p>
+          <p className="mt-2"><strong>Message us</strong></p>
+          <p>
+            <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2">Telegram</a> |
+            <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2">WhatsApp</a> |
+            <a href="http://m.me/undercovervibe" className="text-coffee hover:underline ml-2">Messenger</a> |
+            <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2">Facebook</a>
+          </p>
+          <img src={kivimurru} alt="Kivimurru Address" className="mx-auto my-4" />
           <p>
             Address:
-            <span className="ml-2">Tartu mnt 84, Tallinn, Estonia</span>
+            <span className="ml-2">Kivimurru 34 - 6, Tallinn, Estonia</span>
           </p>
-          <p>
-            Telegram: <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2">@Acrashik</a>
-          </p>
-
         </motion.p>
       </div>
     </section>

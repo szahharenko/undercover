@@ -31,17 +31,17 @@ const CoworkingExperience: React.FC = () => {
   const { t } = useTranslation();
   const features = [
     {
-      icon: () => <img src={iconComfort} alt="Comfort Icon" className="w-24 h-24 mb-4" />,
+      icon: () => <img src={iconComfort} alt="Comfort Icon" className="w-24 h-24 mb-4 max-w-[350px]" />,
       title: t('coworking_experience.features.comfort.title'),
       description: t('coworking_experience.features.comfort.description'),
     },
     {
-      icon: () => <img src={iconCoffee} alt="Coffee Icon" className="w-24 h-24 mb-4" />,
+      icon: () => <img src={iconCoffee} alt="Coffee Icon" className="w-24 h-24 mb-4 max-w-[350px]" />,
       title: t('coworking_experience.features.coffee.title'),
       description: t('coworking_experience.features.coffee.description'),
     },
     {
-      icon: () => <img src={iconQuite} alt="Quiet Icon" className="w-24 h-24 mb-4" />,
+      icon: () => <img src={iconQuite} alt="Quiet Icon" className="w-24 h-24 mb-4 max-w-[350px]" />,
       title: t('coworking_experience.features.atmosphere.title'),
       description: t('coworking_experience.features.atmosphere.description'),
     },
