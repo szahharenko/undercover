@@ -4,7 +4,6 @@ export interface EmailPayload {
   name: string;
   data: Record<string, unknown>;
   type: 'trial' | 'registration' | 'contact' | 'other';
-  title: string;
   message: string;
 }
 

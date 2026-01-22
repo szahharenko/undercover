@@ -15,8 +15,15 @@
     "phone_placeholder": "Sinu telefoninumber",
     "email_placeholder": "sinu@näide.com",
     "date": "Eelistatud külastuse kuupäev",
+    "message": "Lisateade",
+    "message_placeholder": "Sinu sõnum...",
     "submit_button": "Broneeri Minu Tasuta Päev",
-    "submit_alert": "Täname huvi eest! Võtame teiega peagi ühendust."
+    "submit_alert": "Täname huvi eest! Võtame teiega peagi ühendust.",
+    "thank_you_title": "Olete Broneeritud!",
+    "thank_you_message": "Täname, et registreerusite prooviseansile. Võtame teiega peagi ühendust, et teie broneering kinnitada.",
+    "send_another": "Saada veel kord",
+    "error_message": "Midagi läks valesti. Palun proovige hiljem uuesti.",
+    "contact_us": "Võta meiega ühendust"
   },
   "about_us_page": {
     "title": "Meist",
