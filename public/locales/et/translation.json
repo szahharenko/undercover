@@ -103,7 +103,13 @@
       "title": "Koostööruum"
     },
     "bg": {
-      "title": "Lauamängud"
+      "title": "Lauamängud",
+      "includes": "Kõikide ürituste ja turniiride hulka kuulub:",
+      "includes_item1": "Juurdepääs kogu meie lauamängude kogu",
+      "includes_item2": "Suurepärane kohv, tee ja suupisted mängimise ajal tasuta",
+      "includes_item3": "Suurepärased mängulauad mugavate istmete ja valgustusega",
+      "includes_item4": "Abi mängu valimisel ja reeglite selgitamisel meie sõbraliku personali poolt",
+      "includes_item5": "Usaldusväärne õhkkond ja atmosfäär"
     },
     "monthly_desk": {
       "title": "Kuu Laud",
@@ -119,12 +125,12 @@
       "description": "Broneerige tasuta proovipäev, et kogeda meie koostöörühma ja näha, kas see sobib teile."
     },
     "boardgames_event_club": {
-      "title": "Oma Lauamängu Üritus",
-      "description": "Korraldage oma lauamänguõhtuid Undercover Vibe'is! Ideaalne gruppidele, kes otsivad pühendatud ruumi mängimiseks ja suhtlemiseks."
+      "title": "Oma Üritus",
+      "description": "Korraldage oma lauamängu või mõni muu üritus Undercover'is! Kogu ruum on reserveeritud teile ja teie sõpradele."
     },
     "boardgames_event_table": {
-      "title": "Oma Lauamängu Laud",
-      "description": "Reserveerige privaatne laud oma lauamänguürituste jaoks. Ideaalne gruppidele, kes otsivad pühendatud ruumi mängimiseks ja suhtlemiseks."
+      "title": "Oma Laud",
+      "description": "Reserveerige privaatne laud oma lauamänguürituste jaoks."
     },
     "boardgames_event_daily": {
       "title": "Päevapilet",
@@ -161,5 +167,9 @@
         "description": "Lõdvestunud õhtu kergete ja lõbusate lauamängude valikuga."
       }
     }
+  },
+  "faq": {
+    "title": "Korduma Kippuvad Küsimused",
+    "content": "# Kas mul on vaja liikmelisust, et siin töötada?\nSaate kasutada päevapileteid või valida igakuise liikmelisuse.\n\n# Millised on teie lahtiolekuaegad?\nKuu liikmed: 24/7\nPäevapileti kasutajad: Esmaspäevast reedeni: 9:00-18:00\n\n# Kuidas ma pääsen pärast tööaega sisse?\nIsikliku võtmekaardi / koodi kaudu.\n\n# Kas ma saan külalisi kaasa tuua?\nJah, külalised on lubatud piiratud ajaks ja nad peavad olema registreeritud.\n\n# Kas kiire internet on kaasas?\nJah, ettevõtte klassi Wi-Fi. Optiline fiiberühendus.\n\n# Milliseid liikmelisusplaane te pakute?\nPäevased, nädalased, igakuised ja meeskonnaplaanid.\n\n# Mis on liikmelisusesse kaasatud?\nTöökohad, internet, kommunaalkulud, kohv/tee, koristamine, kogukonna üritused.\n\n# Kas on pikaajalisi allahindlusi?\nJah, 3-kuuliste, 6-kuuliste ja aastaplaanide puhul saab arutada.\n\n# Kas ruum on lemmikloomadele sobiv?\nVäikesed, hästi käituvad lemmikloomad on lubatud. Palun teavitage meid eelnevalt.\n\n# Milline on teie tühistamispoliitika?\n14-päevane etteteatamine igakuise plaani puhul.\n\n# Kas ma saan kasutada aadressi ettevõtte registreerimiseks?\nJah, virtuaalse kontori ja juriidilise aadressi teenused on saadaval.\n\n# Kas ruum on turvaline?\n24/7 CCTV, juurdepääsukontroll ja isiklikud kapid (tulekul).\n\n# Kas ma saan ruumi enne kohustuse võtmist proovida?\nJah, tasuta tuuri või proovipäevaga.\n\n# Kus te asute ja kuidas ma sinna jõuan?\nMe asume aadressil Kivimurru 34. Kergesti ligipääsetav ühistranspordi ja jalgrattaga. Mitte kaugel T1 keskusest."
   }
 }

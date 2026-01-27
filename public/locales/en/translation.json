@@ -137,7 +137,7 @@
     },
     "boardgames_event_table": {
       "title": "Own Table",
-      "description": "Reserve a private table for your board game events. Ideal for groups looking for a dedicated space to play."
+      "description": "Reserve a private table for your board game events."
     },
     "boardgames_event_daily": {
       "title": "Daily Pass",
@@ -174,5 +174,9 @@
         "description": "A relaxed evening with a selection of light and fun board games."
       }
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "content": "# Do I need a membership to work here?\nYou can use day passes or choose a monthly membership.\n\n# What are your opening hours?\nMonthly Members: 24/7\nDay Pass Users: Monday to Friday: 9:00-18:00\n\n# How do I get access after hours?\nVia personal key card / code.\n\n# Can I bring guests?\nYes, guests are allowed for a limited time and must be registered.\n\n# Is high-speed internet included?\nYes, enterprise-grade Wi-Fi. Optic fiber connection.\n\n# What membership plans do you offer?\nDaily, weekly, monthly, and team plans.\n\n# What is included in the membership?\nWorkspace, internet, utilities, coffee/tea, cleaning, community events.\n\n# Are there long-term discounts?\nYes, for 3-month, 6-month, and annual plans can be discussed.\n\n# Is the space pet-friendly?\nSmall, well-behaved pets are allowed. Please inform us in advance.\n\n# What is your cancellation policy?\n14-day notice for monthly plans\n\n# Can I use the address for company registration?\nYes, virtual office and legal address services are available.\n\n# Is the space secure?\n24/7 CCTV, access control, and personal lockers (coming soon).\n\n# Can I try the space before committing?\nYes, with a free tour or trial day.\n\n# Where are you located and how do I get there?\nWe are located at Kivimurru 34. Easily accessible by public transport and bike. Not far from T1 center."
   }
 }

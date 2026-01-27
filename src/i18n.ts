@@ -18,4 +18,8 @@ i18n
     },
   });
 
+
+export const getCurrentLanguage = () => i18n.language;
+
 export default i18n;
+

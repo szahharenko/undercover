@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import HeroSectionPricing from '../components/HeroSectionPricing';
+import Faq from '../components/Faq';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
@@ -28,6 +29,9 @@ const Pricing: React.FC = () => {
             <p>{t('pricing_page.free_trial.description')}</p>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto">
+        <Faq/>
       </div>
     </>
   );
