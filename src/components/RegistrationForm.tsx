@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import kivimurru from '../assets/kivimurru-house.jpg';
 import { EmailService, type EmailPayload } from '../servises/send-email';
+import { FaTelegramPlane, FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLocationArrow } from "react-icons/fa";
+import { MdMailOutline } from "react-icons/md";
+
 
 const RegistrationForm: React.FC = () => {
   const { t } = useTranslation();
@@ -191,23 +194,24 @@ const RegistrationForm: React.FC = () => {
         >
           <p>
             <a href="mailto:info@undercover.ee" className="text-coffee hover:underline ml-2">
-              info@undercover.ee
+               <MdMailOutline size={16} style={{display: 'inline'}} /> info@undercover.ee
             </a><br/>
             <a href="tel:+37255512345" className="text-coffee hover:underline ml-2">
-              +372 5154369
+              <FaPhone size={16} style={{display: 'inline'}} />+372 5154369
             </a>
 
           </p>
           <p className="mt-2">
           </p>
           <p>
-            <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2">Telegram</a> |
-            <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2">WhatsApp</a> |
-            <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2">Facebook</a>
+            <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2"><FaTelegramPlane style={{display: 'inline'}} size={16} /> Telegram</a> |
+            <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2"><FaWhatsapp style={{display: 'inline'}} size={16} /> WhatsApp</a> |
+            <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2"><FaFacebook style={{display: 'inline'}} size={16} /> Facebook</a>
+            <a href="https://www.instagram.com/undercovertallinn" className="text-coffee hover:underline ml-2"><FaInstagram style={{display: 'inline'}} size={16} /> Instagram</a>
           </p>
           <br/>
           <p>
-            <span className="ml-2">Kivimurru 34 - 6, Tallinn, Estonia</span>
+            <span className="ml-2"><FaLocationArrow style={{display: 'inline'}} size={16} /> Kivimurru 34 - 6, Tallinn, Estonia</span>
           </p>
           <img src={kivimurru} alt="Kivimurru Address" className="mx-auto my-4 rounded-lg" />
 
