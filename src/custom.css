@@ -15,3 +15,24 @@ h1, h2, h3, h4, h5, h6 {
 .text-coffee {
     color: #4c6907cb;
 }
+
+.nav-logo {
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.nav-logo img {
+    max-width: 120px;
+    height: auto;
+}
+.nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    background: #00000092;
+    z-index: 2;
+}
