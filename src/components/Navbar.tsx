@@ -20,12 +20,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="text-white">{t('home')}</Link>
           <Link to="/about" className="text-white">{t('about_us')}</Link>
           <Link to="/pricing" className="text-white">{t('pricing')}</Link>
-          {
-            /*
-            <Link to="/boardgames" className="text-white">{t('board_games')}</Link>
-            <Link to="/events" className="text-white">{t('events')}</Link>
-            */
-          }
+          <Link to="/boardgames" className="text-white">{t('board_games')}</Link>
 
         </div>
         <div className="flex items-center">

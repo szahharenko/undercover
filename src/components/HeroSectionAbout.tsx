@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import founders from '../assets/founders.jpg';
+import founders from '../assets/us-hero.png';
 
 const HeroSectionAbout: React.FC = () => {
   const { t } = useTranslation();

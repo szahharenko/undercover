@@ -3,7 +3,7 @@
   "home": "Home",
   "about_us": "About Us",
   "pricing": "Pricing",
-  "board_games": "Board Games",
+  "board_games": "Board games",
   "events": "Events",
   "book_a_visit": "Visit us",
   "form": {
@@ -95,6 +95,14 @@
     "social_title": "Social Media",
     "rights_reserved": "No rights reserved."
   },
+  "bgs_page": {
+    "title": "Board Games Club",
+    "subtitle": "A perfect place for board game enthusiasts to gather, play, and connect. Whether you're a seasoned gamer or new to the world of board games, our club offers something for everyone."
+  },
+  "bgs_gallery": {
+    "title": "Events Gallery",
+    "description": ""
+  },
   "pricing_page": {
     "title": "Our Pricing",
     "subtitle": "We offer flexible pricing options to suit your needs. Whether you're here for a day of work or a month of productivity, we have a plan for you.",
@@ -102,7 +110,13 @@
       "title": "Co-working"
     },
     "bg": {
-      "title": "Board Games"
+      "title": "Board Games",
+      "includes": "All type of events, and tournaments includes:",
+      "includes_item1": "Access to our entire board game library",
+      "includes_item2": "Great coffee, tea and snacks while you play for free",
+      "includes_item3": "Great gaming tables with comfortable seating and lighting",
+      "includes_item4": "Help with game selection and rules explanations from our friendly staff",
+      "includes_item5": "Unbealievable vibes and atmosphere"
     },
     "monthly_desk": {
       "title": "Monthly",
@@ -118,16 +132,16 @@
       "description": "Pre-book a free trial day to experience our co-working space and see if it's the right fit for you."
     },
     "boardgames_event_club": {
-      "title": "Own Boardgames event",
-      "description": "Host your own board game event nights at Undercover Vibe! Ideal for groups looking for a dedicated space to play and socialize."
+      "title": "Own Event",
+      "description": "Host your own board game or any other event at Undercover! Whole space reserved for you and your friends. "
     },
     "boardgames_event_table": {
-      "title": "Own Boardgames table",
-      "description": "Reserve a private table for your board game events. Ideal for groups looking for a dedicated space to play and socialize."
+      "title": "Own Table",
+      "description": "Reserve a private table for your board game events. Ideal for groups looking for a dedicated space to play."
     },
     "boardgames_event_daily": {
       "title": "Daily Pass",
-      "description": "For various board game events and tournaments."
+      "description": "Entry fee for various board game events and tournaments. See events calendar for details."
     }
   },
   "board_games_page": {

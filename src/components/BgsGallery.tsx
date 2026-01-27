@@ -1,26 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import of1 from '../assets/of1.jpg';
-import of2 from '../assets/of2.jpg';
-import of3 from '../assets/of3.jpg';
-import of4 from '../assets/of4.jpg';
-import of5 from '../assets/of5.jpg';
-import of6 from '../assets/of6.jpg';
-import of7 from '../assets/of7.jpg';
-import of8 from '../assets/of8.jpg';
+import of1 from '../assets/bg1.jpg';
+import of2 from '../assets/bg2.jpg';
+import of3 from '../assets/bg3.jpg';
+import of4 from '../assets/bg4.jpg';
+import of5 from '../assets/bg5.jpg';
 
-const AtmosphereGallery: React.FC = () => {
+const BgsGallery: React.FC = () => {
   const { t } = useTranslation();
   const images = [
-    { src: of1, alt: t('atmosphere_gallery.images.coworking1') },
+    { src: of1, alt: t('atmosphere_gallery.images.boardGames1') },
     { src: of2, alt: t('atmosphere_gallery.images.boardGames1') },
-    { src: of3, alt: t('atmosphere_gallery.images.coffeeShop1') },
-    { src: of4, alt: t('atmosphere_gallery.images.coworking2') },
-    { src: of5, alt: t('atmosphere_gallery.images.boardGames2') },
-    { src: of6, alt: t('atmosphere_gallery.images.generic') },
-    { src: of7, alt: t('atmosphere_gallery.images.coffeeShop2') },
-    { src: of8, alt: t('atmosphere_gallery.images.generic2') },
+    { src: of3, alt: t('atmosphere_gallery.images.boardGames1') },
+    { src: of4, alt: t('atmosphere_gallery.images.boardGames1') },
+    { src: of5, alt: t('atmosphere_gallery.images.boardGames1') }
   ];
 
   return (
@@ -33,7 +27,7 @@ const AtmosphereGallery: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-charcoal mb-12"
         >
-          {t('atmosphere_gallery.title')}
+          {t('bgs_gallery.title')}
         </motion.h2>
         <motion.p
           initial={{ y: -20, opacity: 0 }}
@@ -42,7 +36,7 @@ const AtmosphereGallery: React.FC = () => {
           transition={{ duration: 0.7 }}
           className="text-xl text-charcoal/80 max-w-3xl mx-auto mb-16"
         >
-          {t('atmosphere_gallery.description')}
+          {t('bgs_gallery.description')}
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,4 +58,4 @@ const AtmosphereGallery: React.FC = () => {
   );
 };
 
-export default AtmosphereGallery;
+export default BgsGallery;

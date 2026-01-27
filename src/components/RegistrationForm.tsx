@@ -6,7 +6,7 @@ import { EmailService, type EmailPayload } from '../servises/send-email';
 
 const RegistrationForm: React.FC = () => {
   const { t } = useTranslation();
-  const [emailSend, setEmailSend] = useState<boolean>(true);
+  const [emailSend, setEmailSend] = useState<boolean>(false);
   const [emailSending, setEmailSending] = useState<boolean>(false);
   const [emailSendingError, setEmailSendingError] = useState<string | null>(null);
   const minDate = useMemo(() => new Date(new Date().getTime() + 86400000).toISOString().split('T')[0], []);
