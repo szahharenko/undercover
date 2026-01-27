@@ -3,10 +3,19 @@ import { useTranslation } from 'react-i18next';
 import BoardGameClub from '../components/BoardGameClub';
 import HeroSectionBgs from '../components/HeroSectionBoardgames';
 import BgsGallery from '../components/BgsGallery';
+import EventsCalendar from '../components/EventsCalendar';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
-
+  // scroll to #events-calendar on load if hash is present
+  React.useEffect(() => {
+    if (window.location.hash === '#events-calendar') {
+      const element = document.getElementById('events-calendar');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
   return (
     <>
       <HeroSectionBgs />
@@ -42,6 +51,14 @@ const Pricing: React.FC = () => {
           <li>{t('pricing_page.bg.includes_item5')}</li>
         </ul>
       </div>
+      <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto">
+        <h1 className="text-3xl font-bold mt-4 mb-2">{t('pricing_page.bg.booking')}</h1>
+        <p className="mt-4">{t('pricing_page.bg.booking_description')}</p>
+      </div>
+      <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto" id="events-calendar">
+        <EventsCalendar />
+      </div>
+
     </>
   );
 };

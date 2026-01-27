@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import bggs from '../assets/bggs.jpg';
+import { useNavigate } from "react-router-dom";
+import { t } from 'i18next';
+
 
 const BGGUrl = 'https://boardgamegeek.com/collection/user/acrashik?sort=rank&sortdir=asc&rankobjecttype=subtype&rankobjectid=1&columns=title%7Cthumbnail%7Cstatus%7Crank%7Crating%7Cbggrating%7Cplays%7Ccomment&geekranks=Board%20Game%20Rank&excludesubtype=boardgameexpansion&own=1&objecttype=thing&ff=1&subtype=boardgame';
 
@@ -9,9 +12,10 @@ interface GameFeatureCardProps {
   icon: React.ElementType;
   title: string;
   description: string;
+  action?: () => void;
 }
 
-const GameFeatureCard: React.FC<GameFeatureCardProps> = ({ icon: Icon, title, description }) => {
+const GameFeatureCard: React.FC<GameFeatureCardProps> = ({ icon: Icon, title, description, action }) => {
   return (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -24,12 +28,26 @@ const GameFeatureCard: React.FC<GameFeatureCardProps> = ({ icon: Icon, title, de
       <Icon className="w-12 h-12 text-sage-green mb-4" />
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-cream/80">{description}</p>
+      {action && (
+        <button onClick={action} className="mt-4 px-4 py-2 text-white transparent underline transition">
+          {t('learn_more')}
+        </button>
+      )}
     </motion.div>
   );
 };
 
 const BoardGameClub: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const eventsAction = () => {
+    const element = document.getElementById('events-calendar');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/boardgames#events-calendar');
+    }
+  }
   const features = [
     {
       icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
@@ -40,6 +58,7 @@ const BoardGameClub: React.FC = () => {
       icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
       title: t('board_game_club.features.tournaments.title'),
       description: t('board_game_club.features.tournaments.description'),
+      action: eventsAction
     },
     {
       icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
