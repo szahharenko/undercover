@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full bg-transparent p-6 z-50">
+    <nav className="absolute top-0 left-0 w-full bg-transparent p-6 z-50 nav-bar">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className='flex items-center nav-logo'>
           <img src={logo} alt="Undercover vibe logo" className='max-h-[150px] h-auto '/>

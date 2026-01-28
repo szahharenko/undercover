@@ -11,7 +11,7 @@ const HeroSectionPricing: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative bg-cream min-h-[60vh] flex items-center justify-center text-center p-8 overflow-hidden"
+      className="relative bg-cream min-h-[60vh] flex items-center justify-center text-center p-8 overflow-hidden hero-section"
     >
       <div className="absolute w-full h-full z-1">
         <img src={pricing} alt="Undercover workspace" className="w-full h-full object-cover" />
