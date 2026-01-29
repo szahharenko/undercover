@@ -13,20 +13,15 @@ const EventsCalendar: React.FC = () => {
   const { t, i18n } = useTranslation();
 
   const events = [
-    {
+      {
       title: `${t('events_calendar.game_evening')}`,
-      date: '2026-02-05',
-      rrule: {
-        freq: 'weekly',
-        byweekday: ['we'],
-        dtstart: '2026-02-05T18:00:00'
-      },
-      duration: '05:00',
+      start: '2026-02-11T18:00:00',
+      end: '2026-02-05T22:00:00',
       extendedProps: {
         description: `
-          <img src="${dune}" alt="Dune: Uprising" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;" class="float-left"/>
-          <img src="${duneExp}" alt="Dune: Bloodlines" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;" class="float-left"/>
-          <img src="${kanban}" alt="Kanban" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;" class="float-left"/>
+          <img src="${dune}" alt="Dune: Uprising" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
+          <img src="${duneExp}" alt="Dune: Bloodlines" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
+          <img src="${kanban}" alt="Kanban" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
           Dune: Uprising wtih Bloodlines, Kanban, Marco Polo, and other games...<br/>
           ☕ Hot drinks included<br/>
           🍪🥐🥨 Snacks provided<br/>
@@ -34,16 +29,15 @@ const EventsCalendar: React.FC = () => {
         `
       }
     },
-
     {
       title: `${t('events_calendar.game_weekend')}`,
-      date: '2026-02-05',
+      date: '2026-02-07',
       startTime: '12:00',
       endTime: '22:00',
       rrule: {
         freq: 'weekly',
         byweekday: ['sa', 'su'],
-        dtstart: '2026-02-05T12:00:00'
+        dtstart: '2026-02-07T12:00:00'
       },
       duration: '09:00'
     },
