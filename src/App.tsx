@@ -7,8 +7,11 @@ import AboutUs from './pages/AboutUs';
 import Pricing from './pages/Pricing';
 import BoardGames from './pages/BoardGames';
 import Events from './pages/Events';
+import ReactGA from "react-ga4";
+
 
 const App: React.FC = () => {
+  ReactGA.initialize("G-X3XS65G8VL");
   return (
     <Router>
       <div className="min-h-screen bg-neutral-100 text-charcoal">

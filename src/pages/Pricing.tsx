@@ -2,10 +2,12 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import HeroSectionPricing from '../components/HeroSectionPricing';
 import Faq from '../components/Faq';
+import { logEvent } from '../servises/analytics';
+
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
-
+  logEvent({ category: 'page_view', action: 'view_pricing_page', label: 'User viewed the pricing page' });
   return (
     <>
       <HeroSectionPricing />

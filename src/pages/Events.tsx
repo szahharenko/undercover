@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Calendar, Gamepad2, Users } from 'lucide-react';
+import { logEvent } from '../servises/analytics';
 
 const Events: React.FC = () => {
   const { t } = useTranslation();
+  logEvent({ category: 'page_view', action: 'view_events_page', label: 'User viewed the events page' });
   const events = [
     {
       date: t('events_page.events.mafia.date'),

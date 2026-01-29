@@ -5,6 +5,7 @@ import kivimurru from '../assets/kivimurru-house.jpg';
 import { EmailService, type EmailPayload } from '../servises/send-email';
 import { FaTelegramPlane, FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLocationArrow } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
+import { logEvent } from '../servises/analytics';
 
 
 const RegistrationForm: React.FC = () => {
@@ -23,6 +24,7 @@ const RegistrationForm: React.FC = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    logEvent({ category: 'user_interaction', action: 'change_registration_form_field', label: `User changed the ${e.target.name} field` });
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -36,17 +38,18 @@ const RegistrationForm: React.FC = () => {
       type: 'trial',
       message: formData.message,
     };
-
+    logEvent({ category: 'user_interaction', action: 'submit_registration_form', label: 'User submitted the registration form' });
     // 2. Call the service
     const result = await EmailService.send(emailData);
 
     // 3. Handle the result
     if (result.status === 'success') {
+      logEvent({ category: 'form_submission', action: 'submit_registration_form_success', label: 'User submitted the registration form successfully' });
       setEmailSend(true);
       setEmailSending(false);
       setEmailSendingError(null);
     } else {
-
+      logEvent({ category: 'form_submission', action: 'submit_registration_form_error', label: 'User encountered an error submitting the registration form' });
       setEmailSending(false);
       setEmailSendingError(result.message);
     }

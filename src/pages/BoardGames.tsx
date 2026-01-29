@@ -4,9 +4,11 @@ import BoardGameClub from '../components/BoardGameClub';
 import HeroSectionBgs from '../components/HeroSectionBoardgames';
 import BgsGallery from '../components/BgsGallery';
 import EventsCalendar from '../components/EventsCalendar';
+import { logEvent } from '../servises/analytics';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
+  logEvent({ category: 'page_view', action: 'view_boardgames_page', label: 'User viewed the boardgames page' });
   // scroll to #events-calendar on load if hash is present
   React.useEffect(() => {
     if (window.location.hash === '#events-calendar') {

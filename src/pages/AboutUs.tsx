@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import HeroSectionAbout from '../components/HeroSectionAbout';
+import { logEvent } from '../servises/analytics';
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
-
+  logEvent({ category: 'page_view', action: 'view_about_us_page', label: 'User viewed the about us page' });
   return (
     <>
       <HeroSectionAbout />
