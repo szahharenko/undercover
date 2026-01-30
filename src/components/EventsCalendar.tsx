@@ -7,7 +7,8 @@ import rrulePlugin from '@fullcalendar/rrule'
 import FullCalendar from '@fullcalendar/react';
 import dune from '../assets/dune-cover.jpg';
 import kanban from '../assets/kanban-cover.jpg';
-import duneExp from '../assets/dune-bloodlines-cover.jpg';
+import noThanks from '../assets/nothanks.webp';
+
 
 const EventsCalendar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -19,10 +20,11 @@ const EventsCalendar: React.FC = () => {
       end: '2026-02-05T22:00:00',
       extendedProps: {
         description: `
+          <img src="${noThanks}" alt="No Thanks" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
           <img src="${dune}" alt="Dune: Uprising" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
-          <img src="${duneExp}" alt="Dune: Bloodlines" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
           <img src="${kanban}" alt="Kanban" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
-          Dune: Uprising wtih Bloodlines, Kanban, Marco Polo, and other games...<br/>
+          <strong>No Thanks!</strong> friendly opening tournament<br/>
+          Dune: Uprising, Kanban, Marco Polo, and any other games could be played later<br/>
           ☕ Hot drinks included<br/>
           🍪🥐🥨 Snacks provided<br/>
           📍 Kivimurru tn 34 - 6, 11411 Tallinn<br/>
