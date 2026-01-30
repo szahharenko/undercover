@@ -34,7 +34,7 @@
     "team_title": "Tutvuge Asutajatega"
   },
   "hero": {
-    "title": "Kõige hubasem koostööruum Tallinnas",
+    "title": "Kõige hubasem coworking Tallinnas",
     "subtitle": "Hubane tööruum päeval. VIP-lauamänguklubi öösel.",
     "reserve_button": "Reserveeri Töökoht",
     "join_button": "Liitu Klubiga"
@@ -84,7 +84,7 @@
     "title": "Sulle Loodud Atmosfäär",
     "description": "Astuge ruumi, kus läbimõeldud disain kohtub ülima mugavusega. Meie interjöörid ühendavad soojad puidutoonid, pehme ümbritseva valgustuse ja pehme mööbli, et luua kutsuv õhkkond, mis tundub nii produktiivne kui ka sügavalt lõõgastav.",
     "images": {
-      "coworking1": "Kaasaegne ja hubane koostööruum",
+      "coworking1": "Kaasaegne ja hubane coworking",
       "boardGames1": "Riiulil olev laumängude kollektsioon",
       "coffeeShop1": "Soe ja kutsuv kohvinurk",
       "coworking2": "Inimesed töötavad koostöökeskkonnas",
@@ -101,7 +101,7 @@
     "title": "Hinnakiri",
     "subtitle": "Pakume paindlikke hinnakujundusvõimalusi, mis vastavad teie vajadustele. Ükskõik, kas olete siin üheks päevaks tööks või kuuks ajaks tootlikkuseks, meil on teile plaan.",
     "coworking": {
-      "title": "Koostööruum"
+      "title": "Coworking"
     },
     "bg": {
       "title": "Lauamängud",
