@@ -24,7 +24,8 @@
     "thank_you_message": "Thank you for registering for a trial session. We will contact you soon to confirm your booking.",
     "send_another": "Send Another",
     "error_message": "Something went wrong. Please try again later.",
-    "contact_us": "Contact Us"
+    "contact_us": "Contact Us",
+    "weekend_error": "Weekends are not allowed. Please pick a weekday."
   },
   "about_us_page": {
     "title": "Meet the Founders",

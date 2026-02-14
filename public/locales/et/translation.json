@@ -24,7 +24,8 @@
     "thank_you_message": "Täname, et registreerusite prooviseansile. Võtame teiega peagi ühendust, et teie broneering kinnitada.",
     "send_another": "Saada veel kord",
     "error_message": "Midagi läks valesti. Palun proovige hiljem uuesti.",
-    "contact_us": "Võta meiega ühendust"
+    "contact_us": "Võta meiega ühendust",
+    "weekend_error": "Nädalavahetused ei ole lubatud. Palun vali nädalapäev."
   },
   "about_us_page": {
     "title": "Meist",

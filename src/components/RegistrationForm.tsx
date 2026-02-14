@@ -143,12 +143,13 @@ const RegistrationForm: React.FC = () => {
               <div className="relative">
                 <label htmlFor="date" className="block text-charcoal text-lg font-medium mb-2">{t('form.date')}</label>
                 <NativeDateInput
-                  min={ minDate }
                   value={formData.date}
-                  name="date"
+                  minDateValue={minDate}
+                  inputName="date"
                   onChange={handleChange}
                   className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all appearance-none pr-10"
                   required={true}
+                  disableWeekends={true}
                 />
               </div>
               <div className="relative">
