@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import bgs from '../assets/bgs-hero.png';
+import bgs from '../assets/bgs-hero.jpg';
 
 const HeroSectionBgs: React.FC = () => {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ const HeroSectionBgs: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative bg-cream min-h-[60vh] flex items-center justify-center text-center p-8 overflow-hidden hero-section"
+      className="main-hero relative bg-cream min-h-[60vh] flex items-center justify-center text-center p-8 overflow-hidden hero-section"
     >
       <div className="absolute w-full h-full z-1">
         <img src={bgs} alt="Undercover workspace" className="w-full h-full object-cover" />

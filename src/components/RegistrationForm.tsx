@@ -6,6 +6,7 @@ import { EmailService, type EmailPayload } from '../servises/send-email';
 import { FaTelegramPlane, FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLocationArrow } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { logEvent } from '../servises/analytics';
+import NativeDateInput from './DatePicker';
 
 
 const RegistrationForm: React.FC = () => {
@@ -141,15 +142,13 @@ const RegistrationForm: React.FC = () => {
               </div>
               <div className="relative">
                 <label htmlFor="date" className="block text-charcoal text-lg font-medium mb-2">{t('form.date')}</label>
-                <input
-                  type="date"
-                  id="date"
-                  name="date"
+                <NativeDateInput
                   min={ minDate }
                   value={formData.date}
+                  name="date"
                   onChange={handleChange}
                   className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all appearance-none pr-10"
-                  required
+                  required={true}
                 />
               </div>
               <div className="relative">

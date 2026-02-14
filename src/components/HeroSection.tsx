@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative bg-cream min-h-[70vh] flex items-center justify-center text-center p-8 overflow-hidden"
+      className="main-hero relative bg-cream min-h-[70vh] flex items-center justify-center text-center p-8 overflow-hidden"
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
