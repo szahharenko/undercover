@@ -85,7 +85,7 @@ const BoardGameClub: React.FC = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-5xl md:text-6xl font-extrabold text-white mb-4"
+          className="text-4xl md:text-6xl font-extrabold text-white mb-4"
         >
           {t('board_game_club.title')}
         </motion.h2>

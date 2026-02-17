@@ -216,5 +216,13 @@
       "title": "Broneeri oma üritus",
       "description": "Oma ürituse või koolituse broneerimiseks võtke meiega ühendust e-posti teel või mõne sõnumirakenduse kaudu. Aitame teil planeerida täiusliku kogemuse."
     }
+  },
+  "bgs_page": {
+    "title": "Lauamänguklubi",
+    "subtitle": "Täiuslik koht lauamänguhuvilistele kogunemiseks, mängimiseks ja suhtlemiseks. Olenemata sellest, kas olete kogenud mängija või uus lauamängude maailmas, pakub meie klubi midagi kõigile."
+  },
+  "bgs_gallery": {
+    "title": "Galerii",
+    "description": "Mõned juhuslikud fotod meie lauamänguklubist ja üritustest. Meil on alati hea meel näha uusi nägusid meie mänguõhtutel!"
   }
 }
