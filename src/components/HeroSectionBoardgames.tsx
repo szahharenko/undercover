@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import bgs from '../assets/bgs-hero.jpg';
+import bgs from '../assets/bgparty.jpg';
 
 const HeroSectionBgs: React.FC = () => {
   const { t } = useTranslation();

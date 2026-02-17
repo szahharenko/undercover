@@ -25,29 +25,6 @@ h1, h2, h3, h4, h5, h6 {
     .hero-section .absolute {
         top: 0;
     }
-    .nav-bar {
-        padding: 64px 0.5em 0;
-    }
-    .nav-logo {
-        position: relative;
-        z-index: 3;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-    .nav-logo img {
-        max-width: 120px;
-        height: auto;
-    }
-    .nav-links {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1em;
-        text-align: center;
-        background: #00000092;
-        z-index: 2;
-    }
     .main-hero  {
         min-height: 85vh;
     }
