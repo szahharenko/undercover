@@ -4,8 +4,25 @@ import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 // Dynamically import all images from the games folder
-const imagesGlob = import.meta.glob('../assets/games/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
-const imageList = Object.values(imagesGlob) as string[];
+const mainImagesGlob = import.meta.glob('../assets/games/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+const thumbsGlob = import.meta.glob('../assets/games/thumbs/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' });
+
+interface GalleryImage {
+  full: string;
+  thumb: string;
+}
+
+const galleryImages: GalleryImage[] = Object.keys(mainImagesGlob).map((key) => {
+  const fullPath = mainImagesGlob[key] as string;
+  const fileName = key.split('/').pop();
+  const thumbKey = `../assets/games/thumbs/${fileName}`;
+  const thumbPath = thumbsGlob[thumbKey] as string | undefined;
+
+  return {
+    full: fullPath,
+    thumb: thumbPath || fullPath, // Fallback to full image if thumb missing
+  };
+});
 
 const BgsGallery: React.FC = () => {
   const { t } = useTranslation();
@@ -15,11 +32,11 @@ const BgsGallery: React.FC = () => {
   const closeLightbox = () => setSelectedIndex(null);
 
   const nextImage = useCallback(() => {
-    setSelectedIndex((prev) => (prev === null ? null : (prev + 1) % imageList.length));
+    setSelectedIndex((prev) => (prev === null ? null : (prev + 1) % galleryImages.length));
   }, []);
 
   const prevImage = useCallback(() => {
-    setSelectedIndex((prev) => (prev === null ? null : (prev - 1 + imageList.length) % imageList.length));
+    setSelectedIndex((prev) => (prev === null ? null : (prev - 1 + galleryImages.length) % galleryImages.length));
   }, []);
 
   // Keyboard navigation
@@ -59,9 +76,9 @@ const BgsGallery: React.FC = () => {
 
         {/* Image Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {imageList.map((src, index) => (
+          {galleryImages.map((image, index) => (
             <motion.div
-              key={src}
+              key={image.full}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -70,7 +87,7 @@ const BgsGallery: React.FC = () => {
               onClick={() => openLightbox(index)}
             >
               <img
-                src={src}
+                src={image.thumb}
                 alt={`Board game ${index + 1}`}
                 className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-120"
                 loading="lazy"
@@ -100,7 +117,7 @@ const BgsGallery: React.FC = () => {
 
             {/* Navigation Buttons */}
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-50 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
+              className="absolute left-[1em] top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-50 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 prevImage();
@@ -109,7 +126,7 @@ const BgsGallery: React.FC = () => {
               <ChevronLeft size={40} />
             </button>
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-50 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
+              className="absolute right-[1em] top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-50 p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 nextImage();
@@ -129,7 +146,7 @@ const BgsGallery: React.FC = () => {
               onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
             >
               <img
-                src={imageList[selectedIndex]}
+                src={galleryImages[selectedIndex].full}
                 alt={`Board game ${selectedIndex + 1}`}
                 className="max-w-full max-h-[90vh] object-contain shadow-2xl"
               />
@@ -137,7 +154,7 @@ const BgsGallery: React.FC = () => {
 
             {/* Image Counter */}
              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white bg-black/50 px-4 py-1 rounded-full text-sm">
-              {selectedIndex + 1} / {imageList.length}
+              {selectedIndex + 1} / {galleryImages.length}
             </div>
           </motion.div>
         )}
