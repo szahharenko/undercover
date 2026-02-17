@@ -36,23 +36,21 @@ const HeroSection: React.FC = () => {
         >
           {t('hero.subtitle')}
         </motion.p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <motion.button
-            // scroll to registration-form
-            onClick={ () => {
-              const element = document.getElementById('registration-form');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-            className="px-8 py-3 bg-coffee text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
-          >
-            {t('book_a_visit')}
-          </motion.button>
-        </div>
+        <motion.button
+          // scroll to registration-form
+          onClick={ () => {
+            const element = document.getElementById('registration-form');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="px-8 py-3 bg-coffee text-cream rounded-2xl text-lg font-semibold shadow-lg hover:bg-opacity-90 transition-all duration-300"
+        >
+          {t('book_a_visit')}
+        </motion.button>
       </div>
     </motion.section>
   );

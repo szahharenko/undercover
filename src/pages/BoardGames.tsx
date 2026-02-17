@@ -2,9 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import BoardGameClub from '../components/BoardGameClub';
 import HeroSectionBgs from '../components/HeroSectionBoardgames';
-import BgsGallery from '../components/BgsGallery';
 import EventsCalendar from '../components/EventsCalendar';
 import { logEvent } from '../servises/analytics';
+import GalleryByFolder from '../components/GalleryByFolder';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
@@ -18,10 +18,15 @@ const Pricing: React.FC = () => {
       }
     }
   }, []);
+
+  const mainImagesGlob = import.meta.glob(`../assets/games/*.{jpg,jpeg,png,webp}`, { eager: true, import: 'default' });
+  const thumbsGlob = import.meta.glob(`../assets/games/thumbs/*.{jpg,jpeg,png,webp}`, { eager: true, import: 'default' });
+      <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('bgs_gallery.title')} description={t('bgs_gallery.description')} />
+
   return (
     <>
       <HeroSectionBgs />
-      <BgsGallery />
+      <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('bgs_gallery.title')} description={t('bgs_gallery.description')} />
       <BoardGameClub />
       <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto">
         <h1 className="text-3xl font-bold mt-4 mb-2">{t('pricing_page.bg.title')}</h1>

@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
     }
     .main-hero  {
-        min-height: 85vh;
+        min-height: 70vh;
     }
     .mobile-240 {
         max-width: 240px !important;
