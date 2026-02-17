@@ -5,6 +5,7 @@
   "pricing": "Hinnakiri",
   "board_games": "Lauamängud",
   "events": "Üritused",
+  "events_and_trainings": "Üritused ja koolitused",
   "book_a_visit": "Tule külla",
   "learn_more": "Lisainfo",
   "form": {
@@ -181,5 +182,39 @@
     "description": "Jääge kursis kõigi tulevaste ürituste ja turniiridega Undercover Vibe'is. Märkige oma kalendrisse ja ärge jätke lõbu vahele!",
     "game_evening": "Lauamängu Õhtu",
     "game_weekend": "Lauamängu Nädalavahetus"
+  },
+  "events_trainings_page": {
+    "title": "Üritused ja koolitused",
+    "subtitle": "Meie ruum sobib suurepäraselt ürituste, erinevate koolituste ja meeskonnaürituste korraldamiseks.",
+    "pricing": {
+      "title": "Ürituste Paketid",
+      "whole_space": {
+        "title": "Terve Ruum",
+        "price": "Võta ühendust",
+        "description": "Broneeri terve ruum oma privaatseks ürituseks. Maksimaalne privaatsus ja paindlikkus."
+      },
+      "training_room": {
+        "title": "Koolitusala",
+        "price": "Võta ühendust",
+        "description": "Ideaalne töötubadeks, seminarideks ja koolitusteks."
+      },
+      "team_building": {
+        "title": "Meeskonnaüritus",
+        "price": "Võta ühendust",
+        "description": "Eripaketid sinu meeskonnale, sealhulgas lauamänguturniirid ja toitlustus."
+      }
+    },
+    "includes": {
+      "title": "Mis sisaldub",
+      "item1": "Kiire WiFi ja esitlustehnika (projektor ja ekraan)",
+      "item2": "Piiramatu kohv, tee ja vesi",
+      "item3": "Paindlikud istumisvõimalused",
+      "item4": "Tahvlid ja pabertahvlid",
+      "item5": "Kohapealne tugipersonal"
+    },
+    "booking": {
+      "title": "Broneeri oma üritus",
+      "description": "Oma ürituse või koolituse broneerimiseks võtke meiega ühendust e-posti teel või mõne sõnumirakenduse kaudu. Aitame teil planeerida täiusliku kogemuse."
+    }
   }
 }

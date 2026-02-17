@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaTelegramPlane, FaFacebook, FaInstagram, FaWhatsapp, FaPhone } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
-
 
 import cat from '../assets/cat-left.png';
 import dog from '../assets/dog-right.png';
+import { SocialIcons } from './SocialIcons';
+import { SocialContacts } from './SocialContacts';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -27,25 +26,12 @@ const Footer: React.FC = () => {
               <div className='flex text-center flex-col p-2 w-full md:w-[50%]'>
                 <h3 className="text-xl font-bold mb-4">{t('footer.social_title')}</h3>
                 <div className="flex justify-center p-4 space-x-6">
-                  <a href="https://www.instagram.com/undercovertallinn" className="hover:text-sage-green transition-colors" aria-label="Instagram">
-                    <FaInstagram size={28} />
-                  </a>
-                  <a href="https://t.me/acrashik" className="hover:text-sage-green transition-colors" aria-label="Telegram">
-                    <FaTelegramPlane size={28} />
-                  </a>
-                  <a href='https://wa.me/3725154369' className="hover:text-sage-green transition-colors" aria-label="WhatsApp">
-                    <FaWhatsapp size={28} />
-                  </a>
-                  <a href="https://www.facebook.com/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Facebook">
-                    <FaFacebook size={28} />
-                  </a>
+                  <SocialIcons/>
                 </div>
               </div>
               <div className='flex flex-col w-full md:w-[50%]'>
                 <h3 className="text-xl font-bold mb-4">{t('footer.location_title')}</h3>
-                <p><a href="https://maps.app.goo.gl/z4kknp2yiiwf39QJ8">Kivimurru tn 34 - 6, 11411 Tallinn</a></p>
-                <p><MdMailOutline style={{display: 'inline'}} size={16}  /> <a href="mailto:info@undercover.ee">info@undercover.ee</a></p>
-                <p><FaPhone style={{display: 'inline'}} size={16} /> <a href="tel:+3725154369">(+372) 51 54 369</a></p>
+                <SocialContacts/>
               </div>
             </div>
             <img src={dog} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>

@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs';
 import Pricing from './pages/Pricing';
 import BoardGames from './pages/BoardGames';
 import Events from './pages/Events';
+import EventsAndTrainings from './pages/EventsAndTrainings';
 import ReactGA from "react-ga4";
 
 
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/boardgames" element={<BoardGames />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/events-and-trainings" element={<EventsAndTrainings />} />
         </Routes>
         <Footer />
       </div>

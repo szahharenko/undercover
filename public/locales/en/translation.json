@@ -5,6 +5,7 @@
   "pricing": "Pricing",
   "board_games": "Board games",
   "events": "Events",
+  "events_and_trainings": "Events & Trainings",
   "book_a_visit": "Visit us",
   "learn_more": "Learn More",
   "form": {
@@ -188,5 +189,39 @@
     "description": "Stay updated with all upcoming events and tournaments at Undercover Vibe. Mark your calendars and don't miss out on the fun!",
     "game_evening": "Board Game Evening",
     "game_weekend": "Board Game Weekend"
+  },
+  "events_trainings_page": {
+    "title": "Events and Trainings",
+    "subtitle": "Our space is perfect for organizing events, different trainings, and team building activities.",
+    "pricing": {
+      "title": "Event Packages",
+      "whole_space": {
+        "title": "Whole Space",
+        "price": "Contact us",
+        "description": "Reserve the entire space for your private event. Maximum privacy and flexibility."
+      },
+      "training_room": {
+        "title": "Training Area",
+        "price": "Contact us",
+        "description": "Perfect for workshops, seminars, and training sessions."
+      },
+      "team_building": {
+        "title": "Team Building",
+        "price": "Contact us",
+        "description": "Custom packages for your team including team board game tournaments and catering options."
+      }
+    },
+    "includes": {
+      "title": "What's Included",
+      "item1": "High-speed WiFi and presentation equipment (Projector & Screen)",
+      "item2": "Unlimited coffee, tea, and water",
+      "item3": "Flexible seating arrangements",
+      "item4": "Whiteboards and flipcharts",
+      "item5": "On-site support staff"
+    },
+    "booking": {
+      "title": "Book Your Event",
+      "description": "To book your event or training session, please contact us via email or any messenger. We will help you plan the perfect experience."
+    }
   }
 }
