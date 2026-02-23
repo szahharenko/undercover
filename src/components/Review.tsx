@@ -27,9 +27,8 @@ const GoogleReviews: React.FC = () => {
   document.body.appendChild(mapDiv);
   const mapRef = useRef<HTMLDivElement>(mapDiv);
 
-  // You should ideally move these to environment variables
-  const GOOGLE_MAPS_API_KEY = 'AIzaSyAE9h6-EN7Es3Wl-HzzrR5fhRURXwvvlVg';
-  const PLACE_ID = 'ChIJKX0BDg6VkkYRVVP4NJtscvw';
+  const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  const PLACE_ID = import.meta.env.VITE_GOOGLE_PLACE_ID;
 
   useEffect(() => {
     setOptions({
@@ -39,7 +38,6 @@ const GoogleReviews: React.FC = () => {
     });
 
     importLibrary('places').then(async (places: any) => {
-        console.log({places, mapRef: mapRef.current});
       if (!mapRef.current) return;
 
       const service = new places.PlacesService(mapRef.current);
@@ -51,7 +49,6 @@ const GoogleReviews: React.FC = () => {
         (place: any, status: any) => {
           // Access PlacesServiceStatus from the places library or global google.maps if available
           // Since we use the library, we can check status string
-          console.log({ place, status });
           if (status === 'OK' && place) {
             if (place.reviews) {
               setReviews(place.reviews as Review[]);
@@ -181,7 +178,7 @@ const GoogleReviews: React.FC = () => {
 
         <div className="mt-12 text-center flex flex-col md:flex-row justify-center gap-4">
           <a
-            href={`https://www.google.com/maps/place/?q=place_id:${PLACE_ID}`}
+            href={`https://maps.app.goo.gl/siNDMNinPGBeVEV28`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-charcoal text-cream rounded-full font-bold hover:bg-charcoal/90 transition-colors"

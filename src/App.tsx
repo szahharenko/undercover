@@ -12,7 +12,7 @@ import ReactGA from "react-ga4";
 
 
 const App: React.FC = () => {
-  ReactGA.initialize("G-X3XS65G8VL");
+  ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
   return (
     <Router>
       <div className="min-h-screen bg-neutral-100 text-charcoal">
