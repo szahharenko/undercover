@@ -6,6 +6,7 @@ import RegistrationForm from '../components/RegistrationForm';
 import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
 import { useTranslation } from 'react-i18next';
+import GoogleReviews from '../components/Review';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
       <BoardGameClub />
       <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('atmosphere_gallery.title')} description={t('atmosphere_gallery.description')} />
       <RegistrationForm />
+      <GoogleReviews />
     </>
   );
 };

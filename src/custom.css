@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 .text-coffee {
     color: #4c6907cb;
 }
+.mr-4 {
+    margin-right: 1rem;
+}
 @media screen and (max-width: 640px) {
     .hero-section {
         padding-top: 8em;

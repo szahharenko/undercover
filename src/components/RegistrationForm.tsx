@@ -188,14 +188,14 @@ const RegistrationForm: React.FC = () => {
         >
           {t('form.contact_us')}
         </motion.h2>
-        <motion.p
+        <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7 }}
           className="text-charcoal text-center"
         >
-          <p>
+          <div>
             <a href="mailto:info@undercover.ee" className="text-coffee hover:underline ml-2">
                <MdMailOutline size={16} style={{display: 'inline'}} /> info@undercover.ee
             </a><br/>
@@ -203,22 +203,22 @@ const RegistrationForm: React.FC = () => {
               <FaPhone size={16} style={{display: 'inline'}} />+372 5154369
             </a>
 
-          </p>
-          <p className="mt-2">
-          </p>
-          <p>
+          </div>
+          <div className="mt-2">
+          </div>
+          <div>
             <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2"><FaTelegramPlane style={{display: 'inline'}} size={16} /> Telegram</a> |
             <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2"><FaWhatsapp style={{display: 'inline'}} size={16} /> WhatsApp</a> |
             <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2"><FaFacebook style={{display: 'inline'}} size={16} /> Facebook</a>
             <a href="https://www.instagram.com/undercovertallinn" className="text-coffee hover:underline ml-2"><FaInstagram style={{display: 'inline'}} size={16} /> Instagram</a>
-          </p>
+          </div>
           <br/>
-          <p>
+          <div>
             <span className="ml-2"><FaLocationArrow style={{display: 'inline'}} size={16} /> Kivimurru 34 - 6, Tallinn, Estonia</span>
-          </p>
+          </div>
           <img src={kivimurru} alt="Kivimurru Address" className="mx-auto my-4 rounded-lg" />
 
-        </motion.p>
+        </motion.div>
       </div>
     </section>
   );

@@ -224,5 +224,11 @@
   "bgs_gallery": {
     "title": "Galerii",
     "description": "Mõned juhuslikud fotod meie lauamänguklubist ja üritustest. Meil on alati hea meel näha uusi nägusid meie mänguõhtutel!"
+  },
+  "reviews": {
+    "title": "Mida meie kogukond ütleb",
+    "based_on": "Põhineb {{count}} Google'i arvustusel",
+    "view_all": "Loe rohkem arvustusi Google'is",
+    "leave_review": "Jäta arvustus"
   }
 }

@@ -223,5 +223,11 @@
       "title": "Book Your Event",
       "description": "To book your event or training session, please contact us via email or any messenger. We will help you plan the perfect experience."
     }
+  },
+  "reviews": {
+    "title": "What Our Community Says",
+    "based_on": "Based on {{count}} Google reviews",
+    "view_all": "Read More Reviews on Google",
+    "leave_review": "Leave a Review"
   }
 }
