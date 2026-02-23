@@ -37,6 +37,7 @@ const GoogleReviews: React.FC = () => {
       language: i18n.language,
     });
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     importLibrary('places').then(async (places: any) => {
       if (!mapRef.current) return;
 
@@ -46,6 +47,7 @@ const GoogleReviews: React.FC = () => {
           placeId: PLACE_ID,
           fields: ['reviews', 'rating', 'user_ratings_total', 'name', 'url'],
         },
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (place: any, status: any) => {
           // Access PlacesServiceStatus from the places library or global google.maps if available
           // Since we use the library, we can check status string
@@ -63,7 +65,7 @@ const GoogleReviews: React.FC = () => {
           }
         }
       );
-    }).catch((err: any) => {
+    }).catch((err: Error) => {
       console.error('Loader Error:', err);
       setError('Failed to load Google Maps SDK');
       setLoading(false);
