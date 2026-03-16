@@ -43,7 +43,7 @@ const Pricing: React.FC = () => {
           </div>
           <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('pricing_page.boardgames_event_daily.title')}</h2>
-            <p className="text-4xl font-bold">€10</p>
+            <p className="text-4xl font-bold">€5</p>
             <p>{t('pricing_page.boardgames_event_daily.description')}</p>
           </div>
         </div>
