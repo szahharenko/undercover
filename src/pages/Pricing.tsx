@@ -17,12 +17,12 @@ const Pricing: React.FC = () => {
           <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('pricing_page.monthly_desk.title')}</h2>
             <p>{t('pricing_page.monthly_desk.subtitle')}</p>
-            <p className="text-4xl font-bold"><span className="font-medium line-through">€300</span> €250</p>
+            <p className="text-4xl font-bold">€250 + km</p>
             <p>{t('pricing_page.monthly_desk.description')}</p>
           </div>
           <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('pricing_page.day_pass.title')}</h2>
-            <p className="text-4xl font-bold mb-4">€30</p>
+            <p className="text-4xl font-bold mb-4">€25 + km</p>
             <p>{t('pricing_page.day_pass.description')}</p>
           </div>
           <div className="border p-6 rounded-lg shadow-lg">
