@@ -84,7 +84,7 @@ const GalleryByFolder: React.FC<{ mainImagesGlob: Record<string, unknown>, thumb
             >
               <img
                 src={image.thumb}
-                alt={`Board game ${index + 1}`}
+                alt={`${title} — photo ${index + 1} of ${galleryImages.length}`}
                 className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-120"
                 loading="lazy"
               />

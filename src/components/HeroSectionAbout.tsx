@@ -15,7 +15,7 @@ const HeroSectionAbout: React.FC = () => {
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
-        <img src={founders} alt="Undercover workspace" className="w-full h-full object-cover" />
+        <img src={founders} alt="Undercover Vibe founders — the team behind Tallinn's coziest coworking and board game club" className="w-full h-full object-cover" />
       </div>
       <div className="absolute w-full h-full z-2 opacity-50 bg-charcoal"/>
       <div className="relative z-10 max-w-4xl mx-auto">

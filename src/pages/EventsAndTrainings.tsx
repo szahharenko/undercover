@@ -5,6 +5,8 @@ import { logEvent } from '../servises/analytics';
 import { SocialIcons } from '../components/SocialIcons';
 import { SocialContacts } from '../components/SocialContacts';
 import { useSEO } from '../hooks/useSEO';
+import StructuredData from '../components/StructuredData';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const EventsAndTrainings: React.FC = () => {
   const { t } = useTranslation();
@@ -13,6 +15,52 @@ const EventsAndTrainings: React.FC = () => {
 
   return (
     <>
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }, { name: t('events_and_trainings'), path: '/events-and-trainings' }]} />
+      <StructuredData data={{
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        'name': 'Undercover Vibe Event & Training Space',
+        'description': t('seo.eventsTrainings.description'),
+        'provider': {
+          '@type': 'LocalBusiness',
+          'name': 'Undercover Vibe',
+          'url': 'https://undercover.ee',
+        },
+        'areaServed': {
+          '@type': 'City',
+          'name': 'Tallinn',
+        },
+        'hasOfferCatalog': {
+          '@type': 'OfferCatalog',
+          'name': t('events_trainings_page.pricing.title'),
+          'itemListElement': [
+            {
+              '@type': 'Offer',
+              'itemOffered': {
+                '@type': 'Service',
+                'name': t('events_trainings_page.pricing.whole_space.title'),
+                'description': t('events_trainings_page.pricing.whole_space.description'),
+              },
+            },
+            {
+              '@type': 'Offer',
+              'itemOffered': {
+                '@type': 'Service',
+                'name': t('events_trainings_page.pricing.training_room.title'),
+                'description': t('events_trainings_page.pricing.training_room.description'),
+              },
+            },
+            {
+              '@type': 'Offer',
+              'itemOffered': {
+                '@type': 'Service',
+                'name': t('events_trainings_page.pricing.team_building.title'),
+                'description': t('events_trainings_page.pricing.team_building.description'),
+              },
+            },
+          ],
+        },
+      }} />
       <HeroSectionEventsTrainings />
 
       <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto">

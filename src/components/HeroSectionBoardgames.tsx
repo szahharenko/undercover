@@ -14,7 +14,7 @@ const HeroSectionBgs: React.FC = () => {
       className="main-hero relative bg-cream min-h-[60vh] flex items-center justify-center text-center p-8 overflow-hidden hero-section"
     >
       <div className="absolute w-full h-full z-1">
-        <img src={bgs} alt="Undercover workspace" className="w-full h-full object-cover" />
+        <img src={bgs} alt="Board game party night at Undercover Vibe in Tallinn" className="w-full h-full object-cover" />
       </div>
       <div className="absolute w-full h-full z-2 opacity-50 bg-charcoal"/>
       <div className="relative z-10 max-w-4xl mx-auto">

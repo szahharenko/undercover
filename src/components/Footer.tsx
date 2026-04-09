@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="">
           <div className='flex items-center w-full justify-between max-w-[700px] mx-auto'>
-            <img src={cat} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
+            <img src={cat} alt="Undercover Vibe mascot cat illustration" className='max-h-[150px] h-auto'/>
             <div className='flex flex-col md:flex-row w-full items-center'>
               <div className='flex text-center flex-col p-2 w-full md:w-[50%]'>
                 <h3 className="text-xl font-bold mb-4">{t('footer.social_title')}</h3>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
                 <SocialContacts/>
               </div>
             </div>
-            <img src={dog} alt="Undercover vibe logo" className='max-h-[150px] h-auto'/>
+            <img src={dog} alt="Undercover Vibe mascot dog illustration" className='max-h-[150px] h-auto'/>
           </div>
         </div>
 

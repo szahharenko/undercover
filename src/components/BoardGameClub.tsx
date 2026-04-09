@@ -50,18 +50,18 @@ const BoardGameClub: React.FC = () => {
   }
   const features = [
     {
-      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
+      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="Private game tables icon" className="w-12 h-12 mb-4" />,
       title: t('board_game_club.features.tables.title'),
       description: t('board_game_club.features.tables.description'),
     },
     {
-      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
+      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="Events and tournaments icon" className="w-12 h-12 mb-4" />,
       title: t('board_game_club.features.tournaments.title'),
       description: t('board_game_club.features.tournaments.description'),
       action: eventsAction
     },
     {
-      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="BGG Icon" className="w-12 h-12 mb-4" />,
+      icon: () => <img src="https://boardgamegeek.com/favicon.ico" alt="Board game collection icon" className="w-12 h-12 mb-4" />,
       title: t('board_game_club.features.collection.title'),
       description: t('board_game_club.features.collection.description'),
     },
@@ -76,7 +76,7 @@ const BoardGameClub: React.FC = () => {
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
-        <img src={bggs} alt="Undercover workspace" className="w-full h-full object-cover" />
+        <img src={bggs} alt="Board game collection shelves at Undercover Vibe game club" className="w-full h-full object-cover" />
       </div>
       <div className="absolute w-full h-full z-2 opacity-80 bg-charcoal"/>
 

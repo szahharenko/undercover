@@ -6,6 +6,8 @@ import EventsCalendar from '../components/EventsCalendar';
 import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
 import { useSEO } from '../hooks/useSEO';
+import StructuredData from '../components/StructuredData';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
@@ -27,6 +29,47 @@ const Pricing: React.FC = () => {
 
   return (
     <>
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }, { name: t('board_games'), path: '/boardgames' }]} />
+      <StructuredData data={{
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'Board Game Pricing at Undercover Vibe',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'item': {
+              '@type': 'Offer',
+              'name': t('pricing_page.boardgames_event_club.title'),
+              'price': '150',
+              'priceCurrency': 'EUR',
+              'description': t('pricing_page.boardgames_event_club.description'),
+            },
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'item': {
+              '@type': 'Offer',
+              'name': t('pricing_page.boardgames_event_table.title'),
+              'price': '50',
+              'priceCurrency': 'EUR',
+              'description': t('pricing_page.boardgames_event_table.description'),
+            },
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'item': {
+              '@type': 'Offer',
+              'name': t('pricing_page.boardgames_event_daily.title'),
+              'price': '5',
+              'priceCurrency': 'EUR',
+              'description': t('pricing_page.boardgames_event_daily.description'),
+            },
+          },
+        ],
+      }} />
       <HeroSectionBgs />
       <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('bgs_gallery.title')} description={t('bgs_gallery.description')} />
       <BoardGameClub />

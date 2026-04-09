@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import HeroSectionAbout from '../components/HeroSectionAbout';
 import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
@@ -10,6 +11,7 @@ const AboutUs: React.FC = () => {
   logEvent({ category: 'page_view', action: 'view_about_us_page', label: 'User viewed the about us page' });
   return (
     <>
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }, { name: t('about_us'), path: '/about' }]} />
       <HeroSectionAbout />
       <div className="container mx-auto px-4 py-16">
         <div className="p-20 max-w-[700px] mx-auto text-center">

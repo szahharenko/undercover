@@ -4,6 +4,8 @@ import HeroSectionPricing from '../components/HeroSectionPricing';
 import Faq from '../components/Faq';
 import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
+import StructuredData from '../components/StructuredData';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
@@ -11,6 +13,42 @@ const Pricing: React.FC = () => {
   logEvent({ category: 'page_view', action: 'view_pricing_page', label: 'User viewed the pricing page' });
   return (
     <>
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }, { name: t('pricing'), path: '/pricing' }]} />
+      <StructuredData data={{
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        'name': 'Undercover Vibe Coworking',
+        'description': t('seo.pricing.description'),
+        'brand': { '@type': 'Brand', 'name': 'Undercover Vibe' },
+        'offers': [
+          {
+            '@type': 'Offer',
+            'name': t('pricing_page.monthly_desk.title'),
+            'price': '250',
+            'priceCurrency': 'EUR',
+            'priceValidUntil': '2026-12-31',
+            'availability': 'https://schema.org/InStock',
+            'url': 'https://undercover.ee/pricing',
+          },
+          {
+            '@type': 'Offer',
+            'name': t('pricing_page.day_pass.title'),
+            'price': '25',
+            'priceCurrency': 'EUR',
+            'priceValidUntil': '2026-12-31',
+            'availability': 'https://schema.org/InStock',
+            'url': 'https://undercover.ee/pricing',
+          },
+          {
+            '@type': 'Offer',
+            'name': t('pricing_page.free_trial.title'),
+            'price': '0',
+            'priceCurrency': 'EUR',
+            'availability': 'https://schema.org/InStock',
+            'url': 'https://undercover.ee/pricing',
+          },
+        ],
+      }} />
       <HeroSectionPricing />
       <div className="container mx-auto px-4 py-8 max-w-[1200px] mx-auto">
         <h1 className="text-3xl font-bold mb-2">{t('pricing_page.coworking.title')}</h1>

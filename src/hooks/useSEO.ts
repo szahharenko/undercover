@@ -10,9 +10,12 @@ interface SEOProps {
 const BASE_URL = 'https://undercover.ee';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
+/** Supported languages for hreflang tags */
+const LANGUAGES = ['en', 'et', 'ru'] as const;
+
 /**
- * Lightweight SEO hook — sets document title and meta tags per page.
- * Works with pre-rendering (vite-ssg) since tags are set during SSG build.
+ * Lightweight SEO hook — sets document title, meta tags, canonical, and hreflang per page.
+ * Works with pre-rendering since tags are set during SSG build.
  */
 export function useSEO({ title, description, path, ogImage }: SEOProps) {
   useEffect(() => {
@@ -34,6 +37,23 @@ export function useSEO({ title, description, path, ogImage }: SEOProps) {
       el.setAttribute('content', content);
     };
 
+    // Helper to set/create link tags
+    const setLink = (rel: string, _key: string, href: string, extraAttrs?: Record<string, string>) => {
+      const selector = extraAttrs
+        ? `link[rel="${rel}"][${Object.entries(extraAttrs).map(([k, v]) => `${k}="${v}"`).join('][')}]`
+        : `link[rel="${rel}"]`;
+      let el = document.querySelector(selector) as HTMLLinkElement | null;
+      if (!el) {
+        el = document.createElement('link');
+        el.setAttribute('rel', rel);
+        if (extraAttrs) {
+          Object.entries(extraAttrs).forEach(([k, v]) => el!.setAttribute(k, v));
+        }
+        document.head.appendChild(el);
+      }
+      el.setAttribute('href', href);
+    };
+
     // Standard meta
     setMeta('name', 'description', description);
 
@@ -52,12 +72,15 @@ export function useSEO({ title, description, path, ogImage }: SEOProps) {
     setMeta('name', 'twitter:card', 'summary_large_image');
 
     // Canonical link
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
+    setLink('canonical', 'canonical', canonicalUrl);
+
+    // Hreflang tags — tell search engines about language versions
+    for (const lang of LANGUAGES) {
+      const langUrl = `${canonicalUrl}${path === '/' ? '' : ''}?lng=${lang}`;
+      setLink('alternate', `hreflang-${lang}`, langUrl, { hreflang: lang });
     }
-    canonical.setAttribute('href', canonicalUrl);
+    // x-default hreflang (points to the base URL without language param)
+    setLink('alternate', 'hreflang-x-default', canonicalUrl, { hreflang: 'x-default' });
+
   }, [title, description, path, ogImage]);
 }

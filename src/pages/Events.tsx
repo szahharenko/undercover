@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Calendar, Gamepad2, Users } from 'lucide-react';
 import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
+import StructuredData from '../components/StructuredData';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const Events: React.FC = () => {
   const { t } = useTranslation();
@@ -37,6 +39,37 @@ const Events: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 py-16">
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }, { name: t('events'), path: '/events' }]} />
+      <StructuredData data={{
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': t('events_page.title'),
+        'itemListElement': events.map((event, index) => ({
+          '@type': 'ListItem',
+          'position': index + 1,
+          'item': {
+            '@type': 'Event',
+            'name': event.title,
+            'description': event.description,
+            'location': {
+              '@type': 'Place',
+              'name': 'Undercover Vibe',
+              'address': {
+                '@type': 'PostalAddress',
+                'streetAddress': 'Kivimurru 34-6',
+                'addressLocality': 'Tallinn',
+                'postalCode': '11411',
+                'addressCountry': 'EE',
+              },
+            },
+            'organizer': {
+              '@type': 'Organization',
+              'name': 'Undercover Vibe',
+              'url': 'https://undercover.ee',
+            },
+          },
+        })),
+      }} />
       <h1 className="text-5xl font-extrabold text-center text-charcoal mb-6">{t('events_page.title')}</h1>
       <p className="text-xl text-center text-charcoal/80 max-w-2xl mx-auto mb-16">
         {t('events_page.subtitle')}

@@ -8,6 +8,8 @@ import GalleryByFolder from '../components/GalleryByFolder';
 import { useTranslation } from 'react-i18next';
 import GoogleReviews from '../components/Review';
 import { useSEO } from '../hooks/useSEO';
+import StructuredData from '../components/StructuredData';
+import BreadcrumbSchema from '../components/BreadcrumbSchema';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -27,6 +29,18 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <StructuredData data={{
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        'name': 'Undercover Vibe',
+        'url': 'https://undercover.ee',
+        'potentialAction': {
+          '@type': 'SearchAction',
+          'target': 'https://undercover.ee/?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      }} />
+      <BreadcrumbSchema items={[{ name: t('home'), path: '/' }]} />
       <HeroSection />
       <CoworkingExperience />
       <BoardGameClub />
