@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /free-trial
+
+Sitemap: https://undercover.ee/sitemap.xml

@@ -5,9 +5,11 @@ import HeroSectionBgs from '../components/HeroSectionBoardgames';
 import EventsCalendar from '../components/EventsCalendar';
 import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
+import { useSEO } from '../hooks/useSEO';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.boardgames.title'), description: t('seo.boardgames.description'), path: '/boardgames' });
   logEvent({ category: 'page_view', action: 'view_boardgames_page', label: 'User viewed the boardgames page' });
   // scroll to #events-calendar on load if hash is present
   React.useEffect(() => {

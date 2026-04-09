@@ -2,9 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Calendar, Gamepad2, Users } from 'lucide-react';
 import { logEvent } from '../servises/analytics';
+import { useSEO } from '../hooks/useSEO';
 
 const Events: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.events.title'), description: t('seo.events.description'), path: '/events' });
   logEvent({ category: 'page_view', action: 'view_events_page', label: 'User viewed the events page' });
   const events = [
     {

@@ -4,9 +4,11 @@ import HeroSectionEventsTrainings from '../components/HeroSectionEventsTrainings
 import { logEvent } from '../servises/analytics';
 import { SocialIcons } from '../components/SocialIcons';
 import { SocialContacts } from '../components/SocialContacts';
+import { useSEO } from '../hooks/useSEO';
 
 const EventsAndTrainings: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.eventsTrainings.title'), description: t('seo.eventsTrainings.description'), path: '/events-and-trainings' });
   logEvent({ category: 'page_view', action: 'view_events_trainings_page', label: 'User viewed the events and trainings page' });
 
   return (

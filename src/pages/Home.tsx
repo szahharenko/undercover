@@ -7,9 +7,11 @@ import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
 import { useTranslation } from 'react-i18next';
 import GoogleReviews from '../components/Review';
+import { useSEO } from '../hooks/useSEO';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.home.title'), description: t('seo.home.description'), path: '/' });
 
   logEvent({ category: 'page_view', action: 'view_home_page', label: 'User viewed the home page' });
 

@@ -3,10 +3,11 @@ import { useTranslation } from 'react-i18next';
 import HeroSectionPricing from '../components/HeroSectionPricing';
 import Faq from '../components/Faq';
 import { logEvent } from '../servises/analytics';
-
+import { useSEO } from '../hooks/useSEO';
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.pricing.title'), description: t('seo.pricing.description'), path: '/pricing' });
   logEvent({ category: 'page_view', action: 'view_pricing_page', label: 'User viewed the pricing page' });
   return (
     <>

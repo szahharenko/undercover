@@ -2,9 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import HeroSectionAbout from '../components/HeroSectionAbout';
 import { logEvent } from '../servises/analytics';
+import { useSEO } from '../hooks/useSEO';
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
+  useSEO({ title: t('seo.about.title'), description: t('seo.about.description'), path: '/about' });
   logEvent({ category: 'page_view', action: 'view_about_us_page', label: 'User viewed the about us page' });
   return (
     <>

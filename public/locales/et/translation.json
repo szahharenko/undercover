@@ -230,5 +230,35 @@
     "based_on": "Põhineb {{count}} Google'i arvustusel",
     "view_all": "Loe rohkem arvustusi Google'is",
     "leave_review": "Jäta arvustus"
+  },
+  "seo": {
+    "home": {
+      "title": "Undercover Vibe — Koostööruum ja Lauamänguklubi Tallinnas",
+      "description": "Hubane koostööruum päeval, VIP lauamänguklubi õhtul. Ergonoomiline töökeskkond, kiire WiFi ja 200+ lauamängu Tallinnas."
+    },
+    "about": {
+      "title": "Meist — Undercover Vibe",
+      "description": "Meie lugu: kuidas koostööruum sai Tallinna lemmik lauamänguklubiks. Tutvu Undercover Vibe meeskonnaga."
+    },
+    "pricing": {
+      "title": "Hinnakiri — Undercover Vibe Koostööruum Tallinn",
+      "description": "Paindlikud koostööruumi plaanid alates €25/päev. Kuupiletid, päevapiletid, tasuta proovipäev ja koosolekuruumid Tallinnas."
+    },
+    "boardgames": {
+      "title": "Lauamängud — Undercover Vibe Mänguklubi Tallinn",
+      "description": "Lauamängud, VIP mängusaal, teemaõhtud. Broneeri oma laud Tallinna kõige hubasemas mänguklubis."
+    },
+    "events": {
+      "title": "Üritused — Undercover Vibe Tallinn",
+      "description": "Tulevased mänguõhtud, Maffia, D&D, töötoad ja kogukonna üritused. Vaata kalendrit ja liitu meiega!"
+    },
+    "eventsTrainings": {
+      "title": "Üritused ja Koolitused — Undercover Vibe Tallinn",
+      "description": "Korraldage oma ettevõtte üritus, koolitus või meeskonna üritus Undercover Vibe'is. Paindlik ruumide rent Tallinnas."
+    },
+    "freeTrial": {
+      "title": "Tasuta Proovipäev — Undercover Vibe Koostööruum Tallinn",
+      "description": "Proovi Tallinna kõige hubasemat koostööruumi tasuta. Täielik juurdepääs tööruumile, kohv, kiire WiFi ja lauamängud õhtul."
+    }
   }
 }

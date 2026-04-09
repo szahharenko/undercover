@@ -5,6 +5,7 @@ import logo from '../assets/logo-undercover.png';
 import heroImg from '../assets/main-hero-2.jpg';
 import GalleryByFolder from '../components/GalleryByFolder';
 import { useTranslation } from 'react-i18next';
+import { useSEO } from '../hooks/useSEO';
 
 const perks = [
   { icon: '🖥️', label: 'Full workspace access' },
@@ -17,6 +18,7 @@ const FacebookCampaign: React.FC = () => {
   const mainImagesGlob = import.meta.glob(`../assets/office/*.{jpg,jpeg,png,webp}`, { eager: true, import: 'default' });
   const thumbsGlob = import.meta.glob(`../assets/office/thumbs/*.{jpg,jpeg,png,webp}`, { eager: true, import: 'default' });
   const { t } = useTranslation();
+  useSEO({ title: t('seo.freeTrial.title'), description: t('seo.freeTrial.description'), path: '/free-trial' });
 
   return <div className="min-h-screen bg-cream font-sans">
 

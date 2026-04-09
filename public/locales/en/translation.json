@@ -229,5 +229,35 @@
     "based_on": "Based on {{count}} Google reviews",
     "view_all": "Read More Reviews on Google",
     "leave_review": "Leave a Review"
+  },
+  "seo": {
+    "home": {
+      "title": "Undercover Vibe — Coworking & Board Game Club in Tallinn",
+      "description": "Cozy coworking space by day, VIP board game club by night. Ergonomic workspace, fast WiFi, meeting rooms, and 200+ board games in Tallinn, Estonia."
+    },
+    "about": {
+      "title": "About Us — Undercover Vibe",
+      "description": "Our story: how a coworking space became Tallinn's favorite board game club. Meet the team behind Undercover Vibe."
+    },
+    "pricing": {
+      "title": "Pricing — Undercover Vibe Coworking Tallinn",
+      "description": "Flexible coworking plans from €25/day. Monthly desks, day passes, free trial, and private meeting rooms in Tallinn."
+    },
+    "boardgames": {
+      "title": "Board Games — Undercover Vibe Game Club Tallinn",
+      "description": "Board games, VIP gaming lounge, themed game nights. Book your table at Tallinn's coziest board game club."
+    },
+    "events": {
+      "title": "Events — Undercover Vibe Tallinn",
+      "description": "Upcoming game nights, Mafia, D&D, workshops, and community events. Check the calendar and join us at Undercover Vibe!"
+    },
+    "eventsTrainings": {
+      "title": "Events & Trainings — Undercover Vibe Tallinn",
+      "description": "Host your corporate event, training, or team building at Undercover Vibe. Flexible space rental in Tallinn with full amenities."
+    },
+    "freeTrial": {
+      "title": "Free Trial Day — Undercover Vibe Coworking Tallinn",
+      "description": "Try Tallinn's coziest coworking space for free. Full workspace access, specialty coffee, fast WiFi, and board games in the evening."
+    }
   }
 }
