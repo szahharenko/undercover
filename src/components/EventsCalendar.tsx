@@ -8,6 +8,9 @@ import FullCalendar from '@fullcalendar/react';
 import dune from '../assets/dune-cover.jpg';
 import kanban from '../assets/kanban-cover.jpg';
 import noThanks from '../assets/nothanks.webp';
+import austria from '../assets/austria.jpg';
+import istanbul from '../assets/istanbul.webp';
+import balance from '../assets/balance.jpg'
 
 
 const EventsCalendar: React.FC = () => {
@@ -32,16 +35,52 @@ const EventsCalendar: React.FC = () => {
       }
     },
     {
-      title: `${t('events_calendar.game_weekend')}`,
+      title: `${t('events_calendar.game_evening')}`,
+      start: '2026-03-21T16:00:00',
+      end: '2026-03-21T23:59:00',
+      extendedProps: {
+        description: `
+          <img src="${austria}" alt="Austria" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
+          <img src="${istanbul}" alt="Istanbul" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
+          <img src="${dune}" alt="Dune: Uprising" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;"/>
+          <strong>Grand Austria Hotel</strong>, Dune: Uprising, Istanbul.<br/>
+          Register in <a href="https://t.me/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Telegram"><u>Telegram</u></a> or suggest your games<br/>
+          ☕ Hot drinks included<br/>
+          🍪🥐🥨 Snacks provided<br/>
+          📍 Kivimurru tn 34 - 6, 11411 Tallinn<br/>
+        `
+      }
+    },
+    {
+      title: `${t('events_calendar.game_evening')}`,
+      start: '2026-03-28T16:00:00',
+      end: '2026-03-28T23:59:00',
+      extendedProps: {
+        description: `
+          Register in <a href="https://t.me/undercovervibe" className="hover:text-sage-green transition-colors" aria-label="Telegram"><u>Telegram</u></a> or suggest your games<br/>
+          ☕ Hot drinks included<br/>
+          🍪🥐🥨 Snacks provided<br/>
+          📍 Kivimurru tn 34 - 6, 11411 Tallinn<br/>
+        `
+      }
+    },
+    {
+      title: `🕵️ Private Event (Balance Tallinn)`,
       date: '2026-02-07',
-      startTime: '12:00',
-      endTime: '22:00',
+      startTime: '14:00',
+      endTime: '20:00',
       rrule: {
         freq: 'weekly',
-        byweekday: ['sa', 'su'],
-        dtstart: '2026-02-07T12:00:00'
+        byweekday: ['su'],
+        dtstart: '2026-02-07T14:00:00'
       },
-      duration: '09:00'
+      extendedProps: {
+        description: `<div style="clear: both; padding-top: 0.5rem;"/>
+          <img src="${balance}" alt="Balance" style="height: 8rem;margin-right: 1rem;margin-bottom: 0.5rem;float:left;width:50px;height:50px;"/>
+          Сообщество любителей настольных игр: от лёгких филлеров до хардкорных стратегий. Регулярные встречи, честная конкуренция и хорошая компания.
+        `
+      },
+      duration: '04:00'
     },
   ];
 
