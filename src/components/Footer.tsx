@@ -39,6 +39,9 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 text-sm">
+          <p className="font-bold mb-1">{t('footer.hours_title')}</p>
+          <p>{t('footer.hours_day_pass')}</p>
+          <p className="mb-4">{t('footer.hours_members')}</p>
           &copy; {new Date().getFullYear()} Undercover Vibe. {t('footer.rights_reserved')}
         </div>
       </div>

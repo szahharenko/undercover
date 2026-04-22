@@ -1,4 +1,4 @@
-# Tech Stack — Undercover Vibe
+# Tech Stack - Undercover Vibe
 
 ## Core
 | Layer | Choice | Version |
@@ -6,7 +6,7 @@
 | Language | **TypeScript** | ~5.9 (strict mode) |
 | UI Library | **React** | 19 |
 | Build Tool | **Vite** | 7 |
-| Module format | ESM (`"type": "module"`) | — |
+| Module format | ESM (`"type": "module"`) | - |
 
 ## Styling
 - **Tailwind CSS v4** (JIT, PostCSS plugin) with custom design tokens:
@@ -15,33 +15,33 @@
   - Border radius: `xl` = 1rem, `2xl` = 1.5rem
 
 ## Routing & State
-- **React Router DOM v7** — client-side routing
+- **React Router DOM v7** - client-side routing
 
 ## Animation
-- **Framer Motion v12** — page/component animations
+- **Framer Motion v12** - page/component animations
 
 ## Internationalisation
-- **i18next + react-i18next** — translations
-- `i18next-browser-languagedetector` — auto-detect language
-- `i18next-http-backend` — lazy-load translation JSON files
+- **i18next + react-i18next** - translations
+- `i18next-browser-languagedetector` - auto-detect language
+- `i18next-http-backend` - lazy-load translation JSON files
 
 ## Icons
 - **Lucide React** + **React Icons** (dual icon libraries)
 
 ## Forms & Data
-- **React Datepicker** — date selection in forms
+- **React Datepicker** - date selection in forms
 
 ## Calendar
-- **FullCalendar** (React adapter) — `daygrid`, `timegrid`, `list`, `rrule` views
+- **FullCalendar** (React adapter) - `daygrid`, `timegrid`, `list`, `rrule` views
 
 ## Maps
-- **@googlemaps/js-api-loader** — Google Maps integration
+- **@googlemaps/js-api-loader** - Google Maps integration
 
 ## Analytics
-- **react-ga4** — Google Analytics 4
+- **react-ga4** - Google Analytics 4
 
 ## Compiler Optimisation
-- **babel-plugin-react-compiler** — React compiler (auto-memoisation, enabled via Vite's Babel plugin)
+- **babel-plugin-react-compiler** - React compiler (auto-memoisation, enabled via Vite's Babel plugin)
 
 ## Linting
 - ESLint v9 (flat config) + `typescript-eslint` + `eslint-plugin-react-hooks` + `eslint-plugin-react-refresh`

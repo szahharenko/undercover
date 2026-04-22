@@ -9,6 +9,7 @@ import BoardGames from './pages/BoardGames';
 import Events from './pages/Events';
 import EventsAndTrainings from './pages/EventsAndTrainings';
 import FacebookCampaign from './pages/FacebookCampaign';
+import LocaleRedirect from './components/LocaleRedirect';
 import ReactGA from "react-ga4";
 
 const CAMPAIGN_ROUTES = ['/free-trial'];
@@ -28,6 +29,9 @@ const AppContent: React.FC = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/events-and-trainings" element={<EventsAndTrainings />} />
         <Route path="/free-trial" element={<FacebookCampaign />} />
+        <Route path="/en/*" element={<LocaleRedirect lang="en" />} />
+        <Route path="/et/*" element={<LocaleRedirect lang="et" />} />
+        <Route path="/ru/*" element={<LocaleRedirect lang="ru" />} />
       </Routes>
       {!isCampaignPage && <Footer />}
     </div>

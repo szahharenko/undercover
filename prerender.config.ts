@@ -2,7 +2,7 @@
  * Pre-rendering configuration for Vite.
  *
  * This file configures vite-plugin-prerender to generate static HTML
- * for each route at build time. This is critical for SEO — without it,
+ * for each route at build time. This is critical for SEO - without it,
  * search engine bots see an empty <div id="root"></div>.
  *
  * SETUP:

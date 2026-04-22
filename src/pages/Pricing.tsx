@@ -55,7 +55,7 @@ const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('pricing_page.monthly_desk.title')}</h2>
-            <p>{t('pricing_page.monthly_desk.subtitle')}</p>
+            <p>{t('pricing_page.monthly_desk.subtitle')} *</p>
             <p className="text-4xl font-bold">€250 + km</p>
             <p>{t('pricing_page.monthly_desk.description')}</p>
           </div>

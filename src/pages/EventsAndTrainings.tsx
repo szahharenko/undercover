@@ -67,10 +67,6 @@ const EventsAndTrainings: React.FC = () => {
         <h1 className="text-3xl font-bold mt-4 mb-2">{t('events_trainings_page.pricing.title')}</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <div className="border p-6 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-2">{t('events_trainings_page.pricing.whole_space.title')}</h2>
-            <p>{t('events_trainings_page.pricing.whole_space.description')}</p>
-          </div>
-          <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('events_trainings_page.pricing.training_room.title')}</h2>
             <p>{t('events_trainings_page.pricing.training_room.description')}</p>
           </div>

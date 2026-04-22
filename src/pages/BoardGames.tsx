@@ -41,7 +41,7 @@ const Pricing: React.FC = () => {
             'item': {
               '@type': 'Offer',
               'name': t('pricing_page.boardgames_event_club.title'),
-              'price': '150',
+              'price': '',
               'priceCurrency': 'EUR',
               'description': t('pricing_page.boardgames_event_club.description'),
             },
@@ -78,7 +78,7 @@ const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
           <div className="border p-6 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-2">{t('pricing_page.boardgames_event_club.title')}</h2>
-            <p className="text-4xl font-bold">€150</p>
+            <p className="text-4xl font-bold">@request</p>
             <p>{t('pricing_page.boardgames_event_club.description')}</p>
           </div>
           <div className="border p-6 rounded-lg shadow-lg">

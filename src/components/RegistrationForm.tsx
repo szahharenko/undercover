@@ -128,7 +128,9 @@ const RegistrationForm: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-charcoal text-lg font-medium mb-2">{t('form.phone')}</label>
+                <label htmlFor="phone" className="block text-charcoal text-lg font-medium mb-2">
+                  {t('form.phone')} <span className="text-charcoal/50 text-sm font-normal">({t('form.optional')})</span>
+                </label>
                 <input
                   type="tel"
                   id="phone"
@@ -137,7 +139,6 @@ const RegistrationForm: React.FC = () => {
                   onChange={handleChange}
                   placeholder={t('form.phone_placeholder')}
                   className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all"
-                  required
                 />
               </div>
               <div className="relative">
@@ -199,7 +200,7 @@ const RegistrationForm: React.FC = () => {
             <a href="mailto:info@undercover.ee" className="text-coffee hover:underline ml-2">
                <MdMailOutline size={16} style={{display: 'inline'}} /> info@undercover.ee
             </a><br/>
-            <a href="tel:+37255512345" className="text-coffee hover:underline ml-2">
+            <a href="tel:+3725154369" className="text-coffee hover:underline ml-2">
               <FaPhone size={16} style={{display: 'inline'}} />+372 5154369
             </a>
 
@@ -207,7 +208,7 @@ const RegistrationForm: React.FC = () => {
           <div className="mt-2">
           </div>
           <div>
-            <a href="https://t.me/Acrashik" className="text-coffee hover:underline ml-2"><FaTelegramPlane style={{display: 'inline'}} size={16} /> Telegram</a> |
+            <a href="https://t.me/acrashik" className="text-coffee hover:underline ml-2"><FaTelegramPlane style={{display: 'inline'}} size={16} /> Telegram</a> |
             <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2"><FaWhatsapp style={{display: 'inline'}} size={16} /> WhatsApp</a> |
             <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2"><FaFacebook style={{display: 'inline'}} size={16} /> Facebook</a>
             <a href="https://www.instagram.com/undercovertallinn" className="text-coffee hover:underline ml-2"><FaInstagram style={{display: 'inline'}} size={16} /> Instagram</a>

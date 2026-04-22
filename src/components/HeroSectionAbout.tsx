@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import founders from '../assets/us-hero.jpg';
+import founders from '../assets/founders3.jpg';
 
 const HeroSectionAbout: React.FC = () => {
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const HeroSectionAbout: React.FC = () => {
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
-        <img src={founders} alt="Undercover Vibe founders — the team behind Tallinn's coziest coworking and board game club" className="w-full h-full object-cover" />
+        <img src={founders} alt="Undercover Vibe founders - the team behind Tallinn's coziest coworking and board game club" className="w-full h-full object-cover" />
       </div>
       <div className="absolute w-full h-full z-2 opacity-50 bg-charcoal"/>
       <div className="relative z-10 max-w-4xl mx-auto">
@@ -23,7 +23,7 @@ const HeroSectionAbout: React.FC = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-5xl md:text-5xl font-extrabold text-white mb-4"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-4"
         >
           {t('about_us_page.title')}
         </motion.h2>

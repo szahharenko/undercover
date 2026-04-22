@@ -14,12 +14,12 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 const LANGUAGES = ['en', 'et', 'ru'] as const;
 
 /**
- * Lightweight SEO hook — sets document title, meta tags, canonical, and hreflang per page.
+ * Lightweight SEO hook - sets document title, meta tags, canonical, and hreflang per page.
  * Works with pre-rendering since tags are set during SSG build.
  */
 export function useSEO({ title, description, path, ogImage }: SEOProps) {
   useEffect(() => {
-    const fullTitle = title.includes('Undercover') ? title : `${title} — Undercover Vibe`;
+    const fullTitle = title.includes('Undercover') ? title : `${title} - Undercover Vibe`;
     const canonicalUrl = `${BASE_URL}${path}`;
     const image = ogImage || DEFAULT_OG_IMAGE;
 
@@ -74,7 +74,7 @@ export function useSEO({ title, description, path, ogImage }: SEOProps) {
     // Canonical link
     setLink('canonical', 'canonical', canonicalUrl);
 
-    // Hreflang tags — tell search engines about language versions
+    // Hreflang tags - tell search engines about language versions
     for (const lang of LANGUAGES) {
       const langUrl = `${canonicalUrl}${path === '/' ? '' : ''}?lng=${lang}`;
       setLink('alternate', `hreflang-${lang}`, langUrl, { hreflang: lang });

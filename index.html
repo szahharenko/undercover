@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/src/assets/logo-undercover-web.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undercover Vibe — Coworking & Board Game Club in Tallinn</title>
+    <title>Undercover Vibe - Coworking & Board Game Club in Tallinn</title>
     <meta name="description" content="Cozy coworking space by day, VIP board game club by night. Ergonomic workspace, fast WiFi, meeting rooms, and 200+ board games in Tallinn, Estonia." />
     <meta name="keywords" content="coworking Tallinn, board games Tallinn, coworking space Estonia, game cafe Tallinn, настольные игры Таллинн, koostööruum Tallinn" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://undercover.ee/" />
-    <meta property="og:title" content="Undercover Vibe — Coworking & Board Game Club in Tallinn" />
+    <meta property="og:title" content="Undercover Vibe - Coworking & Board Game Club in Tallinn" />
     <meta property="og:description" content="Cozy coworking space by day, VIP board game club by night. Ergonomic workspace, fast WiFi, and 200+ board games in Tallinn." />
     <meta property="og:image" content="https://undercover.ee/og-image.jpg" />
     <meta property="og:locale" content="en_US" />
@@ -21,32 +21,42 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Undercover Vibe — Coworking & Board Game Club in Tallinn" />
+    <meta name="twitter:title" content="Undercover Vibe - Coworking & Board Game Club in Tallinn" />
     <meta name="twitter:description" content="Cozy coworking space by day, VIP board game club by night. Ergonomic workspace, fast WiFi, and 200+ board games in Tallinn." />
     <meta name="twitter:image" content="https://undercover.ee/og-image.jpg" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["CoworkingSpace", "LocalBusiness"],
       "name": "Undercover Vibe",
       "alternateName": "Undercover Coworking & Board Game Club",
       "image": "https://undercover.ee/images/logo.png",
+      "logo": "https://undercover.ee/images/logo.png",
       "@id": "https://undercover.ee",
       "url": "https://undercover.ee",
       "telephone": "+3725154369",
-      "priceRange": "$$",
+      "email": "hello@undercover.ee",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Kivimurru 34-6",
         "addressLocality": "Tallinn",
         "postalCode": "11411",
+        "addressRegion": "Harju",
         "addressCountry": "EE"
       },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 59.426685,
         "longitude": 24.793315
+      },
+      "hasMap": "https://maps.app.goo.gl/siNDMNinPGBeVEV28",
+      "areaServed": {
+        "@type": "City",
+        "name": "Tallinn"
       },
       "openingHoursSpecification": [
         {
@@ -59,21 +69,29 @@
             "Friday"
           ],
           "opens": "09:00",
-          "closes": "22:00"
+          "closes": "18:00",
+          "description": "Day pass access. Monthly members have 24/7 access via key card."
         }
       ],
       "amenityFeature": [
-        "High-speed WiFi",
-        "Meeting rooms",
-        "Quiet zones",
-        "24/7 access",
-        "Coworking spaces",
-        "Board game library",
-        "VIP gaming lounge",
-        "Coffee and snacks",
-        "Ergonomic chairs",
-        "Community events"
+        {"@type": "LocationFeatureSpecification", "name": "High-speed WiFi", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Meeting rooms", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Quiet zones", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "24/7 access for members", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Board game library (1000+ games)", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Specialty coffee & tea", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Ergonomic IKEA Markus chairs", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Community events", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true}
       ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "12",
+        "reviewCount": "12"
+      },
       "sameAs": [
         "https://www.facebook.com/undercover.vibe",
         "https://t.me/undercovervibe"
