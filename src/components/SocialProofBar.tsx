@@ -44,10 +44,10 @@ const SocialProofBar: React.FC = () => {
           href="https://maps.app.goo.gl/siNDMNinPGBeVEV28"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-coffee hover:underline font-medium"
+          className="inline-flex items-center gap-1.5 text-coffee hover:underline font-medium p-2"
         >
-          <FaGoogle size={14} />
-          {t('social_proof.see_on_google')}
+            <span className='inline px-2'><FaGoogle size={14} /></span>
+            {t('social_proof.see_on_google')}
         </a>
       </div>
     </motion.aside>
