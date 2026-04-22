@@ -343,4 +343,3 @@ These are isolated, low-risk, ship-in-an-hour-each fixes. Each one has a real co
 - The pricing card decision (delete the discount line vs. extend vs. swap promo) needs your call. Defaulting to "delete the subtitle" if no answer.
 - The footer copyright line "Õigused ei ole kaitstud" / "No rights reserved" is a charming joke but reads as amateurish to some visitors. Worth keeping if you like it; flag in case you want to revisit.
 - Lighthouse and meta-tag verification could not be done remotely during the audit (extension conflict blocked DOM access). Worth running locally before the next round.
-
