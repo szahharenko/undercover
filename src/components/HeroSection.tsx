@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import undercover from '../assets/main-hero-2.jpg';
+import { useRegistrationModal } from './RegistrationModal';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
+  const { openModal } = useRegistrationModal();
 
   return (
     <motion.section
@@ -37,13 +39,7 @@ const HeroSection: React.FC = () => {
           {t('hero.subtitle')}
         </motion.p>
         <motion.button
-          // scroll to registration-form
-          onClick={ () => {
-            const element = document.getElementById('registration-form');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
+          onClick={() => openModal('hero')}
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}

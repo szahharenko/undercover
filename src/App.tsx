@@ -10,6 +10,7 @@ import Events from './pages/Events';
 import EventsAndTrainings from './pages/EventsAndTrainings';
 import FacebookCampaign from './pages/FacebookCampaign';
 import LocaleRedirect from './components/LocaleRedirect';
+import { RegistrationModalProvider } from './components/RegistrationModal';
 import ReactGA from "react-ga4";
 
 const CAMPAIGN_ROUTES = ['/free-trial'];
@@ -42,7 +43,9 @@ const App: React.FC = () => {
   ReactGA.initialize(import.meta.env.VITE_GA_MEASUREMENT_ID);
   return (
     <Router>
-      <AppContent />
+      <RegistrationModalProvider>
+        <AppContent />
+      </RegistrationModalProvider>
     </Router>
   );
 };

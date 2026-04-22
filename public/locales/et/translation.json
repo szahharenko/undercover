@@ -306,5 +306,8 @@
     "aria_label": "Klientide arvustuste kokkuvõte",
     "summary": "Google'is · <b>12 arvustust</b> liikmetelt ja külalistelt",
     "see_on_google": "Vaata Google'is"
+  },
+  "modal": {
+    "close": "Sulge"
   }
 }

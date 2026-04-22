@@ -7,6 +7,7 @@ import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
 import StructuredData from '../components/StructuredData';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
+import { useRegistrationModal } from '../components/RegistrationModal';
 
 const BenefitsList: React.FC<{ items: string[] }> = ({ items }) => (
   <ul className="mt-4 space-y-2 text-left">
@@ -21,6 +22,7 @@ const BenefitsList: React.FC<{ items: string[] }> = ({ items }) => (
 
 const Pricing: React.FC = () => {
   const { t } = useTranslation();
+  const { openModal } = useRegistrationModal();
   useSEO({ title: t('seo.pricing.title'), description: t('seo.pricing.description'), path: '/pricing' });
   logEvent({ category: 'page_view', action: 'view_pricing_page', label: 'User viewed the pricing page' });
 
@@ -94,12 +96,13 @@ const Pricing: React.FC = () => {
             <BenefitsList items={freeTrialBenefits} />
             <br/>
             <div className='mt-4 pt-4'>
-              <a
-                href="/#registration-form"
+              <button
+                type="button"
+                onClick={() => openModal('pricing_free_trial')}
                 className="mt-6 px-4 py-2 bg-coffee text-cream rounded-xl font-bold text-center hover:bg-opacity-90 transition-colors"
               >
                 {t('hero.reserve_button')}
-              </a>
+              </button>
             </div>
           </div>
         </div>

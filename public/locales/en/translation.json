@@ -305,5 +305,8 @@
     "aria_label": "Customer reviews summary",
     "summary": "on Google · <b>12 reviews</b> from members and visitors",
     "see_on_google": "See on Google"
+  },
+  "modal": {
+    "close": "Close"
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import HeroSectionAbout from '../components/HeroSectionAbout';
 import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
+import { useRegistrationModal } from '../components/RegistrationModal';
 
 const Section: React.FC<{ title: string; children: React.ReactNode; tone?: 'cream' | 'neutral' }> = ({
   title,
@@ -28,6 +28,7 @@ const Section: React.FC<{ title: string; children: React.ReactNode; tone?: 'crea
 
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
+  const { openModal } = useRegistrationModal();
   useSEO({ title: t('seo.about.title'), description: t('seo.about.description'), path: '/about' });
   logEvent({ category: 'page_view', action: 'view_about_us_page', label: 'User viewed the about us page' });
 
@@ -66,12 +67,13 @@ const AboutUs: React.FC = () => {
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6">{t('about_us_page.invitation_title')}</h2>
           <p className="text-lg leading-relaxed mb-8">{t('about_us_page.invitation_text')}</p>
-          <Link
-            to="/#registration-form"
+          <button
+            type="button"
+            onClick={() => openModal('about_invitation')}
             className="inline-block px-8 py-3 bg-cream text-charcoal rounded-full font-bold hover:bg-white transition-colors"
           >
             {t('hero.reserve_button')}
-          </Link>
+          </button>
         </div>
       </motion.section>
     </>
