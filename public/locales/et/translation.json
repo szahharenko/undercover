@@ -49,7 +49,7 @@
   "hero": {
     "title": "Kõige hubasem coworking Tallinnas",
     "subtitle": "Mitte kontor. Mitte kodu. ❤️ Parem! Proovi tasuta",
-    "reserve_button": "Reserveeri Töökoht",
+    "reserve_button": "Proovi tasuta",
     "join_button": "Liitu Klubiga"
   },
   "coworking_experience": {
@@ -133,15 +133,39 @@
     "monthly_desk": {
       "title": "Kuu",
       "subtitle": "Esimene nädal tasuta",
-      "description": "Täielik pakett. * Registreeru kuni 30. juunini, et saada esimene nädal tasuta."
+      "description": "Täielik pakett. * Registreeru kuni 30. juunini, et saada esimene nädal tasuta.",
+      "benefits": [
+        "24/7 ligipääs isikliku kiipkaardiga/koodiga",
+        "Ergonoomilised toolid",
+        "Fiiberoptiline Wi-Fi (ilma puhverdamiseta)",
+        "Piiramatu eriline kohv ja tee",
+        "Vaiksed tsoonid keskendunud tööks",
+        "Kõik kogukonna üritused on kaasas",
+        "Saadaval posti- ja juriidiline aadress",
+        "Lemmikloomasõbralik (heakäitumuslikud kaaslased on teretulnud)",
+        "14-päevane etteteatamine, pikad lepingud puuduvad"
+      ]
     },
     "day_pass": {
       "title": "Päevapilet",
-      "description": "Täiuslik päev keskendunud tööks. Sisaldab juurdepääsu kõigile ühiskasutatavatele aladele ja mugavustele."
+      "description": "Täiuslik päev keskendunud tööks. Sisaldab juurdepääsu kõigile ühiskasutatavatele aladele ja mugavustele.",
+      "benefits": [
+        "E-R 9:00-18:00 ligipääs",
+        "Sama ergonoomiline tool ja fiiber Wi-Fi",
+        "Piiramatu eriline kohv ja tee",
+        "Vaiksed tsoonid, lounge ja koosolekuruum",
+        "Ilma kohustuseta, ilma lepinguta"
+      ]
     },
     "free_trial": {
       "title": "Tasuta Proovipäev",
-      "description": "Broneerige tasuta proovipäev, et kogeda meie koostöörühma ja näha, kas see sobib teile."
+      "description": "Broneerige tasuta proovipäev, et kogeda meie koostöörühma ja näha, kas see sobib teile.",
+      "benefits": [
+        "Terve tööpäev meie kostitada",
+        "Kõik, mis liikmed saavad, ainult üheks päevaks",
+        "Tutvu kogukonnaga enne otsustamist",
+        "Broneeri sulle sobiv tööpäev ette"
+      ]
     },
     "boardgames_event_club": {
       "title": "Oma Üritus",
@@ -154,7 +178,10 @@
     "boardgames_event_daily": {
       "title": "Päevapilet",
       "description": "Erinevatele lauamängu üritustele ja turniiridele."
-    }
+    },
+    "benefits_title": "Mis on hinnas",
+    "per_month": "kuus",
+    "per_day": "päev"
   },
   "board_games_page": {
     "title": "Meie Lauamängud",
@@ -274,5 +301,10 @@
       "title": "Tasuta Proovipäev - Undercover Vibe Koostööruum Tallinn",
       "description": "Proovi Tallinna kõige hubasemat koostööruumi tasuta. Täielik juurdepääs tööruumile, kohv, kiire WiFi ja lauamängud õhtul."
     }
+  },
+  "social_proof": {
+    "aria_label": "Klientide arvustuste kokkuvõte",
+    "summary": "Google'is · <b>12 arvustust</b> liikmetelt ja külalistelt",
+    "see_on_google": "Vaata Google'is"
   }
 }

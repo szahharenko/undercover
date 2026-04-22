@@ -48,7 +48,7 @@
   "hero": {
     "title": "Coziest co-working in Tallinn",
     "subtitle": "Not an office. Not home. ❤️ Better! Try it for free",
-    "reserve_button": "Reserve Workspace",
+    "reserve_button": "Let's try it",
     "join_button": "Join the Club"
   },
   "coworking_experience": {
@@ -140,15 +140,39 @@
     "monthly_desk": {
       "title": "Monthly",
       "subtitle": "Free first week",
-      "description": "Full package. * Sign until June 30th to receive the first week free."
+      "description": "Full package. * Sign until June 30th to receive the first week free.",
+      "benefits": [
+        "24/7 access via personal key card/code",
+        "Ergonomic chairs",
+        "Fiber-optic Wi-Fi (no buffering)",
+        "Unlimited specialty coffee & tea",
+        "Quiet zones for focused work",
+        "All community events included",
+        "Mailing & legal address available",
+        "Pet-friendly (well-behaved companions welcome)",
+        "14-day cancellation, no long contracts"
+      ]
     },
     "day_pass": {
       "title": "Daily Pass",
-      "description": "Perfect for a day of focused work. Includes access to all common areas and amenities."
+      "description": "Perfect for a day of focused work. Includes access to all common areas and amenities.",
+      "benefits": [
+        "Mon-Fri 9:00-18:00 access",
+        "Same ergonomic chairs and fiber Wi-Fi",
+        "Unlimited specialty coffee & tea",
+        "Quiet zones, lounge, and meeting space",
+        "No commitment, no contract"
+      ]
     },
     "free_trial": {
       "title": "Free Trial Day",
-      "description": "Pre-book a free trial day to experience our co-working space and see if it's the right fit for you."
+      "description": "Pre-book a free trial day to experience our co-working space and see if it's the right fit for you.",
+      "benefits": [
+        "Full workday on us",
+        "Everything members get, just for the day",
+        "Meet the community before you decide",
+        "Pre-book a weekday that suits you"
+      ]
     },
     "boardgames_event_club": {
       "title": "Own Event",
@@ -161,7 +185,10 @@
     "boardgames_event_daily": {
       "title": "Daily Pass",
       "description": "Entry fee for various board game events and tournaments. See events calendar for details."
-    }
+    },
+    "benefits_title": "What's included",
+    "per_month": "month",
+    "per_day": "day"
   },
   "board_games_page": {
     "title": "Our Board Games",
@@ -273,5 +300,10 @@
       "title": "Free Trial Day - Undercover Vibe Coworking Tallinn",
       "description": "Try Tallinn's coziest coworking space for free. Full workspace access, specialty coffee, fast WiFi, and board games in the evening."
     }
+  },
+  "social_proof": {
+    "aria_label": "Customer reviews summary",
+    "summary": "on Google · <b>12 reviews</b> from members and visitors",
+    "see_on_google": "See on Google"
   }
 }

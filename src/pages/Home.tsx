@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
+import SocialProofBar from '../components/SocialProofBar';
 import CoworkingExperience from '../components/CoworkingExperience';
 import BoardGameClub from '../components/BoardGameClub';
 import RegistrationForm from '../components/RegistrationForm';
@@ -42,10 +43,11 @@ const Home: React.FC = () => {
       }} />
       <BreadcrumbSchema items={[{ name: t('home'), path: '/' }]} />
       <HeroSection />
+      <SocialProofBar />
       <CoworkingExperience />
-      <BoardGameClub />
-      <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('atmosphere_gallery.title')} description={t('atmosphere_gallery.description')} />
       <RegistrationForm />
+      <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('atmosphere_gallery.title')} description={t('atmosphere_gallery.description')} />
+      <BoardGameClub />
       <GoogleReviews />
     </>
   );
