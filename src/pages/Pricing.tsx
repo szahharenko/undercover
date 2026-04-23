@@ -7,7 +7,7 @@ import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
 import StructuredData from '../components/StructuredData';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
-import { useRegistrationModal } from '../components/RegistrationModal';
+import { useRegistrationModal } from '../components/registrationModalContext';
 
 const BenefitsList: React.FC<{ items: string[] }> = ({ items }) => (
   <ul className="mt-4 space-y-2 text-left">

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import undercover from '../assets/main-hero-2.jpg';
-import { useRegistrationModal } from './RegistrationModal';
+import { useRegistrationModal } from './registrationModalContext';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();

@@ -1,14 +1,17 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import kivimurru from '../assets/kivimurru-house.jpg';
 import { EmailService, type EmailPayload } from '../servises/send-email';
+import { FaTelegramPlane, FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLocationArrow } from 'react-icons/fa';
+import { MdMailOutline } from 'react-icons/md';
 import { logEvent } from '../servises/analytics';
 import NativeDateInput from './DatePicker';
 
 type Variant = 'inline' | 'modal';
 
 interface Props {
-  /** 'inline' = used inside the on-page section. 'modal' = used inside RegistrationModal (no in-view animations, no large title duplication). */
+  /** 'inline' = used inside the on-page section. 'modal' = used inside RegistrationModal. */
   variant?: Variant;
   /** Optional callback fired after a successful submission (e.g. to close the modal after a delay). */
   onSuccess?: () => void;
@@ -78,8 +81,6 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
     }
   };
 
-  // Animation props are conditional: only animate on inline (in-view) usage.
-  // In a modal, framer-motion's whileInView won't trigger reliably, and it's not needed visually.
   const sectionAnim =
     variant === 'inline'
       ? {
@@ -100,19 +101,25 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
         }
       : { initial: false, animate: { y: 0, opacity: 1 } };
 
-  const layoutClass = variant === 'inline' ? 'md:flex' : 'flex flex-col gap-8';
+  const wrapperClass =
+    variant === 'inline'
+      ? 'mx-auto max-w-6xl flex flex-col md:flex-row gap-10 md:gap-12 items-start justify-center'
+      : 'w-full';
+
+  const formColClass =
+    variant === 'inline'
+      ? 'w-full md:flex-1 md:max-w-xl mx-auto'
+      : 'w-full';
+
+  const formTitleClass =
+    variant === 'inline'
+      ? 'text-3xl md:text-4xl font-extrabold text-charcoal text-center mb-8'
+      : 'text-2xl md:text-3xl font-extrabold text-charcoal text-center mb-6';
 
   return (
-    <div className={layoutClass}>
-      <div className={variant === 'inline' ? 'container mx-auto px-4 mb-8 max-w-2xl' : 'w-full'}>
-        <motion.h2
-          {...sectionAnim}
-          className={
-            variant === 'inline'
-              ? 'text-4xl font-extrabold text-charcoal text-center mb-12'
-              : 'text-2xl md:text-3xl font-extrabold text-charcoal text-center mb-6'
-          }
-        >
+    <div className={wrapperClass}>
+      <div className={formColClass}>
+        <motion.h2 {...sectionAnim} className={formTitleClass}>
           {t('form.title')}
         </motion.h2>
         {emailSend ? (
@@ -220,6 +227,52 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
           </motion.form>
         )}
       </div>
+
+      {variant === 'inline' && (
+        <div className="w-full md:flex-1 md:max-w-xl mx-auto">
+          <motion.h2
+            {...sectionAnim}
+            className="text-3xl md:text-4xl font-extrabold text-charcoal text-center mb-8"
+          >
+            {t('form.contact_us')}
+          </motion.h2>
+          <motion.div {...formAnim} className="text-charcoal text-center">
+            <div>
+              <a href="mailto:info@undercover.ee" className="text-coffee hover:underline ml-2">
+                <MdMailOutline size={16} style={{ display: 'inline' }} /> info@undercover.ee
+              </a>
+              <br />
+              <a href="tel:+3725154369" className="text-coffee hover:underline ml-2">
+                <FaPhone size={16} style={{ display: 'inline' }} /> +372 5154369
+              </a>
+            </div>
+            <div className="mt-2"></div>
+            <div>
+              <a href="https://t.me/acrashik" className="text-coffee hover:underline ml-2">
+                <FaTelegramPlane style={{ display: 'inline' }} size={16} /> Telegram
+              </a>{' '}
+              |
+              <a href="https://wa.me/3725154369" className="text-coffee hover:underline ml-2">
+                <FaWhatsapp style={{ display: 'inline' }} size={16} /> WhatsApp
+              </a>{' '}
+              |
+              <a href="https://www.facebook.com/undercovervibe" className="text-coffee hover:underline ml-2">
+                <FaFacebook style={{ display: 'inline' }} size={16} /> Facebook
+              </a>
+              <a href="https://www.instagram.com/undercovertallinn" className="text-coffee hover:underline ml-2">
+                <FaInstagram style={{ display: 'inline' }} size={16} /> Instagram
+              </a>
+            </div>
+            <br />
+            <div>
+              <span className="ml-2">
+                <FaLocationArrow style={{ display: 'inline' }} size={16} /> Kivimurru 34 - 6, Tallinn, Estonia
+              </span>
+            </div>
+            <img src={kivimurru} alt="Kivimurru Address" className="mx-auto my-4 rounded-lg" />
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 };

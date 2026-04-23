@@ -5,7 +5,7 @@ import HeroSectionAbout from '../components/HeroSectionAbout';
 import { logEvent } from '../servises/analytics';
 import { useSEO } from '../hooks/useSEO';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
-import { useRegistrationModal } from '../components/RegistrationModal';
+import { useRegistrationModal } from '../components/registrationModalContext';
 
 const Section: React.FC<{ title: string; children: React.ReactNode; tone?: 'cream' | 'neutral' }> = ({
   title,

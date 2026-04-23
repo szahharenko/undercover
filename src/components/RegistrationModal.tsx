@@ -1,31 +1,16 @@
-import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FaTimes } from 'react-icons/fa';
 import RegistrationFormContent from './RegistrationFormContent';
 import { logEvent } from '../servises/analytics';
+import { RegistrationModalContext } from './registrationModalContext';
 
 interface ModalState {
   open: boolean;
   source?: string;
 }
-
-interface ContextShape {
-  openModal: (source?: string) => void;
-  closeModal: () => void;
-  isOpen: boolean;
-}
-
-const RegistrationModalContext = createContext<ContextShape | null>(null);
-
-export const useRegistrationModal = (): ContextShape => {
-  const ctx = useContext(RegistrationModalContext);
-  if (!ctx) {
-    throw new Error('useRegistrationModal must be used within RegistrationModalProvider');
-  }
-  return ctx;
-};
 
 export const RegistrationModalProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, setState] = useState<ModalState>({ open: false });
@@ -109,7 +94,6 @@ const RegistrationModal: React.FC<ModalProps> = ({ isOpen, source, onClose }) =>
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
           className="fixed inset-0 z-[1000] flex items-start md:items-center justify-center bg-charcoal/60 backdrop-blur-sm overflow-y-auto p-4 md:p-8"
-          style={{background: '#48484869'}}
           onClick={(e) => {
             if (e.target === e.currentTarget) onClose();
           }}
@@ -135,7 +119,7 @@ const RegistrationModal: React.FC<ModalProps> = ({ isOpen, source, onClose }) =>
             >
               <FaTimes size={16} />
             </button>
-            <RegistrationFormContent variant="modal" source={source ?? 'modal'} onSuccess={undefined} />
+            <RegistrationFormContent variant="modal" source={source ?? 'modal'} />
           </motion.div>
         </motion.div>
       )}
