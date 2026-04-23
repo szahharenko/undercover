@@ -17,7 +17,14 @@ const HeroSection: React.FC = () => {
     >
       {/* Background elements for warm lighting and armchairs - implied via styling/color */}
       <div className="absolute w-full h-full z-1">
-        <img src={undercover} alt="Undercover workspace" className="w-full h-full object-cover" />
+        <img
+          src={undercover}
+          alt="Undercover workspace"
+          className="w-full h-full object-cover"
+          // LCP element on the homepage — hint browsers to fetch ASAP
+          fetchPriority="high"
+          decoding="async"
+        />
       </div>
       <div className="absolute w-full h-full z-2 opacity-50 bg-charcoal"/>
 

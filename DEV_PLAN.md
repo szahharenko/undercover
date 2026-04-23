@@ -30,9 +30,11 @@
 | Calendly tour-booking embed | ⬜ Pending |
 | Newsletter signup in footer | ⬜ Pending |
 | GA4 conversion goals | ⬜ Pending |
-| Image optimization (WebP, lazy-load, srcset) | ⬜ Pending |
-| Route-level code splitting | ⬜ Pending |
-| Lighthouse audit + remediation | ⬜ Pending |
+| Image optimization (WebP, lazy-load, srcset) | 🟡 Code-side done · 👤 image re-export on Sergei (see PERF_NOTES.md) |
+| Route-level code splitting | ✅ DONE |
+| Vendor chunk splitting (caching wins) | ✅ DONE |
+| Per-route SEO meta uniqueness verified | ✅ DONE |
+| Lighthouse audit + remediation | 🟡 Code-side done · 👤 run Lighthouse locally per PERF_NOTES.md |
 | Submit sitemap to Google Search Console + Bing | 👤 Sergei manual |
 | List on coworker.com / coworkingspaces.me / visittallinn.ee / workin.space | 👤 Sergei manual |
 | First three blog posts | 👤 Sergei manual |
@@ -80,6 +82,12 @@ Legend: ✅ DONE — shipped · ⬜ Pending — coded work remaining · 👤 Ser
 ## Что сделано (новое — не было в плане)
 
 - ✅ **DONE — Reusable registration modal.** `RegistrationFormContent` (presentational) + `RegistrationModal` + `RegistrationModalProvider` + `useRegistrationModal` hook. Inline-секция на главной осталась, кнопки "Reserve" в Hero / Pricing free trial / About теперь открывают modal вместо cross-page jump. Modal содержит только форму (без contact panel) для скорости заполнения.
+- ✅ **DONE — Route-level code splitting.** Все вторичные страницы через `React.lazy()`, `<Suspense>` fallback. `Home` остался eager (LCP target).
+- ✅ **DONE — Vendor chunk splitting.** `manualChunks` в `vite.config.ts` для react / router / motion / i18n / icons / fullcalendar. Index chunk упал с 163 KB gzip → 23 KB. FullCalendar (~76 KB gzip) больше не грузится на главной — только на `/boardgames`.
+- ✅ **DONE — LCP hints на hero images.** `fetchPriority="high"` + `decoding="async"` на all five hero `<img>`. Footer mascots — `loading="lazy"` + `decoding="async"`. Preconnect для `fonts.googleapis.com` / `fonts.gstatic.com` в `index.html`.
+- ✅ **DONE — Per-route SEO uniqueness.** Static check across en/et/ru: каждый из 7 routes имеет уникальный non-empty title + description, prerender pipeline (через networkidle0) гарантированно их захватывает.
+- 👤 **Sergei manual — re-export oversized images.** 51 файл > 500 KB, total 102 MB. Hero PNG'и по 3-5 MB. См. `PERF_NOTES.md` за списком offenders и Squoosh-командами.
+- 👤 **Sergei manual — Lighthouse local run.** Сэндбокс не может скачать Chrome. Запусти `npm run build:seo && npx serve dist` локально, открой Lighthouse в DevTools, скинь report — итерируем дальше.
 
 ---
 
@@ -105,10 +113,10 @@ Legend: ✅ DONE — shipped · ⬜ Pending — coded work remaining · 👤 Ser
 - ⬜ **Calendly (или аналог) tour-booking embed** в дополнение к контактной форме. Позволит букать слот самостоятельно.
 - ⬜ **Newsletter signup в footer.** Хотя бы одно поле, ежемесячная рассылка.
 - ⬜ **GA4 conversion goals.** Form submissions, Calendly bookings, newsletter signups, Telegram/WhatsApp clicks. События отстреливаются, но как conversion не размечены.
-- ⬜ **Verify `seoConfig.ts`** производит уникальные titles/descriptions/OG-image на каждый route at prerender time. Spot-check `dist/` HTML.
-- ⬜ **Lighthouse audit** (Mobile + Desktop). Зафиксить всё ниже 80 в Performance / Accessibility / SEO.
-- ⬜ **Image optimization.** Конвертировать PNG/JPG в WebP/AVIF, добавить `loading="lazy"` ниже first fold, `<picture>` с srcset для разных размеров.
-- ⬜ **Route-level code splitting.** `lazy(() => import("./pages/BoardGames"))` для страниц вне главной — уменьшит initial bundle, ускорит LCP.
+- ✅ **Verify `seoConfig.ts` уникальность** — DONE (см. PERF_NOTES.md). Note: сам `seoConfig.ts` не импортируется нигде, это dead code; либо удалить, либо подключить как fallback в `useSEO`.
+- 🟡 **Lighthouse audit** (Mobile + Desktop) — code-side fixes shipped (LCP hints, code splitting, vendor caching). 👤 Sergei: запусти локально и скинь scores.
+- 🟡 **Image optimization** — code-side: lazy/decoding hints добавлены на heroes + footer. 👤 Sergei: re-export 51 oversized image, см. PERF_NOTES.md.
+- ✅ **Route-level code splitting** — DONE.
 
 ### 👤 Manual tasks на стороне Sergei
 
