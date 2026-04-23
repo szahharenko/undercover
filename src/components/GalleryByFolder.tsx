@@ -50,7 +50,7 @@ const GalleryByFolder: React.FC<{ mainImagesGlob: Record<string, unknown>, thumb
 
   return (
     <section className="py-20 bg-cream">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-center  max-w-[1400px] mx-auto">
         <motion.h2
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
