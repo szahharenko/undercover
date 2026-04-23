@@ -9,7 +9,7 @@ import RegistrationFormContent from './RegistrationFormContent';
  */
 const RegistrationForm: React.FC = () => {
   return (
-    <section className="py-12 md:py-20 px-4" id="registration-form">
+    <section className="py-12 md:py-20 px-4 max-w-[1400px] mx-auto" id="registration-form">
       <RegistrationFormContent variant="inline" source="inline_section" />
     </section>
   );

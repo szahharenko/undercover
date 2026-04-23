@@ -103,7 +103,7 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
 
   const wrapperClass =
     variant === 'inline'
-      ? 'mx-auto max-w-6xl flex flex-col md:flex-row gap-10 md:gap-12 items-start justify-center'
+      ? 'mx-auto max-w-6xl flex flex-col md:flex-row gap-10 md:gap-12 items-start justify-center gap-4  mb-6'
       : 'w-full';
 
   const formColClass =
