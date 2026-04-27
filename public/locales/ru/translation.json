@@ -304,7 +304,9 @@
   },
   "social_proof": {
     "aria_label": "Сводка отзывов клиентов",
-    "summary": "на Google · <b>12 отзывов</b> от резидентов и гостей",
+    "summary_one": "на Google · <b>{{count}} отзыв</b> от резидентов и гостей",
+    "summary_few": "на Google · <b>{{count}} отзыва</b> от резидентов и гостей",
+    "summary_many": "на Google · <b>{{count}} отзывов</b> от резидентов и гостей",
     "see_on_google": "Смотреть на Google"
   },
   "modal": {

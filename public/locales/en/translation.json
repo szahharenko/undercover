@@ -303,7 +303,8 @@
   },
   "social_proof": {
     "aria_label": "Customer reviews summary",
-    "summary": "on Google · <b>12 reviews</b> from members and visitors",
+    "summary_one": "on Google · <b>{{count}} review</b> from members and visitors",
+    "summary_other": "on Google · <b>{{count}} reviews</b> from members and visitors",
     "see_on_google": "See on Google"
   },
   "modal": {

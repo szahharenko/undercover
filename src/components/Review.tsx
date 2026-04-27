@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { setOptions, importLibrary } from '@googlemaps/js-api-loader';
 import { FaStar, FaMapMarkedAlt } from 'react-icons/fa';
 
-interface Review {
+export interface Review {
   author_name: string;
   author_url: string;
   language: string;
