@@ -301,6 +301,14 @@
       "description": "Try Tallinn's coziest coworking space for free. Full workspace access, specialty coffee, fast WiFi, and board games in the evening."
     }
   },
+  "instagram_feed": {
+    "title": "Catch the Vibe on Instagram",
+    "description": "Game nights, quiet mornings, fresh coffee, and the occasional dog. Here's what's been happening in the space lately.",
+    "aria_label": "Recent posts from our Instagram",
+    "view_on_instagram": "View on Instagram",
+    "follow": "Follow us on Instagram",
+    "follow_handle": "Follow {{handle}}"
+  },
   "social_proof": {
     "aria_label": "Customer reviews summary",
     "summary_one": "on Google · <b>{{count}} review</b> from members and visitors",

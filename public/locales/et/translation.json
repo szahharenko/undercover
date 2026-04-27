@@ -302,6 +302,14 @@
       "description": "Proovi Tallinna kõige hubasemat koostööruumi tasuta. Täielik juurdepääs tööruumile, kohv, kiire WiFi ja lauamängud õhtul."
     }
   },
+  "instagram_feed": {
+    "title": "Püüa vibe Instagramis",
+    "description": "Mängude õhtud, vaiksed hommikud, värske kohv ja aeg-ajalt mõni koer. Vaata, mis ruumis viimasel ajal toimub.",
+    "aria_label": "Meie Instagrami värsked postitused",
+    "view_on_instagram": "Vaata Instagramis",
+    "follow": "Jälgi meid Instagramis",
+    "follow_handle": "Jälgi {{handle}}"
+  },
   "social_proof": {
     "aria_label": "Klientide arvustuste kokkuvõte",
     "summary_one": "Google'is · <b>{{count}} arvustus</b> liikmetelt ja külalistelt",

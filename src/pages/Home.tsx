@@ -8,6 +8,7 @@ import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
 import { useTranslation } from 'react-i18next';
 import GoogleReviews from '../components/Review';
+import InstagramFeed from '../components/InstagramFeed';
 import { useSEO } from '../hooks/useSEO';
 import StructuredData from '../components/StructuredData';
 import BreadcrumbSchema from '../components/BreadcrumbSchema';
@@ -48,6 +49,7 @@ const Home: React.FC = () => {
       <RegistrationForm />
       <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('atmosphere_gallery.title')} description={t('atmosphere_gallery.description')} />
       <BoardGameClub />
+      <InstagramFeed />
       <GoogleReviews />
     </>
   );
