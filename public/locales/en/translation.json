@@ -301,6 +301,13 @@
       "description": "Try Tallinn's coziest coworking space for free. Full workspace access, specialty coffee, fast WiFi, and board games in the evening."
     }
   },
+  "neighbourhood": {
+    "title": "Our Corner of Tallinn",
+    "aria_label": "About our neighbourhood",
+    "paragraph_one": "Undercover sits on Kivimurru — <b>Quarry Street</b> — at the edge of <b>Sikupilli</b>, the oldest pocket of Lasnamäe. It's a neighbourhood that surprises Tallinn newcomers: early-1900s wooden houses lean shoulder-to-shoulder with later limestone blocks, and the cliff that gave the street its name drops away just behind us, opening a wide view toward Kadriorg's chestnut canopy and the bay beyond.",
+    "paragraph_two": "It's quieter here than the centre, but never far from it. The <b>Majaka tram stop</b> is a five-minute walk — trams 2 and 4 reach the Old Town in roughly fifteen minutes — and <b>Ülemiste Centre</b>, with its shops, cafés and the Skywheel of Tallinn, is one short ride south. Kadriorg Park, the Maarjamäe museums and Pirita's beach are an easy bus ride to the north. Around the corner you'll find small bakeries and lunch spots, a Selver for the essentials, and the green slopes of the old Lasnamäe quarry just down the hill — a good place to stretch your legs between calls.",
+    "view_on_map": "See us on the map"
+  },
   "instagram_feed": {
     "title": "Catch the Vibe on Instagram",
     "description": "Game nights, quiet mornings, fresh coffee, and the occasional dog. Here's what's been happening in the space lately.",

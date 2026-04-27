@@ -1,47 +1,157 @@
-Анализ undercover.ee - Undercover Vibe
-Критические проблемы
-1. SEO = ноль. Сайт не индексируется поисковиками вообще. Ни один запрос не возвращает undercover.ee в результатах. Это значит, что весь органический трафик потерян. Причины скорее всего: контент рендерится только на клиенте (CSR без SSR), отсутствуют мета-теги, sitemap.xml, robots.txt настроен неверно, или сайт слишком молод без обратных ссылок.
-2. Пустой HTML-каркас. При загрузке страницы сервер отдаёт практически пустой HTML - только <title>Undercover Vibe</title> и Facebook Pixel. Это означает, что поисковые роботы (Google, Bing) видят пустую страницу. Нет ни описания, ни заголовков, ни контента для индексации.
-3. Нет обнаруживаемости бренда. По запросам "Undercover Vibe", "undercover clothing Estonia", "undercover.ee" - сайт нигде не появляется. Бренд невидим в интернете.
-Рекомендации по маркетинг-стеку
-SEO и техническая база:
+# TODO — Undercover.ee
 
-Включить Server-Side Rendering (SSR) или использовать pre-rendering для основных страниц, чтобы поисковики видели контент
-Добавить уникальные мета-теги (title, description, OG tags) для каждой страницы
-Создать sitemap.xml и отправить в Google Search Console
-Настроить schema.org разметку (Product, Organization, BreadcrumbList)
-Завести Google Search Console и Bing Webmaster Tools - это бесплатно и обязательно
+> Snapshot: 2026-04-27. Только то, что осталось сделать.
+> История завершённых задач — в `DEV_PLAN.md`. Технические заметки и
+> performance-долги — в `PERF_NOTES.md`.
 
-Контент-маркетинг:
+---
 
-Создать страницу "О бренде" с историей, ценностями, уникальностью - для SEO и доверия
-Вести блог с ключевыми словами: "streetwear Tallinn", "Estonian fashion brand", "уличная одежда Эстония"
-Добавить Alt-тексты ко всем изображениям продуктов
+## ✅ Что уже сделано (коротко, чтоб не возвращаться)
 
-Facebook Pixel уже стоит - хорошо. Дальше:
+Сайт стал индексируемым (pre-rendering через `vite-plugin-prerender`),
+у каждой страницы уникальные meta + hreflang в sitemap, schema.org
+размечена (`CoworkingSpace` + `LocalBusiness` + `aggregateRating` +
+`Product`/`Offer` на pricing + `BreadcrumbList`), homepage
+переориентирован на coworking, About переписан, pricing с benefit-
+списками на 3 языках, registration form работает как переиспользуемый
+modal, route-level + vendor chunk splitting, LCP-хинты на hero. Meta
+Pixel установлен. Social proof bar с живым `totalRatings` из Google
+Places. Instagram-фид через Behold подключён на главную. Critical
+bugs (телефон, истёкшая скидка, /en /et /ru redirects) починены.
 
-Настроить события (ViewContent, AddToCart, Purchase) для ретаргетинга
-Создать Lookalike аудитории на основе покупателей
-Запустить динамический ретаргетинг через каталог товаров в Meta
+---
 
-Социальные каналы:
+## ⬜ Pending — кодовая работа
 
-Instagram и TikTok - must-have для fashion бренда. Короткие видео с продуктом, стилизации, behind-the-scenes
-User-generated content (UGC) - стимулировать клиентов постить с хэштегом бренда
-Коллаборации с эстонскими микро-инфлюенсерами (1K-10K подписчиков) - дешевле и эффективнее чем реклама
+### SEO polish (мелкие, но дают rich-results)
 
-Конверсия на сайте:
+- ⬜ **Per-page `<link rel="alternate" hreflang>` в `<head>`.**
+  В sitemap hreflang есть, на самих страницах — нет. Добавить через
+  `useSEO` hook.
+- ⬜ **`Review` schema** на блок Google Reviews на главной — вытянет
+  5★ snippet в Google search results.
+- ⬜ **`Event` schema** со `startDate`/`endDate` на `/boardgames`
+  (сейчас даты живут только в HTML, не в JSON-LD).
+- ⬜ **Locale-prefixed routes** (`/en/pricing`, `/et/pricing`,
+  `/ru/pricing`) вместо текущего redirect-only подхода. Серьёзный лифт
+  для multilingual SEO.
+- ⬜ **Dedicated `/coworking` landing page** для запроса "coworking
+  Tallinn". Internal-linked с homepage и `/pricing`.
+- ⬜ **Alt-тексты** — системный проход по 150+ изображениям. Сейчас
+  частично.
 
-Email-сбор с предложением скидки на первый заказ (поп-ап или встроенная форма)
-Urgency/scarcity элементы (если коллекции ограничены - показывать это)
-Отзывы покупателей на страницах товаров
-Быстрая и прозрачная доставка/возврат - видимо на главной
+### Конверсия / UX
 
-Платная реклама (быстрый рост):
+- ⬜ **Persistent "Book Free Trial" CTA в Navbar.** Сейчас единственная
+  конверсионная кнопка — в Hero. Должна вызывать `openModal("navbar")`.
+- ⬜ **Google Map iframe** в секции контактов на главной (рядом с фото
+  Kivimurru). Trust signal + local SEO.
+- ⬜ **Заменить flag-switcher на текстовые лейблы** EN / ET / RU.
+  Флаги ≠ языки + a11y win.
+- ⬜ **Newsletter signup в footer** — одно поле email + предложение
+  ("первая неделя бесплатно" или "анонсы board game nights").
+- ⬜ **Calendly tour-booking embed** в дополнение к контактной форме
+  (самостоятельный slot booking).
 
-Meta Ads (Instagram/Facebook): начать с трафик-кампаний на холодную аудиторию по интересам (streetwear, fashion, конкретные бренды-конкуренты), затем ретаргетинг
-Google Ads: пока SEO не работает - запустить брендовую кампанию + Shopping Ads через Google Merchant Center
-TikTok Ads: если аудитория молодая - самый дешёвый CPM сейчас
+### Аналитика
 
+- ⬜ **GA4 conversion goals** — events стреляют, но не размечены как
+  conversions: form submissions, Calendly bookings, newsletter
+  signups, Telegram/WhatsApp clicks.
+- ⬜ **Meta Pixel custom events.** Сейчас только `PageView`. Полезные
+  для коворкинга:
+  - `Lead` — отправили форму или newsletter
+  - `ScheduleTour` — клик по Calendly / "book a tour"
+  - `ViewContent` на `/pricing` — для retargeting "посетили цены, не
+    купили"
+  - `Contact` — клик по Telegram / WhatsApp / phone
+  Без этих событий нельзя строить Lookalike-аудитории и нельзя мерить
+  ROI рекламы в Meta.
 
-Приоритет №1 - починить техническую видимость сайта. Пока поисковики видят пустую страницу, все остальные маркетинговые усилия работают вхолостую. Хочешь, чтобы я подготовил конкретный технический чеклист или аудит какого-то из направлений подробнее?
+### Events overhaul (нужно решение Sergei)
+
+- ⬜ **Консолидация events-страниц.** `/events`, `/events-and-trainings`
+  и календарь на `/boardgames` пересекаются. Варианты:
+  (a) удалить `/events`,
+  (b) оставить как landing для общих событий + импортировать туда
+      календарь,
+  (c) переименовать одну из двух.
+  **Жду решения.**
+
+---
+
+## 👤 Manual — на стороне Sergei
+
+### Самое важное — без этого код-фиксы работают вхолостую
+
+- 👤 **Google Search Console.** Подтвердить ownership (DNS или HTML-
+  файл), добавить `sitemap.xml`, request indexing для главной.
+  ~5 минут, но именно эта задача "включает" всё, что мы сделали.
+- 👤 **Bing Webmaster Tools** — то же самое для Bing. Импорт из GSC
+  работает в один клик.
+
+### Directory listings (NAP консистентно)
+
+`Kivimurru tn 34-6, 11411 Tallinn` · `+372 51 54 369` ·
+`info@undercover.ee`
+
+- 👤 coworker.com — Tallinn list
+- 👤 coworkingspaces.me — Tallinn directory
+- 👤 visittallinn.ee / visitestonia.com — coworking guide
+- 👤 workin.space — Estonia / Harju
+- 👤 instantoffices.com / easyoffices.com (опционально)
+
+### Контент-маркетинг
+
+- 👤 **Первые 3 поста в блог** (et + en, ru опционально):
+  - "Best quiet coworking spaces in Tallinn"
+  - "Working as an expat in Tallinn: a remote-work guide"
+  - "Indie hacking from Tallinn"
+- 👤 **Один guest-post или local interview** — Telliskivi blog, ERR
+  Lifestyle, e-Estonia, какое-нибудь startup-издание. Borrowed
+  authority — самый быстрый способ для маленького сайта подняться.
+- 👤 **3–4 коротких member story** на About-странице. Один абзац
+  каждая: имя, чем человек занимается, что Undercover ему даёт.
+
+### Социальные каналы
+
+- 👤 **Регулярные посты в Instagram.** Фид теперь подтягивается на
+  главную через Behold — чем активнее instagram, тем живее главная.
+  Game nights, утренние моменты, новые игры, гости, кофе — fashion
+  не нужен.
+- 👤 **UGC**: попросить резидентов постить с хэштегом / тегом
+  `@undercover.vibe`, делать репосты в stories.
+- 👤 **Микро-инфлюенсеры** (1K-10K followers) в нишах: remote work,
+  expats в Таллине, indie hackers, local creatives, board game
+  community. Дешевле и эффективнее, чем blanket-реклама.
+
+### Платная реклама (когда будет бюджет)
+
+- 👤 **Meta Ads** (Instagram/Facebook): трафик-кампании на холодную
+  аудиторию по интересам ("coworking", "remote work", "freelance",
+  "digital nomad Tallinn"). Ретаргетинг через установленный Pixel —
+  но только после того, как добавим custom events (см. выше).
+- 👤 **Google Ads**: брендовая кампания + запросы "coworking Tallinn",
+  "rent desk Tallinn", "тихий офис Таллин".
+
+### Performance / images
+
+- 👤 **Re-export 51 oversized image** (51 файл > 500 KB, всего 102 MB).
+  Hero PNG'и по 3-5 MB. Список offenders и Squoosh-команды — в
+  `PERF_NOTES.md`.
+- 👤 **Lighthouse audit** локально (sandbox не может скачать Chrome):
+  ```
+  npm run build:seo && npx serve dist
+  ```
+  → открыть Lighthouse в DevTools, скинуть report, итерируем дальше.
+
+---
+
+## ❓ Открытые вопросы для Sergei
+
+- **Events консолидация** (см. выше).
+- **Footer copyright** "Õigused ei ole kaitstud / No rights reserved" —
+  charming, но кому-то читается как amateurish. Оставляем?
+- **Suggested next batch** — polish bundle: navbar CTA + flag→text
+  switcher + Map iframe + Review schema + per-page hreflang. Все
+  мелкие, в сумме ощутимо двигают SEO и conversion. Запускать?

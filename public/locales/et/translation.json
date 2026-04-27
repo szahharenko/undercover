@@ -302,6 +302,13 @@
       "description": "Proovi Tallinna kõige hubasemat koostööruumi tasuta. Täielik juurdepääs tööruumile, kohv, kiire WiFi ja lauamängud õhtul."
     }
   },
+  "neighbourhood": {
+    "title": "Meie nurk Tallinnas",
+    "aria_label": "Meie naabruskonnast",
+    "paragraph_one": "Undercover asub Kivimurru tänaval, <b>Sikupilli</b> serval — Lasnamäe kõige vanemas osas. See on naabruskond, mis tihti üllatab uustulnukaid: 20. sajandi alguse puumajad seisavad õlg õla kõrval hilisemate paeplokkidega, ja sealsamas maja taga laskub paekallas, mis andis tänavale nime — sealt avaneb avar vaade Kadrioru kastaniorgudele ja kaugemale lahele.",
+    "paragraph_two": "Siin on kesklinnast vaiksem, kuid mitte kaugel. <b>Majaka trammipeatus</b> on viie minuti tee — trammid 2 ja 4 viivad Vanalinna umbes viieteistkümne minutiga — ning <b>Ülemiste Keskus</b> kauplustega, kohvikutega ja Tallinna SkyWheeliga on lõuna pool ühe lühisõidu kaugusel. Kadriorg, Maarjamäe muuseumid ja Pirita rand on bussiga kerge minna põhja suunas. Nurga taga leiad väikesi pagariäre ja lõunakohti, Selveri esmavajalikuks ning vana Lasnamäe paemurru rohelised nõlvad mäest alla — hea koht jalgu sirutada koosolekute vahel.",
+    "view_on_map": "Vaata meid kaardil"
+  },
   "instagram_feed": {
     "title": "Püüa vibe Instagramis",
     "description": "Mängude õhtud, vaiksed hommikud, värske kohv ja aeg-ajalt mõni koer. Vaata, mis ruumis viimasel ajal toimub.",
