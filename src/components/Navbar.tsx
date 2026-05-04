@@ -44,10 +44,9 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-6 nav-links items-center w-full justify-between">
           <div className="flex w-full items-center justify-center gap-4">
             <Link to="/" className="text-white hover:text-gray-300 transition-colors">{t('home')}</Link>
-            <Link to="/pricing" className="text-white hover:text-gray-300 transition-colors">{t('pricing')}</Link>
-            <Link to="/events-and-trainings" className="text-white hover:text-gray-300 transition-colors">{t('events_and_trainings')}</Link>
-            <Link to="/boardgames" className="text-white hover:text-gray-300 transition-colors">{t('board_games')}</Link>
             <Link to="/about" className="text-white hover:text-gray-300 transition-colors">{t('about_us')}</Link>
+            <Link to="/pricing" className="text-white hover:text-gray-300 transition-colors">{t('pricing')}</Link>
+            <Link to="/#registration-form" className="px-5 py-2 bg-coffee text-cream rounded-full font-semibold hover:bg-opacity-90 transition-all duration-300">{t('apply')}</Link>
           </div>
           <div className="ml-4 flex space-x-2">
             <FlagIcon lang="en" src={enFlag} changeLanguage={changeLanguage} activeLang={i18n.language} />
@@ -69,8 +68,7 @@ const Navbar: React.FC = () => {
             <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-gray-300">{t('home')}</Link>
             <Link to="/about" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-gray-300">{t('about_us')}</Link>
             <Link to="/pricing" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-gray-300">{t('pricing')}</Link>
-            <Link to="/events-and-trainings" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-gray-300">{t('events_and_trainings')}</Link>
-            <Link to="/boardgames" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-gray-300">{t('board_games')}</Link>
+            <Link to="/#registration-form" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 bg-coffee text-cream rounded-full font-semibold text-xl">{t('apply')}</Link>
 
             <div className="pt-4 flex justify-center space-x-4">
               <FlagIcon lang="en" src={enFlag} changeLanguage={changeLanguage} activeLang={i18n.language} />

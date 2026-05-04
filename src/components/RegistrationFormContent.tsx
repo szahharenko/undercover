@@ -30,6 +30,8 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
     name: '',
     email: '',
     phone: '',
+    business: '',
+    linkedin: '',
     date: '',
     message: '',
   });
@@ -183,6 +185,33 @@ const RegistrationFormContent: React.FC<Props> = ({ variant = 'inline', onSucces
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={t('form.phone_placeholder')}
+                className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all"
+              />
+            </div>
+            <div>
+              <label htmlFor="business" className="block text-charcoal text-lg font-medium mb-2">{t('form.business')}</label>
+              <input
+                type="text"
+                id="business"
+                name="business"
+                value={formData.business}
+                onChange={handleChange}
+                placeholder={t('form.business_placeholder')}
+                className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="linkedin" className="block text-charcoal text-lg font-medium mb-2">
+                {t('form.linkedin')} <span className="text-charcoal/50 text-sm font-normal">({t('form.optional')})</span>
+              </label>
+              <input
+                type="url"
+                id="linkedin"
+                name="linkedin"
+                value={formData.linkedin}
+                onChange={handleChange}
+                placeholder={t('form.linkedin_placeholder')}
                 className="w-full p-3 border border-coffee/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all"
               />
             </div>

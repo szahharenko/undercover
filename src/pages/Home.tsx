@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import SocialProofBar from '../components/SocialProofBar';
 import CoworkingExperience from '../components/CoworkingExperience';
-import BoardGameClub from '../components/BoardGameClub';
+import CommunityProfiles from '../components/CommunityProfiles';
 import RegistrationForm from '../components/RegistrationForm';
 import { logEvent } from '../servises/analytics';
 import GalleryByFolder from '../components/GalleryByFolder';
@@ -33,9 +33,16 @@ const Home: React.FC = () => {
     <>
       <StructuredData data={{
         '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        'name': 'Undercover Vibe',
+        '@type': 'CoworkingSpace',
+        'name': 'Undercover Vibe — Coworking for Entrepreneurs',
         'url': 'https://undercover.ee',
+        'description': 'Exclusive coworking space in Tallinn where every member is an entrepreneur. Curated community of founders, consultants, and business owners.',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Kivimurru 34-6',
+          'addressLocality': 'Tallinn',
+          'addressCountry': 'EE',
+        },
         'potentialAction': {
           '@type': 'SearchAction',
           'target': 'https://undercover.ee/?q={search_term_string}',
@@ -46,9 +53,9 @@ const Home: React.FC = () => {
       <HeroSection />
       <SocialProofBar />
       <CoworkingExperience />
+      <CommunityProfiles />
       <RegistrationForm />
       <GalleryByFolder mainImagesGlob={mainImagesGlob} thumbsGlob={thumbsGlob} title={t('atmosphere_gallery.title')} description={t('atmosphere_gallery.description')} />
-      <BoardGameClub />
       <InstagramFeed />
       <GoogleReviews />
     </>

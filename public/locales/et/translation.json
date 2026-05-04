@@ -1,77 +1,113 @@
 {
-  "coworking_and_board_games": "Coworking & Lauamängud",
+  "coworking_and_board_games": "Coworking Ettevõtjatele",
+  "community": "Kogukond",
+  "apply": "Kandideeri",
   "home": "Esileht",
   "about_us": "Meist",
   "pricing": "Hinnakiri",
   "board_games": "Lauamängud",
   "events": "Üritused",
   "events_and_trainings": "Üritused ja koolitused",
-  "book_a_visit": "Tule külla",
+  "book_a_visit": "Kandideeri",
   "learn_more": "Lisainfo",
   "form": {
-    "title": "Broneeri Tasuta Proovipäev",
+    "title": "Kandideeri kohale",
     "name": "Nimi",
     "name_placeholder": "Sinu Nimi",
     "email": "E-post",
+    "email_placeholder": "sinu@näide.com",
     "phone": "Telefon",
     "phone_placeholder": "Sinu telefoninumber",
     "optional": "valikuline",
-    "email_placeholder": "sinu@näide.com",
+    "business": "Sinu äri / projekt",
+    "business_placeholder": "nt SaaS logistika jaoks, e-kaubanduse bränd, turundusagentuur...",
+    "linkedin": "LinkedIn",
+    "linkedin_placeholder": "https://linkedin.com/in/sinuprofiil",
     "date": "Eelistatud külastuse kuupäev",
-    "message": "Lisateade",
-    "message_placeholder": "Sinu sõnum...",
-    "submit_button": "Broneeri Minu Tasuta Päev",
+    "message": "Mida muud peaksime teadma?",
+    "message_placeholder": "Räägi lähemalt, mille kallal sa töötad...",
+    "submit_button": "Esita taotlus",
     "submit_alert": "Täname huvi eest! Võtame teiega peagi ühendust.",
-    "thank_you_title": "Olete Broneeritud!",
-    "thank_you_message": "Täname, et registreerusite prooviseansile. Võtame teiega peagi ühendust, et teie broneering kinnitada.",
+    "thank_you_title": "Taotlus vastu võetud!",
+    "thank_you_message": "Täname taotluse eest. Vaatame iga taotluse isiklikult läbi ja vastame 1–2 tööpäeva jooksul.",
     "send_another": "Saada veel kord",
     "error_message": "Midagi läks valesti. Palun proovige hiljem uuesti.",
     "contact_us": "Võta meiega ühendust",
     "weekend_error": "Nädalavahetused ei ole lubatud. Palun vali nädalapäev."
   },
   "about_us_page": {
-    "title": "Töökoht, mis on ehitatud armastusega",
-    "subtitle": "Mitte kontor. Mitte kohvik. Väike, käsitööna loodud kodu Tallinnas inimestele, kes võtavad oma tööd tõsiselt - ja oma mugavust veelgi tõsisemalt.",
+    "title": "Ehitatud ettevõtjate poolt, ettevõtjatele",
+    "subtitle": "Me teame, mida äri ehitamine nõuab — sest teeme seda ise. See ruum eksisteerib selleks, et sa ei peaks enam kunagi üksi töötama.",
     "story_title": "Miks me selle ehitasime",
-    "story_text": "Meil oli kaks asja kõrini: külmad korporatiivkontorid, mis sind kolmapäevaks ära kurnavad, ja üksi kodus töötamine, kus pesemata nõud kõrvaltoast pidevalt kutsuvad. Nii ehitasime koha, kus tahtsime ise oma päevi veeta - piisavalt väike, et juba teisel külastusel kõigi nimed teaksid, piisavalt vaikne, et tegelikult mõelda saaks, ja piisavalt soe, et tööpäeva lõppedes ära minna ei tahaks.",
-    "craft_title": "Ehitatud armastusega, mitte ketibüroona",
-    "craft_text": "Iga detail siin ruumis on meie endi valitud, mitte hangete osakonna oma. Toolid valisime, sest katsetasime neid oma seljaga (IKEA Markus - oma klassi parim 8-tunnise tööpäeva jaoks). Kohvi vahetame iga kuu kohalike Tallinna röstijate vahel, sest tühi kontorikohv teeb tühje tööpäevi. Valgustus on soe, sest luminofoorlampidest tekib peavalu. Taimed on päris, sest plastist taimed tunduvad valena. Wi-Fi on optiline kiud, sest miski ei riku keskendumist nii palju kui pöörlev laadimisikoon. Ükski neist polnud odavaim valik - kõik olid õiged.",
-    "community_title": "Kogukond",
-    "community_text": "Hoiame ruumi meelega väikesena. Kuus kuni kümme inimest tavalisel päeval tähendab, et sa tegelikult tutvud oma kaastöötajatega - disainerid, programmeerijad, kirjanikud, keeleõpetajad, ettevõtjad. Inimesed, kes alustasid ühepäevase prooviga ja jäid aastateks. See on test, mis meile kõige rohkem korda läheb: kas tahaksid homme tagasi tulla?",
+    "story_text": "Ettevõtjatena proovisime kõike: kodukontorid, kus üksindus tapab motivatsiooni, korporatiivsed koostööruumid täis inimesi kellegi teise palgal, ja kohvikud, kus ei saa kõnet vastu võtta. Me tahtsime ruumi, kus meid ümbritsevad inimesed, kes mõtlevad nagu meie — kes mõistavad nullist millegi ehitamise tõuse ja mõõnu. Nii me selle ehitasimegi.",
+    "craft_title": "Ruum, mis on loodud fookuse, mitte glamuuri jaoks",
+    "craft_text": "Iga detail on valitud asutajate poolt, kes siin iga päev töötavad. IKEA Markus toolid — testitud oma seljaga 8-tunniste tööpäevade jooksul. Kohvi vahetatakse igakuiselt Tallinna kohalikelt röstijatelt, sest halb kohv toob halbu otsuseid. Fiiberoptiline Wi-Fi, sest pöörlev laadimisikoon kliendikõne ajal ei ole valik. Soe valgustus, päris taimed, vaiksed tsoonid. Ükski neist polnud odavaim valik — kõik olid õiged.",
+    "community_title": "Kureeritud kogukond",
+    "community_text": "Hoiame ruumi meelega väikesena — kuus kuni kümme inimest tavalisel päeval. Kõik siin juhivad äri: SaaS-i asutajad, konsultandid, agentuuride omanikud, e-kaubanduse ettevõtjad. Vaatame iga taotluse üle, et ruumi kvaliteet püsiks kõrge. Tulemus: tõelised vestlused, tõelised partnerlused ja null jutuajamist ilmast.",
     "mission_title": "Meie missioon",
-    "mission_text": "Tõestada, et töökoht võib olla midagi enamat kui üüritud ruutmeetrid. Et hoolikus, käsitöö ja väike grupp toredaid inimesi võivad tavalise tööpäeva muuta millekski, mida ootad. Me ehitame Tallinna töökoha, mida ise ammu igatsesime - ja kutsume sind seda enda omaks tegema.",
-    "boardgames_note_title": "Ja jah - lauamängud on ka olemas",
-    "boardgames_note_text": "Pärast tööpäeva ja nädalavahetustel ruum muutub. Me ise oleme lauamänguhuvilised ja oleme kogunud üle 100 mängu. Kuid tööpäeva ajal on see eelkõige koostööruum - mängud jäävad riiulile kuni kella 18-ni.",
-    "invitation_title": "Tule veeda meiega üks päev",
-    "invitation_text": "Esimene päev on meie kostitada. Võta sülearvuti, võta projekt, mille kallal töötad, ja vaata, kas see on koht, kus sinu parim töö sünnib.",
+    "mission_text": "Tõestada, et koht, kus sa töötad, kujundab seda, kuidas sa töötad. Ettevõtjaid täis ruum loob teistsuguse energia kui võõraid täis ruum. Me ehitame tööruumi, mida Tallinnas alati soovisime — ja hoiame seda piisavalt eksklusiivsena, et iga koht loeb.",
+    "boardgames_note_title": "Ja pärast tööd — 1000+ lauamängu",
+    "boardgames_note_text": "Mängude osas oleme samuti tõsised. Pärast kella 18 ja nädalavahetustel muutub ruum Tallinna kõige ulatuslikumaks lauamänguklubiks. Kuid töötundidel on äri esikohal.",
+    "invitation_title": "Kandideeri kohale",
+    "invitation_text": "Räägi meile oma ärist ja sellest, mille kallal töötad. Vaatame iga taotluse isiklikult läbi ja vastame 1–2 päeva jooksul.",
     "team_title": "Tutvuge Asutajatega"
   },
   "hero": {
-    "title": "Kõige hubasem coworking Tallinnas",
-    "subtitle": "Mitte kontor. Mitte kodu. ❤️ Parem! Proovi tasuta",
-    "reserve_button": "Proovi tasuta",
-    "join_button": "Liitu Klubiga"
+    "title": "Tööruum, kus iga naaber on ettevõtja",
+    "subtitle": "Eksklusiivne coworking ainult ettevõtjatele. Mitte juhuslikud vabakutselised — ainult inimesed, kes ehitavad äri.",
+    "reserve_button": "Kandideeri kohale",
+    "join_button": "Kandideeri"
   },
   "coworking_experience": {
-    "title": "Undercover Coworking Kogemus",
+    "title": "Miks ettevõtjad valivad meid",
     "features": {
       "comfort": {
-        "title": "Terviseteadlik Mugavus",
-        "description": "Töötage mugavalt meie ergonoomiliste IKEA Markus toolidega. Mööbel ja atmosfäär on loodud teie heaolu tagamiseks."
+        "title": "Suletud kogukond",
+        "description": "Iga inimene siin juhib äri. Me kontrollime taotlusi, et teid ümbritseksid alati ainult ettevõtjad — mitte üliõpilased ega juhuslikud vabakutselised."
+      },
+      "coffee": {
+        "title": "Networking, mis tekib loomulikult",
+        "description": "6–10 asutajat ühes ruumis. Partnerlused, kliendid ja ideed sünnivad kohvi kõrval — pole vaja kunstlikke networking-üritusi."
       },
       "wifi": {
         "title": "Välkkiire Wi-Fi",
         "description": "Püsige ühenduses meie fiiberoptilise internetiga, tagades sujuvad videokõned ja kiired allalaadimised."
       },
-      "coffee": {
-        "title": "Käsitöökohv ja -tee",
-        "description": "Nautige piiramatult värskelt valmistatud käsitöökohvi ja valikut premium-teesid, et hoida teid energilisena."
-      },
       "atmosphere": {
-        "title": "Hubane ja Vaikne Atmosfäär",
-        "description": "Meie ruum on loodud olema rahulik ja produktiivne keskkond, kus on vaiksed tsoonid keskendunud tööks."
+        "title": "Loodud süvatööks",
+        "description": "Ergonoomiline töökoht, vaiksed tsoonid, erilkohv, 24/7 ligipääs. Kõik on seadistatud nii, et saaksite keskenduda oma äri ehitamisele."
       }
     }
+  },
+  "community_profiles": {
+    "title": "Kes siin töötab",
+    "subtitle": "Iga koht on võetud inimese poolt, kes ehitab äri. Siin on ettevõtjate tüübid, keda kohtad.",
+    "profiles": [
+      {
+        "role": "SaaS-i asutaja",
+        "description": "Ehitab ja skaleerib tarkvaratooteid"
+      },
+      {
+        "role": "E-kaubanduse ettevõtja",
+        "description": "Juhib veebipoode ja D2C-brände"
+      },
+      {
+        "role": "Konsultant",
+        "description": "Strateegia, turundus ja ärinõustamine"
+      },
+      {
+        "role": "Agentuuri omanik",
+        "description": "Juhib disaini-, arendus- või turundusagentuuri"
+      },
+      {
+        "role": "Startup'i asutaja",
+        "description": "Varajases staadiumis ettevõte, otsib toote-turu sobivust"
+      },
+      {
+        "role": "Soloettevõtja",
+        "description": "Juhib mitut projekti korraga"
+      }
+    ]
   },
   "board_game_club": {
     "title": "Me armastame lauamänge.",
@@ -189,28 +225,28 @@
     "description_2": "Saate sirvida meie kollektsiooni veebis või tulla kohvikusse neid ise vaatama. Meie asjatundlik personal on alati valmis aitama teil valida täiusliku mängu ja õpetama teile reegleid."
   },
   "events_page": {
-    "title": "Tulevased Üritused",
-    "subtitle": "Liituge meie kogukonnaga mitmesugustel põnevatel üritustel, alates eepilistest turniiridest kuni juhuslike mänguõhtuteni. Undercover Vibe'is toimub alati midagi!",
+    "title": "Üritused ettevõtjatele",
+    "subtitle": "Kasvata oma äri koos teiste asutajatega. Meie üritused loovad tõelisi kontakte ja praktilist väärtust — mitte üldist networking'ut.",
     "events": {
-      "mafia": {
-        "date": "Reede, 19:00",
-        "title": "Maffiaõhtu",
-        "description": "Pettuse, deduktsiooni ja lõbu õhtu. Kas suudate ellu jääda?"
+      "mastermind": {
+        "date": "Igal teisel kolmapäeval, 18:00",
+        "title": "Mastermind-grupp",
+        "description": "Väikegrupi sessioon, kus asutajad jagavad väljakutseid ja saavad ausat tagasisidet. Piiratud 6 inimesele."
       },
-      "dnd": {
-        "date": "Kolmapäev, 18:30",
-        "title": "D&D algajatele",
-        "description": "Uus Dungeons & Dragonsis? Liituge meie sissejuhatava sessiooniga ja alustage oma seiklust."
+      "breakfast": {
+        "date": "Reede, 9:00",
+        "title": "Asutajate hommikusöök",
+        "description": "Alusta päeva kohvi ja vestlusega. Vabas formaadis — too kaasa oma võidud, mured või lihtsalt isu."
       },
-      "catan": {
-        "date": "Laupäev, 14:00",
-        "title": "Catani Turniir",
-        "description": "Võistelge teiste asunikega Catani isandavõimu pärast. Võitjale auhinnad!"
+      "demo": {
+        "date": "Kuu viimane neljapäev, 18:00",
+        "title": "Demo-päev",
+        "description": "Näita, mida oled ehitanud. Saa tagasisidet teistelt ettevõtjatelt enne turule minekut."
       },
-      "cozy": {
-        "date": "Esmaspäev, 19:00",
-        "title": "Hubane Mänguõhtu",
-        "description": "Lõdvestunud õhtu kergete ja lõbusate lauamängude valikuga."
+      "peer": {
+        "date": "Esmaspäev, 18:30",
+        "title": "Peer Advisory",
+        "description": "Üks asutaja esitab reaalse äriprobleemi. Grupp aitab seda lahendada. Konfidentsiaalne ja konstruktiivne."
       }
     }
   },
@@ -219,9 +255,9 @@
     "content": "# Kas mul on vaja liikmelisust, et siin töötada?\nSaate kasutada päevapileteid või valida igakuise liikmelisuse.\n\n# Millised on teie lahtiolekuaegad?\nKuu liikmed: 24/7\nPäevapileti kasutajad: Esmaspäevast reedeni: 9:00-18:00\n\n# Kuidas ma pääsen pärast tööaega sisse?\nIsikliku võtmekaardi / koodi kaudu.\n\n# Kas ma saan külalisi kaasa tuua?\nJah, külalised on lubatud piiratud ajaks ja nad peavad olema registreeritud.\n\n# Kas kiire internet on kaasas?\nJah, ettevõtte klassi Wi-Fi. Optiline fiiberühendus.\n\n# Milliseid liikmelisusplaane te pakute?\nPäevased, nädalased, igakuised ja meeskonnaplaanid.\n\n# Mis on liikmelisusesse kaasatud?\nTöökohad, internet, kommunaalkulud, kohv/tee, koristamine, kogukonna üritused.\n\n# Kas on pikaajalisi allahindlusi?\nJah, 3-kuuliste, 6-kuuliste ja aastaplaanide puhul saab arutada.\n\n# Kas ruum on lemmikloomadele sobiv?\nVäikesed, hästi käituvad lemmikloomad on lubatud. Palun teavitage meid eelnevalt.\n\n# Milline on teie tühistamispoliitika?\n14-päevane etteteatamine igakuise plaani puhul.\n\n# Kas ma saan kasutada aadressi ettevõtte registreerimiseks?\nJah, virtuaalse kontori ja juriidilise aadressi teenused on saadaval.\n\n# Kas ruum on turvaline?\n24/7 CCTV, juurdepääsukontroll ja isiklikud kapid (tulekul).\n\n# Kas ma saan ruumi enne kohustuse võtmist proovida?\nJah, tasuta tuuri või proovipäevaga.\n\n# Kus te asute ja kuidas ma sinna jõuan?\nMe asume aadressil Kivimurru 34. Kergesti ligipääsetav ühistranspordi ja jalgrattaga. Mitte kaugel T1 keskusest."
   },
   "events_calendar": {
-    "title": "Ürituste Kalender",
-    "description": "Jääge kursis kõigi tulevaste ürituste ja turniiridega Undercover Vibe'is. Märkige oma kalendrisse ja ärge jätke lõbu vahele!",
-    "game_evening": "Lauamängu Õhtu",
+    "title": "Ürituste kalender",
+    "description": "Kõik tulevased üritused ettevõtjatele Undercover Vibe'is. Mastermind-grupid, asutajate hommikusöögid, demo-päevad ja palju muud.",
+    "game_evening": "Kogukonna õhtu",
     "game_weekend": "Lauamängu Nädalavahetus"
   },
   "events_trainings_page": {
@@ -274,32 +310,32 @@
   },
   "seo": {
     "home": {
-      "title": "Undercover Vibe - Koostööruum ja Lauamänguklubi Tallinnas",
-      "description": "Hubane koostööruum päeval, VIP lauamänguklubi õhtul. Ergonoomiline töökeskkond, kiire WiFi ja 200+ lauamängu Tallinnas."
+      "title": "Undercover Vibe — Eksklusiivne coworking ettevõtjatele Tallinnas",
+      "description": "Eksklusiivne koostööruum Tallinnas, kus iga liige on ettevõtja. Kureeritud kogukond, ergonoomiline tööruum, fiiberoptiline WiFi, 24/7 ligipääs. Kandideeri kohale."
     },
     "about": {
-      "title": "Meist — Armastusega ehitatud töökoht Tallinnas | Undercover Vibe",
-      "description": "Miks me ehitasime Tallinna kõige hoolikamalt loodud koostööruumi, mida sinna investeerisime ja milline väike 6-10 inimese kogukond seda iga päev oma töökohaks nimetab."
+      "title": "Meist — Coworking ehitatud ettevõtjate poolt, ettevõtjatele | Undercover Vibe",
+      "description": "Miks me ehitasime Tallinna ainsa ettevõtjatele eksklusiivse koostööruumi. Kureeritud kogukond 6-10 asutajast, konsultandist ja äriomanikust."
     },
     "pricing": {
-      "title": "Hinnakiri - Undercover Vibe Koostööruum Tallinn",
-      "description": "Paindlikud koostööruumi plaanid alates €25/päev. Kuupiletid, päevapiletid, tasuta proovipäev ja koosolekuruumid Tallinnas."
+      "title": "Hinnakiri — Undercover Vibe Ettevõtjate Coworking Tallinn",
+      "description": "Coworking plaanid ettevõtjatele alates €25/päev. Kuuliikmelisus 24/7 ligipääsuga, päevapiletid ja tasuta proovipäev Tallinnas."
     },
     "boardgames": {
-      "title": "Lauamängud - Undercover Vibe Mänguklubi Tallinn",
-      "description": "Lauamängud, VIP mängusaal, teemaõhtud. Broneeri oma laud Tallinna kõige hubasemas mänguklubis."
+      "title": "Lauamängud — Undercover Vibe Mänguklubi Tallinn",
+      "description": "1000+ lauamängu, privaatsed mängulauad, teemaõhtud. Broneeri oma laud Tallinna kõige ulatuslikumas mänguklubis."
     },
     "events": {
-      "title": "Üritused - Undercover Vibe Tallinn",
-      "description": "Tulevased mänguõhtud, Maffia, D&D, töötoad ja kogukonna üritused. Vaata kalendrit ja liitu meiega!"
+      "title": "Üritused — Undercover Vibe Tallinn",
+      "description": "Mastermind-grupid, asutajate hommikusöögid, demo-päevad ja ettevõtjate kogukonna üritused. Vaata kalendrit ja liitu."
     },
     "eventsTrainings": {
-      "title": "Üritused ja Koolitused - Undercover Vibe Tallinn",
+      "title": "Üritused ja Koolitused — Undercover Vibe Tallinn",
       "description": "Korraldage oma ettevõtte üritus, koolitus või meeskonna üritus Undercover Vibe'is. Paindlik ruumide rent Tallinnas."
     },
     "freeTrial": {
-      "title": "Tasuta Proovipäev - Undercover Vibe Koostööruum Tallinn",
-      "description": "Proovi Tallinna kõige hubasemat koostööruumi tasuta. Täielik juurdepääs tööruumile, kohv, kiire WiFi ja lauamängud õhtul."
+      "title": "Kandideeri tasuta proovipäevale — Undercover Vibe Coworking Tallinn",
+      "description": "Kandideeri tasuta proovipäevale Tallinna ainsas ettevõtjatele mõeldud coworking'us. Tutvu kogukonnaga ja hinda tööruumi."
     }
   },
   "neighbourhood": {

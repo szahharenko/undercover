@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import iconComfort from '../assets/icon-comfort.png'
-import iconCoffee from '../assets/icon-coffe.png'
-import iconQuite from '../assets/icon-quiet.png'
+import { ShieldCheck, Handshake, Target } from 'lucide-react';
 
 interface FeatureCardProps {
   icon: React.ElementType;
@@ -31,17 +29,17 @@ const CoworkingExperience: React.FC = () => {
   const { t } = useTranslation();
   const features = [
     {
-      icon: () => <img src={iconComfort} alt="Comfort Icon" className="w-24 h-24 mb-4 max-w-[350px] mobile-240" />,
+      icon: () => <ShieldCheck className="w-16 h-16 mb-4 text-coffee" strokeWidth={1.5} />,
       title: t('coworking_experience.features.comfort.title'),
       description: t('coworking_experience.features.comfort.description'),
     },
     {
-      icon: () => <img src={iconCoffee} alt="Coffee Icon" className="w-24 h-24 mb-4 max-w-[350px] mobile-240" />,
+      icon: () => <Handshake className="w-16 h-16 mb-4 text-coffee" strokeWidth={1.5} />,
       title: t('coworking_experience.features.coffee.title'),
       description: t('coworking_experience.features.coffee.description'),
     },
     {
-      icon: () => <img src={iconQuite} alt="Quiet Icon" className="w-24 h-24 mb-4 max-w-[350px] mobile-240" />,
+      icon: () => <Target className="w-16 h-16 mb-4 text-coffee" strokeWidth={1.5} />,
       title: t('coworking_experience.features.atmosphere.title'),
       description: t('coworking_experience.features.atmosphere.description'),
     },

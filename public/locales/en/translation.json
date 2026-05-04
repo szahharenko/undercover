@@ -1,15 +1,17 @@
 {
-  "coworking_and_board_games": "Coworking & Board Games",
+  "coworking_and_board_games": "Coworking for Entrepreneurs",
+  "community": "Community",
+  "apply": "Apply",
   "home": "Home",
   "about_us": "About Us",
   "pricing": "Pricing",
   "board_games": "Board games",
   "events": "Events",
   "events_and_trainings": "Events & Trainings",
-  "book_a_visit": "Visit us",
+  "book_a_visit": "Apply",
   "learn_more": "Learn More",
   "form": {
-    "title": "Book a Free Trial Day",
+    "title": "Apply for a spot",
     "name": "Name",
     "phone": "Phone",
     "phone_placeholder": "Your Phone Number",
@@ -17,60 +19,94 @@
     "name_placeholder": "Your Name",
     "email": "Email",
     "email_placeholder": "your@example.com",
+    "business": "Your business / project",
+    "business_placeholder": "e.g. SaaS for logistics, e-commerce brand, marketing agency...",
+    "linkedin": "LinkedIn",
+    "linkedin_placeholder": "https://linkedin.com/in/yourprofile",
     "date": "Preferred Visit Date",
-    "message": "Additional Message",
-    "message_placeholder": "Your message...",
-    "submit_button": "Book My Free Day",
+    "message": "Anything else we should know?",
+    "message_placeholder": "Tell us more about what you're working on...",
+    "submit_button": "Submit Application",
     "submit_alert": "Thank you for your interest! We will get back to you shortly.",
-    "thank_you_title": "You're Booked!",
-    "thank_you_message": "Thank you for registering for a trial session. We will contact you soon to confirm your booking.",
+    "thank_you_title": "Application Received!",
+    "thank_you_message": "Thank you for applying. We review every application personally and will get back to you within 1–2 business days.",
     "send_another": "Send Another",
     "error_message": "Something went wrong. Please try again later.",
     "contact_us": "Contact Us",
     "weekend_error": "Weekends are not allowed. Please pick a weekday."
   },
   "about_us_page": {
-    "title": "A workspace built with love",
-    "subtitle": "Not an office. Not a café. A small, hand-crafted home in Tallinn for people who take their work seriously - and their comfort even more seriously.",
+    "title": "Built by entrepreneurs, for entrepreneurs",
+    "subtitle": "We know what it takes to build a business — because we're doing it ourselves. This space exists so you never have to work alone again.",
     "story_title": "Why we built this",
-    "story_text": "We were tired of two things: cold corporate offices that drain you by Wednesday, and working from home alone with the dishes calling from the next room. So we built the place we wanted to spend our own days in - small enough that you know everyone's name by your second visit, quiet enough that you can actually think, and warm enough that you don't want to leave when the workday ends.",
-    "craft_title": "Built with love, not by a chain",
-    "craft_text": "Every detail in this space was chosen by us, not by a procurement department. We picked the chairs because we tested them with our own backs (IKEA Markus - best in its class for an 8-hour day). We rotate the coffee monthly through local Tallinn roasters because flat office coffee makes flat workdays. The lighting is warm because fluorescent strips give us headaches. The plants are real because plastic ones feel like a lie. The Wi-Fi is fiber-optic because nothing kills focus like a spinning loader. None of this was the cheapest option - it was the right one.",
-    "community_title": "Community",
-    "community_text": "We deliberately keep the space small. Six to ten people on a typical day means you actually meet your coworkers - designers, developers, writers, language teachers, founders. People who started with a one-day trial and stayed for years. That's the test we care about most: would you want to come back tomorrow?",
+    "story_text": "As entrepreneurs, we tried everything: home offices where loneliness kills motivation, corporate coworkings full of people on someone else's payroll, and coffee shops where you can't take a call. We wanted a space surrounded by people who think like us — who understand the highs and lows of building something from scratch. So we built it.",
+    "craft_title": "A space made for focus, not flair",
+    "craft_text": "Every detail was chosen by founders who work here daily. IKEA Markus chairs — tested with our own backs through 8-hour days. Coffee rotated monthly from local Tallinn roasters, because bad coffee makes bad decisions. Fiber-optic Wi-Fi, because a spinning loader during a client call is not an option. Warm lighting, real plants, quiet zones. None of this was the cheapest option — it was the right one.",
+    "community_title": "A curated community",
+    "community_text": "We deliberately keep the space small — six to ten people on a typical day. Everyone here runs a business: SaaS founders, consultants, agency owners, e-commerce entrepreneurs. We review every application so the quality of the room stays high. The result: real conversations, real partnerships, and zero small talk about the weather.",
     "mission_title": "Our mission",
-    "mission_text": "To prove that a workspace can be more than rented square meters. That craft, care, and a small group of good people can turn an ordinary weekday into something you actually look forward to. We're building the Tallinn workspace we wished existed - and inviting you to make it yours too.",
-    "boardgames_note_title": "And yes - there are board games",
-    "boardgames_note_text": "After hours and on weekends, the space transforms. We're board game enthusiasts ourselves and have built up a collection of over 1,000 titles. But during the workday this is a coworking space first - the games stay on the shelf until 18:00.",
-    "invitation_title": "Come spend a day with us",
-    "invitation_text": "Your first day is on us. Bring your laptop, bring whatever you're working on, and see whether this is the place where your best work happens."
+    "mission_text": "To prove that where you work shapes how you work. A room full of entrepreneurs creates a different energy than a room full of strangers. We're building the workspace we always wished existed in Tallinn — and keeping it exclusive enough that every seat matters.",
+    "boardgames_note_title": "And after work — 1,000+ board games",
+    "boardgames_note_text": "We're serious about games too. After 18:00 and on weekends, the space transforms into Tallinn's most extensive board game club. But during work hours, business comes first.",
+    "invitation_title": "Apply for a spot",
+    "invitation_text": "Tell us about your business and what you're building. We review every application personally and get back to you within 1–2 days."
   },
   "hero": {
-    "title": "Coziest co-working in Tallinn",
-    "subtitle": "Not an office. Not home. ❤️ Better! Try it for free",
-    "reserve_button": "Let's try it",
-    "join_button": "Join the Club"
+    "title": "A workspace where every neighbor is a founder",
+    "subtitle": "Exclusive coworking for entrepreneurs only. No random freelancers — only people building businesses.",
+    "reserve_button": "Apply for a spot",
+    "join_button": "Apply"
   },
   "coworking_experience": {
-    "title": "The Undercover Coworking Experience",
+    "title": "Why entrepreneurs choose us",
     "features": {
       "comfort": {
-        "title": "Health-Conscious Comfort",
-        "description": "Work in comfort with our ergonomic IKEA Markus chairs. Furniture and atmosphere designed for your well-being."
+        "title": "Closed community",
+        "description": "Every person here runs a business. We screen applicants so you're always surrounded by fellow entrepreneurs — no students, no random freelancers."
       },
       "coffee": {
-        "title": "New coffee taste",
-        "description": "We are buying most tasty coffee beans from local roasters to make your workday better. New coffee taste every month!"
+        "title": "Networking that happens naturally",
+        "description": "6–10 founders in one room. Partnerships, clients, and ideas emerge over coffee — no forced networking events needed."
       },
       "wifi": {
         "title": "Blazing Fast Wi-Fi",
         "description": "Stay connected with our fiber-optic internet, ensuring smooth video calls and fast downloads."
       },
       "atmosphere": {
-        "title": "Cozy & Quiet Atmosphere",
-        "description": "Our space is designed to be a peaceful and productive environment, with quiet zones for focused work."
+        "title": "Built for deep work",
+        "description": "Ergonomic workspace, quiet zones, specialty coffee, 24/7 access. Everything is set up so you can focus on building your business."
       }
     }
+  },
+  "community_profiles": {
+    "title": "Who works here",
+    "subtitle": "Every seat is taken by someone building a business. Here are the types of entrepreneurs you'll meet.",
+    "profiles": [
+      {
+        "role": "SaaS Founder",
+        "description": "Building and scaling software products"
+      },
+      {
+        "role": "E-commerce Entrepreneur",
+        "description": "Running online stores and D2C brands"
+      },
+      {
+        "role": "Consultant",
+        "description": "Strategy, marketing, and business consulting"
+      },
+      {
+        "role": "Agency Owner",
+        "description": "Leading design, dev, or marketing agencies"
+      },
+      {
+        "role": "Startup Founder",
+        "description": "Early-stage ventures seeking product-market fit"
+      },
+      {
+        "role": "Freelance CEO",
+        "description": "Solo entrepreneurs managing multiple projects"
+      }
+    ]
   },
   "board_game_club": {
     "title": "We love board games.",
@@ -196,28 +232,28 @@
     "description_2": "You can browse our collection online or come into the cafe to see them for yourself. Our knowledgeable staff is always on hand to help you choose the perfect game and teach you the rules."
   },
   "events_page": {
-    "title": "Upcoming Events",
-    "subtitle": "Join our community for a variety of exciting events, from epic tournaments to casual game nights. There's always something happening at Undercover Vibe!",
+    "title": "Events for Entrepreneurs",
+    "subtitle": "Grow your business alongside other founders. Our events are designed to create real connections and practical value — not generic networking.",
     "events": {
-      "mafia": {
-        "date": "Friday, 19:00",
-        "title": "Mafia Night",
-        "description": "A night of deception, deduction, and fun. Can you survive?"
+      "mastermind": {
+        "date": "Every other Wednesday, 18:00",
+        "title": "Mastermind Group",
+        "description": "Small-group session where founders share challenges and get honest feedback. Limited to 6 people per session."
       },
-      "dnd": {
-        "date": "Wednesday, 18:30",
-        "title": "D&D for Beginners",
-        "description": "New to Dungeons & Dragons? Join our introductory session and start your adventure."
+      "breakfast": {
+        "date": "Friday, 9:00",
+        "title": "Founder Breakfast",
+        "description": "Start the day with coffee and conversation. Casual format — bring your wins, your struggles, or just your appetite."
       },
-      "catan": {
-        "date": "Saturday, 14:00",
-        "title": "Catan Tournament",
-        "description": "Compete with other settlers for the lordship of Catan. Prizes for the winner!"
+      "demo": {
+        "date": "Last Thursday of the month, 18:00",
+        "title": "Demo Day",
+        "description": "Show what you've been building. Get feedback from fellow entrepreneurs before you go to market."
       },
-      "cozy": {
-        "date": "Monday, 19:00",
-        "title": "Cozy Game Night",
-        "description": "A relaxed evening with a selection of light and fun board games."
+      "peer": {
+        "date": "Monday, 18:30",
+        "title": "Peer Advisory",
+        "description": "One founder presents a real business problem. The group helps solve it. Confidential and constructive."
       }
     }
   },
@@ -227,8 +263,8 @@
   },
   "events_calendar": {
     "title": "Events Calendar",
-    "description": "Stay updated with all upcoming events and tournaments at Undercover Vibe. Mark your calendars and don't miss out on the fun!",
-    "game_evening": "Board Game Evening",
+    "description": "Stay updated with all upcoming events for entrepreneurs at Undercover Vibe. Mastermind groups, founder breakfasts, demo days, and more.",
+    "game_evening": "Community Evening",
     "game_weekend": "Board Game Weekend"
   },
   "events_trainings_page": {
@@ -273,32 +309,32 @@
   },
   "seo": {
     "home": {
-      "title": "Undercover Vibe - Coworking & Board Game Club in Tallinn",
-      "description": "Cozy coworking space by day, VIP board game club by night. Ergonomic workspace, fast WiFi, meeting rooms, and 200+ board games in Tallinn, Estonia."
+      "title": "Undercover Vibe — Private Coworking for Entrepreneurs in Tallinn",
+      "description": "Exclusive coworking space in Tallinn where every member is an entrepreneur. Curated community, ergonomic workspace, fiber WiFi, 24/7 access. Apply for a spot."
     },
     "about": {
-      "title": "About Us — A Tallinn workspace built with love | Undercover Vibe",
-      "description": "Why we built Tallinn's most hand-crafted coworking space, what we put into it, and the small community of 6-10 people who call it their daily workplace."
+      "title": "About Us — Coworking built by entrepreneurs, for entrepreneurs | Undercover Vibe",
+      "description": "Why we built Tallinn's only entrepreneur-exclusive coworking. A curated community of 6-10 founders, consultants, and business owners working side by side."
     },
     "pricing": {
-      "title": "Pricing - Undercover Vibe Coworking Tallinn",
-      "description": "Flexible coworking plans from €25/day. Monthly desks, day passes, free trial, and private meeting rooms in Tallinn."
+      "title": "Pricing — Undercover Vibe Entrepreneur Coworking Tallinn",
+      "description": "Coworking plans for entrepreneurs from €25/day. Monthly membership with 24/7 access, day passes, and free trial day in Tallinn."
     },
     "boardgames": {
-      "title": "Board Games - Undercover Vibe Game Club Tallinn",
-      "description": "Board games, VIP gaming lounge, themed game nights. Book your table at Tallinn's coziest board game club."
+      "title": "Board Games — Undercover Vibe Game Club Tallinn",
+      "description": "1,000+ board games, private gaming tables, themed game nights. Book your table at Tallinn's most extensive board game club."
     },
     "events": {
-      "title": "Events - Undercover Vibe Tallinn",
-      "description": "Upcoming game nights, Mafia, D&D, workshops, and community events. Check the calendar and join us at Undercover Vibe!"
+      "title": "Events — Undercover Vibe Tallinn",
+      "description": "Mastermind groups, founder breakfasts, demo days, and community events for entrepreneurs. Check the calendar and join us."
     },
     "eventsTrainings": {
-      "title": "Events & Trainings - Undercover Vibe Tallinn",
+      "title": "Events & Trainings — Undercover Vibe Tallinn",
       "description": "Host your corporate event, training, or team building at Undercover Vibe. Flexible space rental in Tallinn with full amenities."
     },
     "freeTrial": {
-      "title": "Free Trial Day - Undercover Vibe Coworking Tallinn",
-      "description": "Try Tallinn's coziest coworking space for free. Full workspace access, specialty coffee, fast WiFi, and board games in the evening."
+      "title": "Apply for a Free Trial — Undercover Vibe Entrepreneur Coworking Tallinn",
+      "description": "Apply for a free trial day at Tallinn's only coworking for entrepreneurs. Meet the community, test the workspace, see if it's the right fit."
     }
   },
   "neighbourhood": {

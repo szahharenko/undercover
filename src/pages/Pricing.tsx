@@ -35,7 +35,7 @@ const Pricing: React.FC = () => {
       <StructuredData data={{
         '@context': 'https://schema.org',
         '@type': 'Product',
-        'name': 'Undercover Vibe Coworking',
+        'name': 'Undercover Vibe — Coworking for Entrepreneurs',
         'description': t('seo.pricing.description'),
         'brand': { '@type': 'Brand', 'name': 'Undercover Vibe' },
         'offers': [
